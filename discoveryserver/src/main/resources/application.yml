@@ -1,0 +1,15 @@
+#spring.application.name=discoveryserver
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: 0.0.0.0
+#    hostname: ${COMPUTERNAME}
+logging:
+  level:
+    '[com.netflix.eureka]': 'OFF'
+    '[com.netflix.discovery]': 'OFF'
+    
