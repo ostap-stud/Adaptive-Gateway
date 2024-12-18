@@ -1,0 +1,58 @@
+server:
+#  port: 8080
+  port: 8443
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: changeit
+    key-store-type: PKCS12
+    key-alias: volunteer-core
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+#    hostname: ${COMPUTERNAME}
+    hostname: asf314
+ 
+spring:
+  application:
+    name: ldubgd-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: geoserver
+#        uri: http://10.138.10.103:10000/
+        uri: http://10.138.10.102:8080/
+        predicates:
+#          - Method=GET,POST
+          - Path=/geoserver/**
+      - id: notify
+        uri: http://10.138.10.103:10000/
+        predicates:
+          - Path=/notify/{segment}
+#          - Method=GET,POST
+        filters:
+          - SetPath=/{segment}
+#          - RewritePath=/notify/?(?<segment>.*), /$\{segment}
+#          - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      - id: notificationService
+        uri: lb://notification
+        predicates:
+        - Path=/notification/***
+    discovery:
+      locator:
+        enabled: 'true'
+        lower-case-service-id: true
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: notification
+        url: /v3/api-docs/notification
+#      - name: department
+#        url: /v3/api-docs/department
+#      - name: organization
+#        url: /v3/api-docs/organization
