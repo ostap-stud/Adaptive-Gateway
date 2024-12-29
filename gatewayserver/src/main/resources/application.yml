@@ -23,6 +23,26 @@ spring:
   cloud:
     gateway:
       routes:
+      - id: test-service
+        uri: lb://test-service
+        predicates:
+          - Path=/test/**
+        filters:
+          - name: Authentication
+            args:
+              roles:
+                - ADMIN
+                - USER
+      - id: auth-service
+        uri: lb://auth-service
+        predicates:
+          - Path=/auth/**
+#        filters:
+#          - name: Authentication
+#            args:
+#              roles:
+#                - ADMIN
+#                - USER
       - id: geoserver
 #        uri: http://10.138.10.103:10000/
         uri: http://10.138.10.102:8080/
