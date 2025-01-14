@@ -1,0 +1,26 @@
+server:
+  port: 8334
+
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/LDUBGD-AuthDB?currentSchema=users
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  security:
+    user:
+      name: admin
+      password: admin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+alertsystem:
+  app:
+    secret: LIGRU43543YGIWG4WE87TVBDKJSBHB4KL4J2O9DSG98U3489AMVBDUIY952039FLS
+    expirationMs: 600000
+
