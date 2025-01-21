@@ -8,8 +8,6 @@ import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.http.HttpStatus
-import org.springframework.http.ResponseEntity
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.core.userdetails.UserDetails
@@ -67,9 +65,9 @@ class JwtFilter : OncePerRequestFilter() {
     }
 
     private fun authForSignUpAccess(signUpRoute: String, jwt: String, userDetails: UserDetailsImpl): Boolean {
-        val serviceRoute = routeRepository.findByRoute(signUpRoute)
-        val requiredRoles = roleRepository.findByIdIn(serviceRoute?.getRolesId() ?: mutableListOf()).map { it.role }
-        println("Service route: ${serviceRoute?.route}\n" +
+        val serviceRoute = routeRepository.findByRoute(signUpRoute)!!
+        val requiredRoles = roleRepository.findByIdIn(serviceRoute.getRolesId()).map { it.role!! }
+        println("Service route: ${serviceRoute.route}\n" +
                 "Required roles: $requiredRoles")
         return jwtUtil.validateToken(jwt, userDetails, requiredRoles)
 

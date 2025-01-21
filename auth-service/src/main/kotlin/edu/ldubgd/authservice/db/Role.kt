@@ -9,6 +9,6 @@ data class Role(
     val id: Int,
     val roleName: String,
     val roleDesc: String? = null,
-    val role: String,
+    val role: String? = null,
     val application: String
 )

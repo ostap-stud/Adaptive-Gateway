@@ -5,7 +5,6 @@ import edu.ldubgd.authservice.db.User
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
-import java.util.stream.Collectors
 
 class UserDetailsImpl() : UserDetails {
 
@@ -54,11 +53,11 @@ class UserDetailsImpl() : UserDetails {
     }
 
     fun getRoleNames(): Set<String>{
-        return roles.stream().map(Role::roleName).collect(Collectors.toSet())
+        return roles.map(Role::roleName).toSet()
     }
 
     fun getRoles(): Set<String>{
-        return roles.stream().map(Role::role).collect(Collectors.toSet())
+        return roles.map { r -> r.role!! }.toSet()
     }
 
     companion object {

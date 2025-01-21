@@ -107,7 +107,7 @@ class SecurityController {
                         return ResponseEntity.status(HttpStatus.OK).body("Token is valid!")*/
                     val serviceRoute = routeRepository.findByRoute(validateTokenRequest.routePath)
                     serviceRoute ?: return ResponseEntity.status(HttpStatus.OK).body("Route is public or doesn't exist")
-                    val requiredRoles = roleRepository.findByIdIn(serviceRoute.getRolesId()).map { it.role }
+                    val requiredRoles = roleRepository.findByIdIn(serviceRoute.getRolesId()).map { it.role!! }
                     /*println("Service route: ${serviceRoute.route}\n" +
                             "Required roles: $requiredRoles")*/
                     if (jwtUtil.validateToken(jwt, userDetails, requiredRoles))
@@ -117,7 +117,7 @@ class SecurityController {
                 }
             }
         }catch (e: Exception) {
-            e.printStackTrace()
+//            e.printStackTrace()
         }
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
             .body("Token is invalid or something went wrong.")

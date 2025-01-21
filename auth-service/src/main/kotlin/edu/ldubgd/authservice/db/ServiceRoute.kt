@@ -14,5 +14,13 @@ data class ServiceRoute(
     @MappedCollection(idColumn = "route_id", keyColumn = "role_id")
     val roles: MutableSet<RouteRoleRef> = HashSet()
 ){
+    fun addRole(role: Role){
+        roles.add(createRouteRoleRef(role.id))
+    }
+
+    private fun createRouteRoleRef(id: Int): RouteRoleRef {
+        return RouteRoleRef(id)
+    }
+
     fun getRolesId(): MutableList<Int> = roles.map { it.roleId }.toMutableList()
 }
