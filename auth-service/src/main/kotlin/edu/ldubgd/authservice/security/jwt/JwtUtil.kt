@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.security.core.Authentication
 import org.springframework.stereotype.Component
 import java.util.*
-import javax.management.relation.Role
 
 
 @Component
@@ -21,7 +20,7 @@ class JwtUtil {
 
     fun generateToken(authentication: Authentication): String {
         val userDetails = authentication.principal as UserDetailsImpl
-        return Jwts.builder().subject(userDetails.username).claim("roles", userDetails.getRoleNames())
+        return Jwts.builder().subject(userDetails.username).claim("roles", userDetails.getRoles()/*userDetails.getRoleNames()*/)
             .expiration(Date(Date().time + expiration!!))
             .signWith(SignatureAlgorithm.HS256, secret)
             .compact()

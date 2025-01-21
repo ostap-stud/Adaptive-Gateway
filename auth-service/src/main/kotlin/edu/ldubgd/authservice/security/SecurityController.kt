@@ -105,7 +105,10 @@ class SecurityController {
                     userDetails = userDetailsService.loadUserByUsername(username) as UserDetailsImpl
                     /*if (jwtUtil.validateToken(jwt, userDetails, validateTokenRequest.roles))
                         return ResponseEntity.status(HttpStatus.OK).body("Token is valid!")*/
-                    val serviceRoute = routeRepository.findByRoute(validateTokenRequest.routePath)
+                    val rootRoute = "/${validateTokenRequest.routePath.substringAfter('/').substringBefore('/')}/**"
+                    val serviceRoute =
+                        routeRepository.findByRoute(validateTokenRequest.routePath) ?:
+                        routeRepository.findByRoute(rootRoute)
                     serviceRoute ?: return ResponseEntity.status(HttpStatus.OK).body("Route is public or doesn't exist")
                     val requiredRoles = roleRepository.findByIdIn(serviceRoute.getRolesId()).map { it.role!! }
                     /*println("Service route: ${serviceRoute.route}\n" +
