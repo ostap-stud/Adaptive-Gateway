@@ -8,11 +8,14 @@ import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.http.HttpStatus
+import org.springframework.http.ResponseEntity
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.stereotype.Component
+import org.springframework.web.client.ResourceAccessException
 import org.springframework.web.filter.OncePerRequestFilter
 
 @Component
@@ -42,35 +45,28 @@ class JwtFilter : OncePerRequestFilter() {
                 jwt = headerAuth.substring(7)
             }
             if (jwt != null) {
-                try {
-                    username = jwtUtil.getNameFromToken(jwt)
-                } catch (e: ExpiredJwtException) {
-                    response.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.message)
-                }
+                username = jwtUtil.getNameFromToken(jwt)
                 if (username != null && SecurityContextHolder.getContext().authentication == null) {
                     userDetails = userDetailsService.loadUserByUsername(username) as UserDetailsImpl
-                    if(request.requestURI == "/auth/signup") {
-                        if (authForSignUpAccess(request.requestURI, jwt, userDetails))
+                    val rootRoute = "/${request.requestURI.substringAfter('/').substringBefore('/')}/**"
+                    val serviceRoute =
+                        routeRepository.findByRoute(request.requestURI) ?:
+                        routeRepository.findByRoute(rootRoute)
+                    if (serviceRoute != null){
+                        val requiredRoles = roleRepository.findByIdIn(serviceRoute.getRolesId()).map { it.role!! }
+                        if(jwtUtil.validateToken(jwt, userDetails, requiredRoles)) {
                             authToken = UsernamePasswordAuthenticationToken(userDetails, null, userDetails.authorities)
-                    }else{
-                        authToken = UsernamePasswordAuthenticationToken(userDetails, null, userDetails.authorities)
+                        } else{
+                            throw ResourceAccessException("User is not allowed to access this resource")
+                        }
                     }
                     authToken?.let { SecurityContextHolder.getContext().authentication = it }
                 }
             }
+            filterChain.doFilter(request, response)
         }catch (e: Exception) {
-            //
+            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.message)
         }
-        filterChain.doFilter(request, response)
-    }
-
-    private fun authForSignUpAccess(signUpRoute: String, jwt: String, userDetails: UserDetailsImpl): Boolean {
-        val serviceRoute = routeRepository.findByRoute(signUpRoute)!!
-        val requiredRoles = roleRepository.findByIdIn(serviceRoute.getRolesId()).map { it.role!! }
-        println("Service route: ${serviceRoute.route}\n" +
-                "Required roles: $requiredRoles")
-        return jwtUtil.validateToken(jwt, userDetails, requiredRoles)
-
     }
 
 }

@@ -24,3 +24,16 @@ alertsystem:
     secret: LIGRU43543YGIWG4WE87TVBDKJSBHB4KL4J2O9DSG98U3489AMVBDUIY952039FLS
     expirationMs: 600000
 
+springdoc:
+  api-docs:
+    enabled: true
+    path: /auth/v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /auth/swagger-ui.html
+
+openapi:
+  service:
+    title: Authentication API specification
+    version: 1.0.0
+    url: https://localhost:8443

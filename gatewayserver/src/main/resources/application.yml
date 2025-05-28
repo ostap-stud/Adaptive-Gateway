@@ -35,10 +35,15 @@ spring:
           - Path=/auth/**
       - id: geoserver
 #        uri: http://10.138.10.103:10000/
-        uri: http://10.138.10.102:8080/
+#        uri: http://10.138.10.102:8080/
+        uri: https://geo-info.co.uk/
         predicates:
 #          - Method=GET,POST
           - Path=/geoserver/**
+      - id: google
+        uri: https://www.google.com/
+        predicates:
+          - Path=/google/**
       - id: notify
         uri: http://10.138.10.103:10000/
         predicates:
@@ -57,12 +62,23 @@ spring:
         enabled: 'true'
         lower-case-service-id: true
 
+openapi:
+  service:
+    title: Infrastructure Gateway API specification
+    version: 1.0.0
+    description: Manages API specification's of microservices. Commonly contains only inner (non-public) endpoints for communication with services.
+
 springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
   swagger-ui:
+    enabled: true
+    config-url: /v3/api-docs/swagger-config
     urls:
-      - name: notification
-        url: /v3/api-docs/notification
-#      - name: department
-#        url: /v3/api-docs/department
-#      - name: organization
-#        url: /v3/api-docs/organization
+      - name: test-service
+        url: /test/v3/api-docs
+      - name: authentication-service
+        url: /auth/v3/api-docs
+      - name: gateway-service
+        url: /v3/api-docs

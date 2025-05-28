@@ -45,9 +45,11 @@ class SecurityConfiguration{
             authorizeRequests {
                 authorize("/error", permitAll)
                 authorize("/auth/login", permitAll)
+                authorize("/auth/validate", permitAll)
                 authorize("/auth/signup", authenticated)
-                authorize("/api/**", authenticated)
-                authorize(anyRequest, permitAll)
+                authorize("/auth/v3/api-docs", permitAll)       // only in dev
+                authorize("/auth/swagger-ui.html", permitAll)
+                authorize(anyRequest, authenticated)
             }
             addFilterBefore<UsernamePasswordAuthenticationFilter>(jwtFilter)
         }

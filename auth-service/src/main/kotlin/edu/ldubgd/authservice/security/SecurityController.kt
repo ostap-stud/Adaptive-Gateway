@@ -57,7 +57,7 @@ class SecurityController {
 
     @PostMapping("/signup")
     fun signup(@RequestBody signUpRequest: SignUpRequest): ResponseEntity<Any> {
-        if(userRepository.existsByLogin(signUpRequest.login)){
+        if(userRepository.existsByLogin(signUpRequest.login.lowercase())){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("This name is already taken")
         }
         if(userRepository.existsByContactId(signUpRequest.contactId)){
@@ -74,7 +74,7 @@ class SecurityController {
             user.addRole(it)
         }
         userRepository.save(user)
-        return ResponseEntity.status(HttpStatus.CREATED).body("Success")
+        return ResponseEntity.status(HttpStatus.CREATED).body("User is successfully registered!")
     }
 
     @GetMapping("/test")
@@ -89,7 +89,6 @@ class SecurityController {
         var jwt: String? = null
         var username: String? = null
         val userDetails: UserDetailsImpl?
-//        var authToken: UsernamePasswordAuthenticationToken? = null
         try {
             if (authorization != null && authorization.startsWith("Bearer ")) {
                 jwt = authorization.substring(7)
@@ -99,24 +98,18 @@ class SecurityController {
                     username = jwtUtil.getNameFromToken(jwt)
                 } catch (e: ExpiredJwtException) {
                     ResponseEntity.status(HttpServletResponse.SC_UNAUTHORIZED)
-                        .body("Authentication failed. " + e.message)
+                        .body("Authorization failed. " + e.message)
                 }
-                if (username != null /*&& SecurityContextHolder.getContext().authentication == null*/) {
+                if (username != null) {
                     userDetails = userDetailsService.loadUserByUsername(username) as UserDetailsImpl
-                    /*if (jwtUtil.validateToken(jwt, userDetails, validateTokenRequest.roles))
-                        return ResponseEntity.status(HttpStatus.OK).body("Token is valid!")*/
                     val rootRoute = "/${validateTokenRequest.routePath.substringAfter('/').substringBefore('/')}/**"
                     val serviceRoute =
                         routeRepository.findByRoute(validateTokenRequest.routePath) ?:
                         routeRepository.findByRoute(rootRoute)
                     serviceRoute ?: return ResponseEntity.status(HttpStatus.OK).body("Route is public or doesn't exist")
                     val requiredRoles = roleRepository.findByIdIn(serviceRoute.getRolesId()).map { it.role!! }
-                    /*println("Service route: ${serviceRoute.route}\n" +
-                            "Required roles: $requiredRoles")*/
                     if (jwtUtil.validateToken(jwt, userDetails, requiredRoles))
                         return ResponseEntity.status(HttpStatus.OK).body("Token is valid!")
-                    /*authToken = UsernamePasswordAuthenticationToken(userDetails, null, userDetails.authorities)
-                    SecurityContextHolder.getContext().authentication = authToken*/
                 }
             }
         }catch (e: Exception) {

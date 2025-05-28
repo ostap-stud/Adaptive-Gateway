@@ -1,4 +1,4 @@
-package edu.ldubgd.authservice.openapi
+package edu.ldubgd.testservice
 
 import io.swagger.v3.oas.models.Components
 import io.swagger.v3.oas.models.OpenAPI
@@ -11,13 +11,13 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
 @Configuration
-class OpenApiConfiguration {
+class OpenAPIConfiguration {
     @Bean
     fun configureOpenAPI(
         @Value("\${openapi.service.title}") title: String,
         @Value("\${openapi.service.version}") version: String,
         @Value("\${openapi.service.url}") url: String,
-    ): OpenAPI{
+    ): OpenAPI {
         val securityScheme = "bearerAuth"
         return OpenAPI()
             .addServersItem(Server().url(url))
