@@ -1,4 +1,4 @@
-package edu.ldubgd.alertSystem.gatewayserver
+package edu.ldubgd.alertSystem.gatewayserver.configuration
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced
 import org.springframework.context.annotation.Bean

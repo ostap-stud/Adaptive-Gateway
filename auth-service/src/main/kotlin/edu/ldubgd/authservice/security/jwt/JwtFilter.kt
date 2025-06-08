@@ -3,13 +3,10 @@ package edu.ldubgd.authservice.security.jwt
 import edu.ldubgd.authservice.db.RoleRepository
 import edu.ldubgd.authservice.db.ServiceRouteRepository
 import edu.ldubgd.authservice.security.UserDetailsImpl
-import io.jsonwebtoken.ExpiredJwtException
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.http.HttpStatus
-import org.springframework.http.ResponseEntity
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.core.userdetails.UserDetails
@@ -36,7 +33,7 @@ class JwtFilter : OncePerRequestFilter() {
         filterChain: FilterChain
     ) {
         var jwt: String? = null
-        var username: String? = null
+        val username: String?
         val userDetails: UserDetails?
         var authToken: UsernamePasswordAuthenticationToken? = null
         try {

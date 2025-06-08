@@ -5,14 +5,14 @@ spring:
   application:
     name: auth-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/LDUBGD-AuthDB?currentSchema=users
-    username: postgres
-    password: postgres
+    url: ${DB_SCHEMA_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
-  security:
-    user:
-      name: admin
-      password: admin
+#  security:
+#    user:
+#      name: admin
+#      password: admin
 
 eureka:
   client:
@@ -21,8 +21,8 @@ eureka:
 
 alertsystem:
   app:
-    secret: LIGRU43543YGIWG4WE87TVBDKJSBHB4KL4J2O9DSG98U3489AMVBDUIY952039FLS
-    expirationMs: 600000
+    secret: ${JWT_SECRET}
+    expirationMs: ${JWT_EXPIRE}
 
 springdoc:
   api-docs:

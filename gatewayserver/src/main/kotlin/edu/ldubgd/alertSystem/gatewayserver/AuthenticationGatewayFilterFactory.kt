@@ -1,5 +1,6 @@
 package edu.ldubgd.alertSystem.gatewayserver
 
+import edu.ldubgd.alertSystem.gatewayserver.data.ValidateTokenRequest
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.cloud.gateway.filter.GatewayFilter
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory
