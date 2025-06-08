@@ -22,7 +22,7 @@ class ActuatorStubController {
     @ApiResponses(
         value = [
             ApiResponse(description = "Refreshed successfully!", responseCode = "200"),
-            ApiResponse(description = "Access denied!", responseCode = "403")
+            ApiResponse(description = "Access denied!", responseCode = "401")
         ]
     )
     @PostMapping("/gateway/refresh")
@@ -32,7 +32,7 @@ class ActuatorStubController {
     @ApiResponses(
         value = [
             ApiResponse(responseCode = "200"),
-            ApiResponse(description = "Access denied!", responseCode = "403")
+            ApiResponse(description = "Access denied!", responseCode = "401")
         ]
     )
     @GetMapping("/gateway/routes")
@@ -42,7 +42,7 @@ class ActuatorStubController {
     @ApiResponses(
         value = [
             ApiResponse(responseCode = "200"),
-            ApiResponse(description = "Access denied!", responseCode = "403")
+            ApiResponse(description = "Access denied!", responseCode = "401")
         ]
     )
     @GetMapping("/health")
@@ -52,7 +52,7 @@ class ActuatorStubController {
     @ApiResponses(
         value = [
             ApiResponse(responseCode = "200"),
-            ApiResponse(description = "Access denied!", responseCode = "403")
+            ApiResponse(description = "Access denied!", responseCode = "401")
         ]
     )
     @GetMapping("/info")

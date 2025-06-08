@@ -8,6 +8,10 @@ data class ServiceRouteDTO(
     val predicates: List<ServiceRoutePredicateDTO> = emptyList()
 )
 
+data class ServiceRoutePathDTO(
+    val route: String
+)
+
 data class ServiceRouteFilterDTO(
     val name: String,
     val args: Map<String, String>?

@@ -27,10 +27,10 @@ alertsystem:
 springdoc:
   api-docs:
     enabled: true
-    path: /auth/v3/api-docs
+    path: /${spring.application.name}/v3/api-docs
   swagger-ui:
     enabled: true
-    path: /auth/swagger-ui.html
+    path: /${spring.application.name}/swagger-ui.html
 
 openapi:
   service:

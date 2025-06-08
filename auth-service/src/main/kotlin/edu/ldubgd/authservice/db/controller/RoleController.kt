@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("/auth/role")
+@RequestMapping("/\${spring.application.name}/role")
 class RoleController {
 
     @Autowired

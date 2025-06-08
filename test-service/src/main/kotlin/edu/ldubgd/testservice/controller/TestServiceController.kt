@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController
 import java.security.Principal
 
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/\${spring.application.name}")
 class TestServiceController {
 
     @GetMapping("/get")

@@ -2,6 +2,7 @@ package edu.ldubgd.authservice.security
 
 import edu.ldubgd.authservice.security.jwt.JwtFilter
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.http.HttpStatus
@@ -24,6 +25,8 @@ class SecurityConfiguration{
 
     @Autowired
     private lateinit var jwtFilter: JwtFilter
+    @Value("\${spring.application.name}")
+    private lateinit var applicationName: String
 
     @Bean
     fun passwordEncoder(): PasswordEncoder {
@@ -44,11 +47,11 @@ class SecurityConfiguration{
             sessionManagement { sessionCreationPolicy = SessionCreationPolicy.STATELESS }
             authorizeRequests {
                 authorize("/error", permitAll)
-                authorize("/auth/login", permitAll)
-                authorize("/auth/validate", permitAll)
-                authorize("/auth/signup", authenticated)
-                authorize("/auth/v3/api-docs", permitAll)       // only in dev
-                authorize("/auth/swagger-ui.html", permitAll)
+                authorize("/$applicationName/login", permitAll)
+                authorize("/$applicationName/validate", permitAll)
+                authorize("/$applicationName/signup", authenticated)
+                authorize("/$applicationName/v3/api-docs", permitAll)       // only in dev
+                authorize("/$applicationName/swagger-ui.html", permitAll)
                 authorize(anyRequest, authenticated)
             }
             addFilterBefore<UsernamePasswordAuthenticationFilter>(jwtFilter)

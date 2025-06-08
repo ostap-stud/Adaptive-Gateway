@@ -13,10 +13,10 @@ eureka:
 springdoc:
   api-docs:
     enabled: true
-    path: /test/v3/api-docs
+    path: /${spring.application.name}/v3/api-docs
   swagger-ui:
     enabled: true
-    path: /test/swagger-ui.html
+    path: /${spring.application.name}/swagger-ui.html
 
 openapi:
   service:

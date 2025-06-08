@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("/auth/service")
+@RequestMapping("/\${spring.application.name}/service")
 class ServiceController {
 
     @Autowired
@@ -87,7 +87,10 @@ class ServiceController {
                         id = 0,
                         route = routeDTO.route,
                         routeDesc = routeDTO.routeDescription,
-                        serviceId = serviceRepository.findByServiceName(routeDTO.serviceName)?.id!!
+                        isInternal = routeDTO.isInternal,
+                        serviceId =
+                        if (routeDTO.isInternal) null
+                        else serviceRepository.findByServiceName(routeDTO.serviceName)?.id!!
                     )
                     roles.forEach {
                         route.addRole(it)
@@ -107,17 +110,25 @@ class ServiceController {
     fun updateServiceRoute(@PathVariable("id") id: Int, @RequestBody serviceRoute: ServiceRouteDTO): ResponseEntity<Any> {
         val current = serviceRouteRepository.findById(id)
         if (current.isPresent) {
-            val newRoles = roleRepository.findRolesByRoleIn(serviceRoute.roles.toList())
-            val updated = current.get().copy(
-                route = serviceRoute.route,
-                routeDesc = serviceRoute.routeDescription
-            )
-            updated.roles.clear()
-            newRoles.forEach {
-                updated.addRole(it)
+            try {
+                val newRoles = roleRepository.findRolesByRoleIn(serviceRoute.roles.toList())
+                val updated = current.get().copy(
+                    route = serviceRoute.route,
+                    routeDesc = serviceRoute.routeDescription,
+                    isInternal = serviceRoute.isInternal,
+                    serviceId =
+                    if (serviceRoute.isInternal) null
+                    else serviceRepository.findByServiceName(serviceRoute.serviceName)?.id!!
+                )
+                updated.roles.clear()
+                newRoles.forEach {
+                    updated.addRole(it)
+                }
+                serviceRouteRepository.save(updated)
+                return ResponseEntity.status(HttpStatus.OK).body("Successfully updated Service-route (id: $id)")
+            } catch (ex: Exception) {
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.message)
             }
-            serviceRouteRepository.save(updated)
-            return ResponseEntity.status(HttpStatus.OK).body("Successfully updated Service-route (id: $id)")
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Not found")
     }

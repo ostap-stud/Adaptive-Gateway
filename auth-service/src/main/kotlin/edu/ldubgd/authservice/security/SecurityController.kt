@@ -22,7 +22,7 @@ import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/\${spring.application.name}")
 class SecurityController {
 
     @Autowired
@@ -75,11 +75,6 @@ class SecurityController {
         }
         userRepository.save(user)
         return ResponseEntity.status(HttpStatus.CREATED).body("User is successfully registered!")
-    }
-
-    @GetMapping("/test")
-    fun test(): ResponseEntity<Any> {
-        return ResponseEntity.status(HttpStatus.OK).body("YOU REACHED THE AUTH SERVICE")
     }
 
     @PostMapping("/validate")
