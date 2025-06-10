@@ -17,12 +17,18 @@ class ValidationServiceImpl(
 
     private val webClient: WebClient = webBuilder.build()
 
-    override fun validateTokenForPath(token: String?, path: String, exchange: ServerWebExchange, chain: (ServerWebExchange) -> Mono<Void>): Mono<Void> {
+    override fun validateTokenForPath(
+        token: String?,
+        path: String,
+        method: String,
+        exchange: ServerWebExchange,
+        chain: (ServerWebExchange) -> Mono<Void>
+    ): Mono<Void> {
         return webClient.post()
             .uri("http://auth-service/auth-service/validate")
             .header("Authorization", token)
             .contentType(MediaType.APPLICATION_JSON)
-            .bodyValue(ValidateTokenRequest(path))
+            .bodyValue(ValidateTokenRequest(path, method))
             .retrieve()
             .onStatus(
                 { it.is4xxClientError }

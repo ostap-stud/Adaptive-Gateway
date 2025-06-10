@@ -1,8 +1,9 @@
 package edu.ldubgd.authservice.security.jwt
 
 import edu.ldubgd.authservice.db.RoleRepository
-import edu.ldubgd.authservice.db.ServiceRouteRepository
+import edu.ldubgd.authservice.db.service.RouteService
 import edu.ldubgd.authservice.security.UserDetailsImpl
+import io.jsonwebtoken.ExpiredJwtException
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
@@ -26,7 +27,7 @@ class JwtFilter : OncePerRequestFilter() {
     @Autowired
     private lateinit var roleRepository: RoleRepository
     @Autowired
-    private lateinit var routeRepository: ServiceRouteRepository
+    private lateinit var routeService: RouteService
 
     @Value("\${spring.application.name}")
     private lateinit var appName: String
@@ -50,25 +51,30 @@ class JwtFilter : OncePerRequestFilter() {
                     username = jwtUtil.getNameFromToken(jwt)
                     if (username != null && SecurityContextHolder.getContext().authentication == null) {
                         userDetails = userDetailsService.loadUserByUsername(username) as UserDetailsImpl
-                        val rootRoute = "/${request.requestURI.substringAfter('/').substringBefore('/')}/**"
-                        val serviceRoute =
-                            routeRepository.findByRoute(request.requestURI) ?:
-                            routeRepository.findByRoute(rootRoute)
-                        if (serviceRoute != null){
-                            val requiredRoles = roleRepository.findByIdIn(serviceRoute.getRolesId()).map { it.role!! }
-                            if(jwtUtil.validateToken(jwt, userDetails, requiredRoles)) {
-                                authToken = UsernamePasswordAuthenticationToken(userDetails, null, userDetails.authorities)
-                            } else{
-                                throw AccessDeniedException("User is not allowed to access this resource")
+                        val requestPathRoutes = routeService.findRoutesByRequestPath(request.requestURI)
+                        if (requestPathRoutes.isNotEmpty()) {
+                            val routeToDirect =
+                                routeService.findRouteByRequestMethod(requestPathRoutes, request.method)
+                            if (routeToDirect != null) {
+                                val requiredRoles = roleRepository.findByIdIn(routeToDirect.getRolesId()).map { it.role!! }
+                                if (jwtUtil.validateToken(jwt, userDetails, requiredRoles))
+                                    authToken = UsernamePasswordAuthenticationToken(userDetails, null, userDetails.authorities)
+                                else
+                                    throw AccessDeniedException("Access denied to [${request.requestURI}] with [${request.method}]")
                             }
                         }
-                        authToken?.let { SecurityContextHolder.getContext().authentication = it }
+                        authToken ?: throw IllegalArgumentException("Route not found [${request.requestURI}] with [${request.method}]")
+                        SecurityContextHolder.getContext().authentication = authToken
                     }
                 }
             }
             filterChain.doFilter(request, response)
-        }catch (e: Exception) {
-            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.message)
+        }catch (ex: Exception) {
+            when (ex){
+                is AccessDeniedException, is ExpiredJwtException -> response.sendError(HttpServletResponse.SC_UNAUTHORIZED, ex.message)
+                is IllegalArgumentException -> response.sendError(HttpServletResponse.SC_NOT_FOUND, ex.message)
+                else -> response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, ex.message)
+            }
         }
     }
 

@@ -15,12 +15,13 @@ class InternalAuthGlobalFilter(
 
     override fun filter(exchange: ServerWebExchange, chain: WebFilterChain): Mono<Void> {
         val path = exchange.request.path.value()
+        val method = exchange.request.method.name()
         val token = exchange.request.headers.getFirst(HttpHeaders.AUTHORIZATION)
         if (!internalRoutesCache.isInternal(path) || path.contains("/v3/api-docs")) {
             return chain.filter(exchange)
         }
         return validationService
-            .validateTokenForPath(token, path, exchange, chain::filter)
+            .validateTokenForPath(token, path, method, exchange, chain::filter)
     }
 
 }

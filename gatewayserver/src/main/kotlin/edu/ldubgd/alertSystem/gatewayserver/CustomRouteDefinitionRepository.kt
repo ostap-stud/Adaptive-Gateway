@@ -19,22 +19,11 @@ class CustomRouteDefinitionRepository(
     private val logger = LoggerFactory.getLogger(CustomRouteDefinitionRepository::class.java)
 
     override fun getRouteDefinitions(): Flux<RouteDefinition> {
-        /*val defs = serviceRouteRepository.findAllRoutes().map { routeDTO ->
-            RouteDefinition().apply {
-                id = "${routeDTO.serviceName}_route-${routeDTO.id}"
-                uri = URI.create("lb://${routeDTO.serviceName}")
-                predicates = listOf(
-                    PredicateDefinition("Path=${routeDTO.route}")
-                )
-                filters = listOf(
-                    FilterDefinition("Authentication")
-                )
-            }
-        }*/
         val defs = serviceRouteRepository.findAllRoutes().map { routeDTO ->
             RouteDefinition().apply {
                 id = "${routeDTO.serviceName}_route-${routeDTO.id}"
                 uri = URI.create("lb://${routeDTO.serviceName}")
+                order = routeDTO.order
                 val extraPaths = routeDTO.predicates
                     .filter { it.name == "Path" }
                     .joinToString(separator = ",") { it.args?.get("patterns").orEmpty() }
@@ -45,7 +34,7 @@ class CustomRouteDefinitionRepository(
                     PredicateDefinition("Path=${allPaths}")
                 ).apply{
                     addAll(
-                        routeDTO.predicates.map { predicateDTO ->
+                        routeDTO.predicates.filterNot { it.name == "Path" }.map { predicateDTO ->
                             PredicateDefinition().apply {
                                 name = predicateDTO.name
                                 args = predicateDTO.args ?: emptyMap()

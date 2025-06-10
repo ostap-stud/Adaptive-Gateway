@@ -13,6 +13,10 @@ class PredicateServiceImpl(
     val objectMapper: ObjectMapper = jacksonObjectMapper()
 ) : PredicateService {
 
+    override fun getPredicatesByName(name: String): List<Predicate> {
+        return predicateRepository.findPredicatesByName(name)
+    }
+
     override fun getPredicatesByNames(names: List<String>): List<Predicate> {
         return predicateRepository.findPredicatesByNameIn(names)
     }

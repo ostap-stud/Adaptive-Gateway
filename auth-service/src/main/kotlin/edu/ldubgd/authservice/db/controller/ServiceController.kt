@@ -4,9 +4,11 @@ import edu.ldubgd.authservice.db.*
 import edu.ldubgd.authservice.db.dto.*
 import edu.ldubgd.authservice.db.service.FilterService
 import edu.ldubgd.authservice.db.service.PredicateService
+import edu.ldubgd.authservice.db.service.RouteService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
+import org.springframework.transaction.annotation.Transactional
 import org.springframework.web.bind.annotation.*
 
 @RestController
@@ -18,6 +20,9 @@ class ServiceController {
 
     @Autowired
     private lateinit var serviceRouteRepository: ServiceRouteRepository
+
+    @Autowired
+    private lateinit var routeService: RouteService
 
     @Autowired
     private lateinit var roleRepository: RoleRepository
@@ -84,33 +89,13 @@ class ServiceController {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Service is not found")
     }
 
+    @Transactional
     @PostMapping("/route/add")
     fun addServiceRoutes(@RequestBody serviceRoutes: List<ServiceRouteDTO>): ResponseEntity<Any> {
         try {
             if (serviceRoutes.isNotEmpty()) {
                 serviceRoutes.forEach { routeDTO ->
-                    val route = ServiceRoute(
-                        id = 0,
-                        route = routeDTO.route,
-                        routeDesc = routeDTO.routeDescription,
-                        isInternal = routeDTO.isInternal,
-                        serviceId =
-                        if (routeDTO.isInternal) null
-                        else serviceRepository.findByServiceName(routeDTO.serviceName)?.id!!
-                    )
-                    val roles = roleRepository.findRolesByRoleIn(routeDTO.roles.toList())
-                    val filters = filterService.getFiltersFromDTO(routeDTO.filters)
-                    val predicates = predicateService.getPredicatesAndSaveNew(routeDTO.predicates)
-                    roles.forEach {
-                        route.addRole(it)
-                    }
-                    filters.forEach {
-                        route.addFilter(it)
-                    }
-                    predicates.forEach {
-                        route.addPredicate(it)
-                    }
-                    serviceRouteRepository.save(route)
+                    routeService.insertRoute(routeDTO)
                 }
             }else {
                 return ResponseEntity.status(HttpStatus.NO_CONTENT).body("No service-routes found in request body")
@@ -126,34 +111,9 @@ class ServiceController {
         val current = serviceRouteRepository.findById(id)
         if (current.isPresent) {
             try {
-                val updated = current.get().copy(
-                    route = serviceRoute.route,
-                    routeDesc = serviceRoute.routeDescription,
-                    isInternal = serviceRoute.isInternal,
-                    serviceId =
-                    if (serviceRoute.isInternal) null
-                    else serviceRepository.findByServiceName(serviceRoute.serviceName)?.id!!
-                )
-                updated.apply {
-                    roles.clear()
-                    filters.clear()
-                    predicates.clear()
-                }
-                val newRoles = roleRepository.findRolesByRoleIn(serviceRoute.roles.toList())
-                val newFilters = filterService.getFiltersFromDTO(serviceRoute.filters)
-                val newPredicates = predicateService.getPredicatesAndSaveNew(serviceRoute.predicates)
-                newRoles.forEach {
-                    updated.addRole(it)
-                }
-                newFilters.forEach {
-                    updated.addFilter(it)
-                }
-                newPredicates.forEach {
-                    updated.addPredicate(it)
-                }
-                serviceRouteRepository.save(updated)
+                routeService.updateRoute(current, serviceRoute)
                 return ResponseEntity.status(HttpStatus.OK).body("Successfully updated Service-route (id: $id)")
-            } catch (ex: Exception) {
+            } catch (ex: Exception){
                 return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.message)
             }
         }

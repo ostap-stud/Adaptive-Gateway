@@ -12,6 +12,7 @@ data class ServiceRoute(
     val routeDesc: String?,
     val serviceId: Int?,
     val isInternal: Boolean,
+    val order: Int?,
     @MappedCollection(idColumn = "route_id", keyColumn = "role_id")
     val roles: MutableSet<RouteRoleRef> = HashSet(),
     @MappedCollection(idColumn = "route_id", keyColumn = "filter_id")

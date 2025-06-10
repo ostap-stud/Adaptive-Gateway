@@ -4,6 +4,7 @@ import edu.ldubgd.authservice.db.RoleRepository
 import edu.ldubgd.authservice.db.ServiceRouteRepository
 import edu.ldubgd.authservice.db.User
 import edu.ldubgd.authservice.db.UserRepository
+import edu.ldubgd.authservice.db.service.RouteService
 import edu.ldubgd.authservice.security.jwt.JwtUtil
 import edu.ldubgd.authservice.security.requests.LogInRequest
 import edu.ldubgd.authservice.security.requests.SignUpRequest
@@ -30,7 +31,7 @@ class SecurityController {
     @Autowired
     private lateinit var roleRepository: RoleRepository
     @Autowired
-    private lateinit var routeRepository: ServiceRouteRepository
+    private lateinit var routeService: RouteService
     @Autowired
     private lateinit var userDetailsService: UserDetailsService
     @Autowired
@@ -97,14 +98,20 @@ class SecurityController {
                 }
                 if (username != null) {
                     userDetails = userDetailsService.loadUserByUsername(username) as UserDetailsImpl
-                    val rootRoute = "/${validateTokenRequest.routePath.substringAfter('/').substringBefore('/')}/**"
-                    val serviceRoute =
-                        routeRepository.findByRoute(validateTokenRequest.routePath) ?:
-                        routeRepository.findByRoute(rootRoute)
-                    serviceRoute ?: return ResponseEntity.status(HttpStatus.OK).body("Route is public or doesn't exist")
-                    val requiredRoles = roleRepository.findByIdIn(serviceRoute.getRolesId()).map { it.role!! }
-                    if (jwtUtil.validateToken(jwt, userDetails, requiredRoles))
-                        return ResponseEntity.status(HttpStatus.OK).body("Token is valid!")
+                    val requestPathRoutes = routeService.findRoutesByRequestPath(validateTokenRequest.routePath)
+                    if (requestPathRoutes.isNotEmpty()) {
+                        val routeToDirect =
+                            routeService.findRouteByRequestMethod(requestPathRoutes, validateTokenRequest.method)
+                        if (routeToDirect != null) {
+                            val requiredRoles = roleRepository.findByIdIn(routeToDirect.getRolesId()).map { it.role!! }
+                            if (jwtUtil.validateToken(jwt, userDetails, requiredRoles))
+                                return ResponseEntity.status(HttpStatus.OK).body("Token is valid!")
+                        } else {
+                            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Cannot reach the route ${validateTokenRequest.routePath} with ${validateTokenRequest.method}")
+                        }
+                    } else {
+                        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("There is no route for this request")
+                    }
                 }
             }
         }catch (e: Exception) {

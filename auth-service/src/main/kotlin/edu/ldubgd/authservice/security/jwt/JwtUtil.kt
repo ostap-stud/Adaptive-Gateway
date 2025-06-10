@@ -20,30 +20,11 @@ class JwtUtil {
 
     fun generateToken(authentication: Authentication): String {
         val userDetails = authentication.principal as UserDetailsImpl
-        return Jwts.builder().subject(userDetails.username).claim("roles", userDetails.getRoles()/*userDetails.getRoleNames()*/)
+        return Jwts.builder().subject(userDetails.username).claim("roles", userDetails.getRoles())
             .expiration(Date(Date().time + expiration!!))
             .signWith(SignatureAlgorithm.HS256, secret)
             .compact()
     }
-
-    /*fun validateToken(token: String, userDetails: UserDetailsImpl, requiredRoles: List<String>): Boolean {
-        val username = getNameFromToken(token)
-//        val roles = getRolesFromToken(token)
-        val roles = userDetails.getRoleNames()
-        return (username == userDetails.username && !isTokenExpired(token) && roles.stream().anyMatch { role -> requiredRoles.contains(role) })
-    }*/
-
-    /*fun validateToken(token: String, userDetails: UserDetailsImpl, serviceRoute: String): Boolean {
-        val username = getNameFromToken(token)
-        val roles = userDetails.getRoles()
-        val accessedService = serviceRoute.substringAfter('/').substringBefore('/')
-        return (
-                username == userDetails.username && !isTokenExpired(token)
-                        && roles.stream().anyMatch { role ->
-                            role.substringAfter('_').substringBefore('_').equals(accessedService, ignoreCase = true)
-                        }
-                )
-    }*/
 
     fun validateToken(token: String, userDetails: UserDetailsImpl, requiredRoles: List<String>): Boolean {
         val username = getNameFromToken(token)
@@ -52,8 +33,6 @@ class JwtUtil {
     }
 
     fun getNameFromToken(token: String): String? {
-        /*val parser = Jwts.parser().setSigningKey(secret).build()
-        return parser.parseSignedClaims(token).payload.subject*/
         return getClaimFromToken(token) { claims -> claims.subject }
     }
 

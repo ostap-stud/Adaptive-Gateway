@@ -13,10 +13,11 @@ class AuthenticationGatewayFilterFactory(
     override fun apply(config: Config?): GatewayFilter {
         return GatewayFilter{ exchange, chain ->
             val path = exchange.request.path.value()
+            val method = exchange.request.method.name()
             val token = exchange.request.headers.getFirst(HttpHeaders.AUTHORIZATION)
             if (!path.contains("/v3/api-docs")){     // DEVELOPMENT PURPOSES ONLY!
                 validationService
-                    .validateTokenForPath(token, path, exchange, chain::filter)
+                    .validateTokenForPath(token, path, method, exchange, chain::filter)
             } else{
                 chain.filter(exchange)
             }
