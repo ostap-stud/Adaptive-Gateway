@@ -1,6 +1,15 @@
 server:
   port: 8334
 
+logging:
+  level:
+    org:
+      springframework:
+        jdbc:
+          core:
+            JdbcTemplate: DEBUG
+            StatementCreatorUtils: TRACE
+
 spring:
   application:
     name: auth-service

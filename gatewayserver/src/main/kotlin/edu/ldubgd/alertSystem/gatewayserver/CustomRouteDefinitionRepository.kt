@@ -35,9 +35,24 @@ class CustomRouteDefinitionRepository(
             RouteDefinition().apply {
                 id = "${routeDTO.serviceName}_route-${routeDTO.id}"
                 uri = URI.create("lb://${routeDTO.serviceName}")
-                predicates = listOf(
-                    PredicateDefinition("Path=${routeDTO.route}")
-                )
+                val extraPaths = routeDTO.predicates
+                    .filter { it.name == "Path" }
+                    .joinToString(separator = ",") { it.args?.get("patterns").orEmpty() }
+                val allPaths =
+                    if (extraPaths.isNotEmpty()) { routeDTO.route + ",$extraPaths" }
+                    else routeDTO.route
+                predicates = mutableListOf(
+                    PredicateDefinition("Path=${allPaths}")
+                ).apply{
+                    addAll(
+                        routeDTO.predicates.map { predicateDTO ->
+                            PredicateDefinition().apply {
+                                name = predicateDTO.name
+                                args = predicateDTO.args ?: emptyMap()
+                            }
+                        }
+                    )
+                }
                 filters = routeDTO.filters.map { filterDTO ->
                     FilterDefinition().apply {
                         name = filterDTO.name
