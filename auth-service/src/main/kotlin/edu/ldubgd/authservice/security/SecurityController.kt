@@ -1,15 +1,22 @@
 package edu.ldubgd.authservice.security
 
 import edu.ldubgd.authservice.db.RoleRepository
-import edu.ldubgd.authservice.db.ServiceRouteRepository
 import edu.ldubgd.authservice.db.User
 import edu.ldubgd.authservice.db.UserRepository
+import edu.ldubgd.authservice.db.dto.ServiceRouteDTO
 import edu.ldubgd.authservice.db.service.RouteService
 import edu.ldubgd.authservice.security.jwt.JwtUtil
 import edu.ldubgd.authservice.security.requests.LogInRequest
 import edu.ldubgd.authservice.security.requests.SignUpRequest
 import edu.ldubgd.authservice.security.requests.ValidateTokenRequest
 import io.jsonwebtoken.ExpiredJwtException
+import io.swagger.v3.oas.annotations.Operation
+import io.swagger.v3.oas.annotations.media.ArraySchema
+import io.swagger.v3.oas.annotations.media.Content
+import io.swagger.v3.oas.annotations.media.ExampleObject
+import io.swagger.v3.oas.annotations.media.Schema
+import io.swagger.v3.oas.annotations.responses.ApiResponse
+import io.swagger.v3.oas.annotations.tags.Tag
 import jakarta.servlet.http.HttpServletResponse
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
@@ -24,6 +31,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/\${spring.application.name}")
+@Tag(name = "Client & Validation API", description = "Операції реєстрації, входу та валідації клієнтів системи")
 class SecurityController {
 
     @Autowired
@@ -41,6 +49,34 @@ class SecurityController {
     @Autowired
     private lateinit var jwtUtil: JwtUtil
 
+    @Operation(
+        summary = "[Публічний] Вхід клієнта за вказаними ідентифікаційними та автентифікаційними даними для отримання токена доступу",
+        requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
+            required = true,
+            description = "Дані користувача",
+            content = [
+                Content(
+                    mediaType = "application/json",
+                    schema = Schema(implementation = LogInRequest::class),
+                    examples = [
+                        ExampleObject(
+                            name = "Example of user's id and auth data",
+                            value = """
+                            {
+                              "login": "User321",
+                              "password": "Secret"
+                            }
+                        """
+                        )
+                    ]
+                )
+            ]
+        ),
+        responses = [
+            ApiResponse(responseCode = "200", description = "Успішний вхід, токен згенеровано та повернено"),
+            ApiResponse(responseCode = "401", description = "Невалідні дані користувача")
+        ]
+    )
     @PostMapping("/login")
     fun login(@RequestBody logInRequest: LogInRequest): ResponseEntity<Any> {
         val authentication: Authentication
@@ -56,6 +92,36 @@ class SecurityController {
         return ResponseEntity.ok(jwt)
     }
 
+    @Operation(
+        summary = "[Обмежений] Реєстрація клієнта за вказаними даними, враховуючи ролі доступу",
+        requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
+            required = true,
+            description = "Дані користувача",
+            content = [
+                Content(
+                    mediaType = "application/json",
+                    schema = Schema(implementation = SignUpRequest::class),
+                    examples = [
+                        ExampleObject(
+                            name = "Example of user's id and auth data",
+                            value = """
+                            {
+                              "login": "User321",
+                              "password": "Secret",
+                              "contactId": "432",
+                              "roles": ["ROLE_TEST_USER"]
+                            }
+                        """
+                        )
+                    ]
+                )
+            ]
+        ),
+        responses = [
+            ApiResponse(responseCode = "201", description = "Успішна реэстрація клієнта в системі"),
+            ApiResponse(responseCode = "401", description = "Некоректні дані для реєстрації")
+        ]
+    )
     @PostMapping("/signup")
     fun signup(@RequestBody signUpRequest: SignUpRequest): ResponseEntity<Any> {
         if(userRepository.existsByLogin(signUpRequest.login.lowercase())){
@@ -78,6 +144,35 @@ class SecurityController {
         return ResponseEntity.status(HttpStatus.CREATED).body("User is successfully registered!")
     }
 
+    @Operation(
+        summary = "[Публічний] Валідація токена доступу, враховуючи ролі користувача та маршрут запиту",
+        requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
+            required = true,
+            description = "Дані HTTP-запиту",
+            content = [
+                Content(
+                    mediaType = "application/json",
+                    schema = Schema(implementation = ValidateTokenRequest::class),
+                    examples = [
+                        ExampleObject(
+                            name = "Example of user's id and auth data",
+                            value = """
+                            {
+                              "routePath": "/test-service/services/add",
+                              "method": "POST"
+                            }
+                        """
+                        )
+                    ]
+                )
+            ]
+        ),
+        responses = [
+            ApiResponse(responseCode = "200", description = "Токен валідний"),
+            ApiResponse(responseCode = "401", description = "Помилка валідації"),
+            ApiResponse(responseCode = "404", description = "Даний маршрут відсутній в системі")
+        ]
+    )
     @PostMapping("/validate")
     fun validate(@RequestHeader("Authorization") authorization: String?,
                  @RequestBody validateTokenRequest: ValidateTokenRequest

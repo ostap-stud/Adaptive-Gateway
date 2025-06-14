@@ -86,7 +86,7 @@ openapi:
   service:
     title: Infrastructure Gateway API specification
     version: 1.0.0
-    description: Manages API specification's of microservices. Commonly contains only inner (non-public) endpoints for communication with services.
+    description: Керує специфікаціями API мікросервісів. Документує внутрішні кінцеві точки системи, що призначені не для реєстрації шлюзом, а для керування ним та моніторингу інфраструктури.
 
 springdoc:
   api-docs:

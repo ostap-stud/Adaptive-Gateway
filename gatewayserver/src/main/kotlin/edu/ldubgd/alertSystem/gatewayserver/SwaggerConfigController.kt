@@ -12,17 +12,16 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/swagger")
-@Tag(name = "OpenAPI Config", description = "Endpoints for aggregation of OpenAPI Specifications")
+@Tag(name = "OpenAPI Config", description = "Динамічна агрегація специфікацій OpenAPI мікросервісів")
 class SwaggerConfigController(
     private val discoveryClient: DiscoveryClient,
     @Value("\${spring.application.name}") private val applicationName: String
 ) {
 
-    @Operation(summary = "Retrieve a map of registered Services and URLs of their OpenAPI Specifications")
+    @Operation(summary = "Отримати зареєстровані сервіси та URL-адреси їхніх специфікацій OpenAPI")
     @ApiResponses(
         value = [
-            ApiResponse(responseCode = "200"),
-            ApiResponse(description = "Access denied!", responseCode = "401")
+            ApiResponse(responseCode = "200")
         ]
     )
     @GetMapping("/config")

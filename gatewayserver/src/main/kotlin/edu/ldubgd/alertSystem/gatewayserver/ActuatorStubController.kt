@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RestController
 * */
 @RestController
 @RequestMapping("/actuator")
-@Tag(name = "Actuator API", description = "Exposed endpoints for monitoring and controlling Gateway")
+@Tag(name = "Actuator API", description = "Моніторинг та управління шлюзом")
 class ActuatorStubController {
 
-    @Operation(summary = "Refresh gateway routes")
+    @Operation(summary = "Провокує оновлення кешу маршрутів шлюзу")
     @ApiResponses(
         value = [
             ApiResponse(description = "Refreshed successfully!", responseCode = "200"),
@@ -28,7 +28,7 @@ class ActuatorStubController {
     @PostMapping("/gateway/refresh")
     fun gatewayRefresh(): ResponseEntity<Void> = ResponseEntity.ok().build()
 
-    @Operation(summary = "Retrieve a list of gateway routes")
+    @Operation(summary = "Отримати список маршрутів, зареєстрованих шлюзом")
     @ApiResponses(
         value = [
             ApiResponse(responseCode = "200"),
@@ -38,7 +38,7 @@ class ActuatorStubController {
     @GetMapping("/gateway/routes")
     fun gatewayRoutes(): ResponseEntity<Void> = ResponseEntity.ok().build()
 
-    @Operation(summary = "Infrastructure health check")
+    @Operation(summary = "Перевірка стану інфраструктури")
     @ApiResponses(
         value = [
             ApiResponse(responseCode = "200"),
@@ -48,7 +48,7 @@ class ActuatorStubController {
     @GetMapping("/health")
     fun gatewayHealth(): ResponseEntity<Void> = ResponseEntity.ok().build()
 
-    @Operation(summary = "Gateway instance information")
+    @Operation(summary = "Інформація про даний екземпляр (instance) шлюзу")
     @ApiResponses(
         value = [
             ApiResponse(responseCode = "200"),
