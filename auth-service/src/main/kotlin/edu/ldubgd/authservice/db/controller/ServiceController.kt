@@ -124,11 +124,6 @@ class ServiceController {
 
     @Operation(
         summary = "Оновлення сервісу",
-        parameters = [Parameter(
-            name = "Service ID",
-            required = true,
-            example = "0"
-        )],
         requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
             required = true,
             description = "Сервіс з оновленими даними",
@@ -170,11 +165,6 @@ class ServiceController {
 
     @Operation(
         summary = "Видалення сервісу",
-        parameters = [Parameter(
-            name = "Service ID",
-            required = true,
-            example = "0"
-        )],
         responses = [
             ApiResponse(responseCode = "200", description = "Сервіс успішно видалено"),
             ApiResponse(responseCode = "404", description = "Сервіс не знайдено")
@@ -222,6 +212,13 @@ class ServiceController {
                                   {
                                     "name": "Authentication",
                                     "args": {}
+                                  },
+                                  {
+                                    "name": "RewritePath",
+                                    "args": {
+                                        "regexp": "/test-service(?<segment>/?.*)",
+                                        "replacement": "${'$'}{segment}"
+                                    }
                                   }
                                 ],
                                 "predicates": [
@@ -272,11 +269,6 @@ class ServiceController {
         Предикати та фільтри створюються автоматично за умови відсутності в БД.
         Після збереження та очищення кешу шлюз автоматично зареєструє новий маршрут, або це можна спровокувати через Actuator API.
         """,
-        parameters = [Parameter(
-            name = "Route ID",
-            required = true,
-            example = "0"
-        )],
         requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
             required = true,
             description = "Маршрут для оновлення",
@@ -299,6 +291,13 @@ class ServiceController {
                                   {
                                     "name": "Authentication",
                                     "args": {}
+                                  },
+                                  {
+                                    "name": "RewritePath",
+                                    "args": {
+                                        "regexp": "/test-service(?<segment>/?.*)",
+                                        "replacement": "${'$'}{segment}"
+                                    }
                                   }
                                 ],
                                 "predicates": [
@@ -338,11 +337,6 @@ class ServiceController {
 
     @Operation(
         summary = "Видалення сервісного маршруту",
-        parameters = [Parameter(
-            name = "Route ID",
-            required = true,
-            example = "0"
-        )],
         responses = [
             ApiResponse(responseCode = "200", description = "Маршрут успішно видалено"),
             ApiResponse(responseCode = "404", description = "Маршрут не знайдено")
@@ -360,11 +354,6 @@ class ServiceController {
 
     @Operation(
         summary = "Додавання до маршруту ролей доступу за назвою",
-        parameters = [Parameter(
-            name = "Route ID",
-            required = true,
-            example = "0"
-        )],
         requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
             required = true,
             description = "Список ролей для маршруту",
@@ -416,11 +405,6 @@ class ServiceController {
 
     @Operation(
         summary = "Видалення ролей з дозволених для даного маршруту",
-        parameters = [Parameter(
-            name = "Route ID",
-            required = true,
-            example = "0"
-        )],
         requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
             required = true,
             description = "Список ролей для заборони",
@@ -466,11 +450,6 @@ class ServiceController {
 
     @Operation(
         summary = "Додавання Spring Gateway Route Filters або ж власних фільтрів до вказаного маршруту",
-        parameters = [Parameter(
-            name = "Route ID",
-            required = true,
-            example = "0"
-        )],
         requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
             required = true,
             description = "Список фільтрів для маршруту",
@@ -529,11 +508,6 @@ class ServiceController {
 
     @Operation(
         summary = "Видалення фільтрів для даного маршруту за їх назвою",
-        parameters = [Parameter(
-            name = "Route ID",
-            required = true,
-            example = "0"
-        )],
         requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
             required = true,
             description = "Список фільтрів для видалення",
@@ -579,11 +553,6 @@ class ServiceController {
 
     @Operation(
         summary = "Додавання Spring Gateway Route Predicates або ж власних предикатів (умов) до вказаного маршруту",
-        parameters = [Parameter(
-            name = "Route ID",
-            required = true,
-            example = "0"
-        )],
         requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
             required = true,
             description = "Список предикатів для маршруту",
@@ -641,11 +610,6 @@ class ServiceController {
 
     @Operation(
         summary = "Видалення предикатів для даного маршруту за їх назвою",
-        parameters = [Parameter(
-            name = "Route ID",
-            required = true,
-            example = "0"
-        )],
         requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
             required = true,
             description = "Список предикатів для видалення",

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="/css/error-alert.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/checkTheme.js"></script>
+</head>
+<body>
+<div th:replace="~{fragment/navbar :: navbar}"></div>
+<div class="container mt-4">
+    <h1 class="mb-4">Available Tours</h1>
+
+    <form id="filterForm" th:action="@{/}" method="get" class="row g-3 mb-4" th:object="${filter}">
+    <!--    Hidden inputs    -->
+        <input type="hidden" name="size" th:value="${size}">
+        <div>
+            <input id="sortByInput" type="hidden" name="sortBy" th:value="${#strings.listJoin(sortBy, ',')}"/>
+            <input id="sortDirectionInput" type="hidden" name="sortDirection" th:value="${#strings.listJoin(sortDirection, ',')}"/>
+        </div>
+    <!--    -------------    -->
+        <div class="col-md-3">
+            <label class="form-label">Tour Type</label>
+            <select class="form-select" aria-label="Filter Tour Type" name="filterTourType" th:field="*{filterTourType}">
+                <option value="">---</option>
+                <option th:each="tourType : ${T(com.epam.finaltask.model.TourType).values()}"
+                        th:value="${tourType}" th:text="${tourType}">Tour Type</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Transfer Type</label>
+            <select class="form-select" aria-label="Filter Transfer Type" name="filterTransferType" th:field="*{filterTransferType}">
+                <option value="">---</option>
+                <option th:each="transferType : ${T(com.epam.finaltask.model.TransferType).values()}"
+                        th:value="${transferType}" th:text="${transferType}">Transfer Type</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Hotel Type</label>
+            <select class="form-select" aria-label="Filter Hotel Type" name="filterHotelType" th:field="*{filterHotelType}">
+                <option value="">---</option>
+                <option  th:each="hotelType : ${T(com.epam.finaltask.model.HotelType).values()}"
+                        th:value="${hotelType}" th:text="${hotelType}">Hotel Type</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Price Range</label>
+            <div class="input-group">
+                <input type="number" class="form-control" name="filterMinPrice" th:field="*{filterMinPrice}" th:value="${filter.filterMinPrice}" min="0" placeholder="Min">
+                <input type="number" class="form-control" name="filterMaxPrice" th:field="*{filterMaxPrice}" th:value="${filter.filterMaxPrice}" min="0" placeholder="Max">
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="d-flex justify-content-start align-items-center">
+                <p>Sorting:</p>
+                <button type="button" class="btn btn-link pt-0 pb-3"
+                        th:with="dir=${sortBy != null && sortBy.contains('hot') ? 'desc' : 'none'}"
+                        th:classappend="${dir == 'desc' ? 'link-danger' : 'link-secondary'}"
+                        th:data-field="'hot'"
+                        onclick="updateSort(this)">
+                    Hot
+                    <i class="bi" th:classappend="${dir == 'desc' ? 'bi-sort-down' : 'bi-arrow-down-up'}"></i>
+                </button>
+                <button type="button" class="btn btn-link pt-0 pb-3"
+                        th:with="dir=${sortBy != null && sortBy.contains('title') ? sortDirection.get(sortBy.indexOf('title')) : 'none'}"
+                        th:classappend="${dir == 'asc' ? 'link-info' : (dir == 'desc' ? 'link-danger' : 'link-secondary')}"
+                        th:data-field="'title'"
+                        onclick="updateSort(this)">
+                    Title
+                    <i class="bi" th:classappend="${dir == 'asc' ? 'bi-sort-up' : (dir == 'desc' ? 'bi-sort-down' : 'bi-arrow-down-up')}"></i>
+                </button>
+                <button type="button" class="btn btn-link pt-0 pb-3"
+                        th:with="dir=${sortBy != null && sortBy.contains('price') ? sortDirection.get(sortBy.indexOf('price')) : 'none'}"
+                        th:classappend="${dir == 'asc' ? 'link-info' : (dir == 'desc' ? 'link-danger' : 'link-secondary')}"
+                        th:data-field="'price'"
+                        onclick="updateSort(this)">
+                    Price
+                    <i class="bi" th:classappend="${dir == 'asc' ? 'bi-sort-up' : (dir == 'desc' ? 'bi-sort-down' : 'bi-arrow-down-up')}"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-9">
+            <input id="searchText" type="text" class="form-control" name="searchText" th:value="${searchText}" placeholder="Search" />
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary">Apply Filters</button>
+        </div>
+    </form>
+
+    <div sec:authorize="hasAuthority('ADMIN_CREATE')">
+        <a href="/voucher/" class="btn btn-success mb-3">Add Voucher</a>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" th:each="voucher : ${vouchers}">
+            <div class="card h-100 border" th:classappend="${voucher.hot} ? 'border-danger'">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${voucher.title}"></h5>
+                    <p class="card-text" th:text="${voucher.description}"></p>
+                    <ul class="list-unstyled">
+                        <li><strong>Price:</strong> <span th:text="${voucher.price}"></span></li>
+                        <li><strong>Type:</strong> <span th:text="${voucher.tourType}"></span></li>
+                        <li><strong>Transfer:</strong> <span th:text="${voucher.transferType}"></span></li>
+                        <li><strong>Hotel:</strong> <span th:text="${voucher.hotelType}"></span></li>
+                    </ul>
+
+                    <div sec:authorize="hasAnyAuthority('ADMIN_UPDATE', 'MANAGER_UPDATE')">
+<!--                        <button class="btn btn-warning mt-2" data-bs-toggle="modal" th:attr="data-bs-target='#editModal-' + ${voucher.id}">Edit</button>-->
+                        <a th:href="@{'/voucher/' + ${voucher.id}}" class="btn btn-warning mt-2">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form method="get" th:action="@{/}" class="row mt-4">
+        <!--    Hidden inputs    -->
+        <input type="hidden" name="filterTourType" th:value="${filter.filterTourType}">
+        <input type="hidden" name="filterTransferType" th:value="${filter.filterTransferType}">
+        <input type="hidden" name="filterHotelType" th:value="${filter.filterHotelType}">
+        <input type="hidden" name="filterMinPrice" th:value="${filter.filterMinPrice}">
+        <input type="hidden" name="filterMaxPrice" th:value="${filter.filterMaxPrice}">
+        <input type="hidden" name="sortBy" th:value="${#strings.listJoin(sortBy, ',')}"/>
+        <input type="hidden" name="sortDirection" th:value="${#strings.listJoin(sortDirection, ',')}"/>
+        <input type="hidden" name="searchText" th:value="${searchText}" />
+        <!--    -------------    -->
+
+        <div class="col d-flex justify-content-center">
+            <div class="me-4">
+                <label for="size" class="form-label me-1">Page size:</label>
+                <select id="size" name="size" onchange="this.form.submit()" class="form-select d-inline-block w-auto">
+                    <option th:value="3" th:selected="${size == 3}">3</option>
+                    <option th:value="6" th:selected="${size == 6}">6</option>
+                    <option th:value="10" th:selected="${size == 10}">10</option>
+                    <option th:value="20" th:selected="${size == 20}">20</option>
+                </select>
+            </div>
+            <ul class="pagination">
+                <li class="page-item" th:classappend="${currentPage == 0} ? 'disabled'">
+                    <button type="submit" name="page" class="page-link" th:value="${currentPage - 1}">Previous</button>
+                </li>
+                <li class="page-item" th:each="i : ${#numbers.sequence(0, (totalPages > 0 ? (totalPages - 1) : 0))}"
+                    th:classappend="${i == currentPage} ? 'active'">
+                    <button type="submit" name="page" class="page-link" th:value="${i}" th:text="${i + 1}"></button>
+                </li>
+                <li class="page-item" th:classappend="${currentPage + 1 >= totalPages} ? 'disabled'">
+                    <button type="submit" name="page" class="page-link" th:value="${currentPage + 1}">Next</button>
+                </li>
+            </ul>
+        </div>
+    </form>
+
+    <div th:replace="~{fragment/error-alert :: errorAlertFragment (errorAlert)}"></div>
+    <script src="/js/updateSortQuery.js" crossorigin="anonymous"></script>
+    <script src="/js/themeToggle.js"></script>
+</div>
+</body>
+</html>

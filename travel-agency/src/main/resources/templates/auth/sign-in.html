@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-in Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="/js/checkTheme.js"></script>
+    <link href="/css/error-alert.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+<div th:replace="~{fragment/navbar :: navbar}"></div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-8 py-3 py-md-5 py-xl-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-5">
+                                <h2 class="display-5 fw-bold text-center">Sign in</h2>
+                                <p class="text-center m-0">Don't have an account? <a href="/sign-up">Sign up</a></p>
+                            </div>
+                            <div th:if="${redirect!=null || error!=null}" th:text="${error!=null ? error : 'Please, sign in to get access!'}" class="alert alert-danger" role="alert">
+                                Alert message
+                            </div>
+                            <div th:if="${message!=null}" th:text="*{message}" class="alert alert-success" role="alert">
+                                Sign Up message
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="row gy-5 justify-content-center">
+                                <div class="col">
+                                    <form th:action="@{/sign-in(redirect=${redirect!=null ? redirect : '/'})}" th:object="${signInRequest}" method="post">
+                                        <div class="row gy-3 overflow-hidden">
+                                            <div class="col-12">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control border-0 border-bottom rounded-0" th:classappend="${#fields.hasErrors('username') ? 'is-invalid' : ''}" name="login" id="login" th:field="*{username}" placeholder="Login" required>
+                                                    <label for="login" class="form-label">Login</label>
+                                                    <div th:if="${#fields.hasErrors('username')}" th:errors="*{username}" id="validationUsernameFeedback" class="invalid-feedback">
+                                                        Validation error message
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating mb-3">
+                                                    <input type="password" class="form-control border-0 border-bottom rounded-0" th:classappend="${#fields.hasErrors('password') ? 'is-invalid' : ''}" name="password" id="password" th:field="*{password}" placeholder="Password" required>
+                                                    <label for="password" class="form-label">Password</label>
+                                                    <div th:if="${#fields.hasErrors('password')}"  id="validationPasswordFeedback" class="invalid-feedback">
+                                                        <ul>
+                                                            <li th:each="err : ${#strings.arraySplit(#fields.errors('password')[0], '|')}" th:text="${err}" />
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row justify-content-between">
+                                                    <div class="col-12">
+                                                        <div class="text-end">
+                                                            <a href="#!" class="link-secondary text-decoration-none">Forgot password?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button class="btn btn-primary btn-lg" type="submit">Log in</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/themeToggle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -22,7 +22,12 @@ class CustomRouteDefinitionRepository(
         val defs = serviceRouteRepository.findAllRoutes().map { routeDTO ->
             RouteDefinition().apply {
                 id = "${routeDTO.serviceName}_route-${routeDTO.id}"
-                uri = URI.create("lb://${routeDTO.serviceName}")
+                val uriStr = if(routeDTO.serviceName.contains(regex = Regex("^https?://"))) {
+                    routeDTO.serviceName
+                } else{
+                    "lb://${routeDTO.serviceName}"
+                }
+                uri = URI.create(uriStr)
                 order = routeDTO.order
                 val extraPaths = routeDTO.predicates
                     .filter { it.name == "Path" }

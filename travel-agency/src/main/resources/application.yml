@@ -1,0 +1,43 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: travel-service
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:h2:mem:travel_agency;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: h2
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#application:
+#  security:
+#    jwt:
+#      access-token:
+#        secret-key: ${JWT_ACCESS_SECRET}
+#        expiration: ${JWT_ACCESS_EXPIRATION}
+#      refresh-token:
+#        secret-key: ${JWT_REFRESH_SECRET}
+#        expiration: ${JWT_REFRESH_EXPIRATION}
+---

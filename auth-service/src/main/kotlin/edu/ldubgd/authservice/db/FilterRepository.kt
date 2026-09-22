@@ -7,13 +7,7 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface FilterRepository : CrudRepository<Filter, Int> {
-    /*@Query(
-        """
-        SELECT * FROM users.filter AS f 
-        WHERE f.name = :name AND f.args = to_jsonb(:args::json)
-        """
-    )
-    fun findFilterByNameAndArgs(@Param("name") name: String,@Param("args") args: String): Filter?*/
+
     fun findFiltersByName(name: String): List<Filter>
     fun findFiltersByNameIn(name: Collection<String>): List<Filter>
 

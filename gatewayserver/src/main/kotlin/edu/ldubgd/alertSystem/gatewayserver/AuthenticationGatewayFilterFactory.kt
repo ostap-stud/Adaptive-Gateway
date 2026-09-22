@@ -15,7 +15,7 @@ class AuthenticationGatewayFilterFactory(
             val path = exchange.request.path.value()
             val method = exchange.request.method.name()
             val token = exchange.request.headers.getFirst(HttpHeaders.AUTHORIZATION)
-            if (!path.contains("/v3/api-docs")){     // DEVELOPMENT PURPOSES ONLY!
+            if (!path.contains("/v3/api-docs")){     // dev only
                 validationService
                     .validateTokenForPath(token, path, method, exchange, chain::filter)
             } else{
@@ -24,7 +24,5 @@ class AuthenticationGatewayFilterFactory(
         }
     }
 
-    /*data*/ class Config(
-//        val roles: List<String>
-    )
+    class Config
 }

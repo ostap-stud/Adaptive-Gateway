@@ -1,3 +1,9 @@
+openapi:
+  service:
+    title: Test-service API specification
+    version: 1.0.0
+    url: https://localhost:8443
+
 spring:
   application:
     name: test-service
@@ -18,8 +24,6 @@ springdoc:
     enabled: true
     path: /${spring.application.name}/swagger-ui.html
 
-openapi:
-  service:
-    title: Test-service API specification
-    version: 1.0.0
-    url: https://localhost:8443
+
+
+

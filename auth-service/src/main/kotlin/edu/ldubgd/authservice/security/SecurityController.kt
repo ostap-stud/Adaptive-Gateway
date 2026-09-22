@@ -3,7 +3,6 @@ package edu.ldubgd.authservice.security
 import edu.ldubgd.authservice.db.RoleRepository
 import edu.ldubgd.authservice.db.User
 import edu.ldubgd.authservice.db.UserRepository
-import edu.ldubgd.authservice.db.dto.ServiceRouteDTO
 import edu.ldubgd.authservice.db.service.RouteService
 import edu.ldubgd.authservice.security.jwt.JwtUtil
 import edu.ldubgd.authservice.security.requests.LogInRequest
@@ -11,7 +10,7 @@ import edu.ldubgd.authservice.security.requests.SignUpRequest
 import edu.ldubgd.authservice.security.requests.ValidateTokenRequest
 import io.jsonwebtoken.ExpiredJwtException
 import io.swagger.v3.oas.annotations.Operation
-import io.swagger.v3.oas.annotations.media.ArraySchema
+import io.swagger.v3.oas.annotations.Parameter
 import io.swagger.v3.oas.annotations.media.Content
 import io.swagger.v3.oas.annotations.media.ExampleObject
 import io.swagger.v3.oas.annotations.media.Schema
@@ -119,7 +118,7 @@ class SecurityController {
         ),
         responses = [
             ApiResponse(responseCode = "201", description = "Успішна реэстрація клієнта в системі"),
-            ApiResponse(responseCode = "401", description = "Некоректні дані для реєстрації")
+            ApiResponse(responseCode = "400", description = "Некоректні дані для реєстрації")
         ]
     )
     @PostMapping("/signup")
@@ -142,6 +141,84 @@ class SecurityController {
         }
         userRepository.save(user)
         return ResponseEntity.status(HttpStatus.CREATED).body("User is successfully registered!")
+    }
+
+    @Operation(
+        summary = "[Обмежений] Призначення ролей клієнту",
+        requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
+            required = true,
+            description = "Список ролей для призначення користувачу",
+            content = [
+                Content(
+                    mediaType = "application/json",
+                    examples = [
+                        ExampleObject(
+                            name = "Example list of roles",
+                            value = """
+                            [
+                              "ROLE_TEST_USER"
+                            ]
+                        """
+                        )
+                    ]
+                )
+            ]
+        ),
+        responses = [
+            ApiResponse(responseCode = "200", description = "Ролі успішно призначено"),
+            ApiResponse(responseCode = "400", description = "Некоректні дані")
+        ]
+    )
+    @PostMapping("/add-roles/{username}")
+    fun addRoles(@PathVariable username: String, @RequestBody roles: List<String>): ResponseEntity<Any> {
+        val user = userRepository.findByLogin(username.lowercase()) ?:
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("User doesn't exists")
+        val newRoles = roleRepository.findRolesByRoleIn(roles)
+        newRoles.forEach {
+            user.addRole(it)
+        }
+        userRepository.save(user)
+        return ResponseEntity.status(HttpStatus.OK).body("Roles added successfully!")
+    }
+
+    @Operation(
+        summary = "[Обмежений] Видалення ролей клієнта",
+        requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
+            required = true,
+            description = "Список ролей користувача для видалення",
+            content = [
+                Content(
+                    mediaType = "application/json",
+                    examples = [
+                        ExampleObject(
+                            name = "Example list of roles",
+                            value = """
+                            [
+                              "ROLE_TEST_USER"
+                            ]
+                        """
+                        )
+                    ]
+                )
+            ]
+        ),
+        responses = [
+            ApiResponse(responseCode = "200", description = "Ролі успішно знято"),
+            ApiResponse(responseCode = "400", description = "Некоректні дані")
+        ]
+    )
+    @DeleteMapping("/remove-roles/{username}")
+    fun removeRoles(@PathVariable username: String, @RequestBody roles: List<String>): ResponseEntity<Any> {
+        val user = userRepository.findByLogin(username.lowercase()) ?:
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("User doesn't exists")
+        val removeRoles = roleRepository.findRolesByRoleIn(roles)
+        removeRoles.forEach { removeRole ->
+            user.roles.removeIf { roleRef ->
+                roleRef.roleId == removeRole.id
+            }
+        }
+        userRepository.save(user)
+        return ResponseEntity.status(HttpStatus.OK).body("Roles removed successfully!")
     }
 
     @Operation(
@@ -202,7 +279,8 @@ class SecurityController {
                             if (jwtUtil.validateToken(jwt, userDetails, requiredRoles))
                                 return ResponseEntity.status(HttpStatus.OK).body("Token is valid!")
                         } else {
-                            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Cannot reach the route ${validateTokenRequest.routePath} with ${validateTokenRequest.method}")
+                            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                                .body("Cannot reach the route ${validateTokenRequest.routePath} with ${validateTokenRequest.method}")
                         }
                     } else {
                         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("There is no route for this request")

@@ -51,6 +51,7 @@ class SecurityConfiguration{
                 authorize("/$applicationName/validate", permitAll)
                 authorize("/$applicationName/signup", authenticated)
                 authorize("/$applicationName/v3/api-docs", permitAll)       // only in dev
+                authorize("/$applicationName/swagger-ui/index.html", permitAll)
                 authorize("/$applicationName/swagger-ui.html", permitAll)
                 authorize(anyRequest, authenticated)
             }

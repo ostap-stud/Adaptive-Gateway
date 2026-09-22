@@ -37,7 +37,6 @@ class RoleController {
 
     @Operation(
         summary = "Отримання інформації про роль за її ПОВНОЮ назвою",
-        parameters = [Parameter(name = "Full role name", required = true)],
         responses = [
             ApiResponse(responseCode = "200"),
             ApiResponse(responseCode = "404", description = "Роль не знайдено")
@@ -106,11 +105,6 @@ class RoleController {
 
     @Operation(
         summary = "Оновлення ролі",
-        parameters = [Parameter(
-            name = "Role ID",
-            required = true,
-            example = "0"
-        )],
         requestBody = io.swagger.v3.oas.annotations.parameters.RequestBody(
             required = true,
             description = "Роль з оновленими даними",
@@ -150,11 +144,6 @@ class RoleController {
 
     @Operation(
         summary = "Видалення ролі",
-        parameters = [Parameter(
-            name = "Role ID",
-            required = true,
-            example = "0"
-        )],
         responses = [
             ApiResponse(responseCode = "200", description = "Роль успішно видалено"),
             ApiResponse(responseCode = "404", description = "Роль не знайдено")

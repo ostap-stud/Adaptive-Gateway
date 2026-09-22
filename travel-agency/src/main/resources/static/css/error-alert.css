@@ -1,0 +1,13 @@
+#error-alert{
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#error-alert.show{
+    visibility: visible;
+    opacity: 1;
+}

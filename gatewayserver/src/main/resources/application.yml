@@ -19,7 +19,7 @@ eureka:
  
 spring:
   application:
-    name: ldubgd-gateway
+    name: gateway
   datasource:
     url: ${DB_SCHEMA_URL}
     username: ${DB_USERNAME}
