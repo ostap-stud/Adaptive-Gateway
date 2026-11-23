@@ -1,0 +1,14 @@
+{
+  "database": "adaptive_cycle_09f0634ad14a",
+  "checks": [
+    "IDEA local profile initializes empty database",
+    "IDEA profiles auto-register and expose public API",
+    "IDEA profiles confirm APPLIED"
+  ],
+  "tlsVerification": false,
+  "status": "PASSED",
+  "sharedConfigVerified": true,
+  "localProfilesVerified": true,
+  "databaseCleanedUp": true,
+  "transport": "HTTP loopback; HTTPS verification is covered by the separate acceptance report."
+}

@@ -1,0 +1,158 @@
+# Select environment "local" in IDEA. Run individual requests in order.
+# Copy http-client.private.env.json.example to http-client.private.env.json first.
+# No POST /service/add is needed for adaptive-demo.
+
+### 1. Administrator login — response is a plain-text JWT
+POST {{auth}}/login
+Content-Type: application/json
+
+{"login":"{{adminLogin}}","password":"{{adminPassword}}"}
+
+> {%
+    client.test("Admin login", () => client.assert(response.status === 200));
+    client.global.set("adminToken", String(response.body).trim());
+%}
+
+### 2. Automatically registered service; keep identifiers for later requests
+GET {{auth}}/service/adaptive-demo
+Authorization: Bearer {{adminToken}}
+
+> {%
+    client.test("Automatic registration", () => client.assert(response.status === 200));
+    client.global.set("serviceId", response.body.id);
+    const route = response.body.routes.find(r => r.managedKey === "ingress");
+    if (route) client.global.set("routeId", route.id);
+%}
+
+### 3. Inspect declarations, policy layers and the effective decision
+GET {{auth}}/policy/services/adaptive-demo/operations
+Authorization: Bearer {{adminToken}}
+
+> {%
+    const operation = response.body.find(o => o.gateway_path === "/adaptive-demo/demo/restricted" && o.http_method === "GET");
+    if (operation) client.global.set("operationId", operation.id);
+%}
+
+### 4. Public API — 200 without a token
+GET {{gateway}}/adaptive-demo/demo/public
+
+### 5. Protected API — 401 without a token
+GET {{gateway}}/adaptive-demo/demo/private
+
+### 6. Create ordinary user ONCE; repeated signup returns 400
+POST {{auth}}/signup
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{"login":"{{userLogin}}","password":"{{userPassword}}","contactId":900001,"roles":[]}
+
+### 7. User login
+POST {{auth}}/login
+Content-Type: application/json
+
+{"login":"{{userLogin}}","password":"{{userPassword}}"}
+
+> {% client.global.set("userToken", String(response.body).trim()); %}
+
+### 8. Protected API — 200
+GET {{gateway}}/adaptive-demo/demo/private
+Authorization: Bearer {{userToken}}
+
+### 9. Unknown permission mapping — 403, even with a valid JWT
+GET {{gateway}}/adaptive-demo/demo/restricted
+Authorization: Bearer {{userToken}}
+
+### 10. Create the central role ONCE
+POST {{auth}}/role/add
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+[{"roleName":"READER","application":"DEMO","roleDescription":"Read the permission-protected demo API"}]
+
+### 11. Administrator maps the service declaration to infrastructure roles
+PUT {{auth}}/policy/permissions/demo.read
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{"roles":["ROLE_DEMO_READER"],"reason":"Allow demo readers to use demo.read"}
+
+### 12. Grant role to user; request 9 should now return 200 with the same JWT
+POST {{auth}}/add-roles/{{userLogin}}
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+["ROLE_DEMO_READER"]
+
+### 13. INTERNAL is blocked for external users — 403
+GET {{gateway}}/adaptive-demo/demo/blocked
+Authorization: Bearer {{userToken}}
+
+### 14. Central Swagger catalog
+GET {{gateway}}/swagger/config
+
+### 15. Service OpenAPI through Gateway; Try it out uses Gateway as its server
+GET {{gateway}}/swagger/services/adaptive-demo
+
+### 16. Manager diagnostic snapshot
+GET {{manager}}/observations
+
+### Optional: normal ADMIN PUBLIC does not weaken the permission requirement
+PUT {{auth}}/policy/operations/{{operationId}}/ADMIN
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{"accessType":"PUBLIC","forceOverride":false,"reason":"Demonstrate restrictive combination"}
+
+### Optional: explicit force override makes this operation public and records an audit entry
+PUT {{auth}}/policy/operations/{{operationId}}/ADMIN
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{"accessType":"PUBLIC","forceOverride":true,"reason":"Temporary public demonstration approved by administrator"}
+
+### Remove ADMIN override and restore declared permissions
+DELETE {{auth}}/policy/operations/{{operationId}}/ADMIN
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{"reason":"End temporary demonstration"}
+
+### Audit of policy and permission changes
+GET {{auth}}/policy/audit
+Authorization: Bearer {{adminToken}}
+
+### Optional: administrator stops automatic changes without deleting configuration
+PUT {{auth}}/service/{{serviceId}}/management-mode
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{"managementMode":"MANUAL"}
+
+### Optional: administrator disables the route; follow with refresh
+PUT {{auth}}/service/route/{{routeId}}/state
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{"active":false}
+
+### Publish manual route changes
+POST {{gateway}}/actuator/gateway/refresh
+Authorization: Bearer {{adminToken}}
+
+### Inspect actual routes
+GET {{gateway}}/actuator/gateway/routes
+Authorization: Bearer {{adminToken}}
+
+### Restore the route; follow with refresh
+PUT {{auth}}/service/route/{{routeId}}/state
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{"active":true}
+
+### Resume automatic management; manual route override remains protected
+PUT {{auth}}/service/{{serviceId}}/management-mode
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{"managementMode":"AUTOMATIC"}

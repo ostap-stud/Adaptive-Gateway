@@ -1,0 +1,12 @@
+# Copy to config/local.properties. Shared by the IDEA run configurations.
+DB_SCHEMA_URL=jdbc:postgresql://localhost:5432/adaptive_gateway?currentSchema=users
+DB_USERNAME=postgres
+DB_PASSWORD=REPLACE_WITH_YOUR_POSTGRES_PASSWORD
+BOOTSTRAP_ADMIN_LOGIN=admin
+BOOTSTRAP_ADMIN_PASSWORD=REPLACE_WITH_YOUR_ADMIN_PASSWORD
+# Generate an independent random 32-byte Base64 value for each key (see docs/operations.uk.md).
+JWT_SECRET=
+ADAPTIVE_SYNC_KEY=
+GATEWAY_REFRESH_KEY=
+JWT_EXPIRE=7200000
+KEY_STORE_PASSWORD_CHANGEIT=unused-in-local-profile

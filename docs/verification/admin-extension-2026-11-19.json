@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-19",
+  "status": "PASSED",
+  "scope": "Manual administration, native Swagger UI and runtime Manager mode switch",
+  "tests": {
+    "manager": 37,
+    "authTargeted": 8,
+    "frontend": 14,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "productionBuild": "PASSED",
+  "backendChanges": [
+    "Read-only route component catalogue",
+    "Admin-authenticated mode relay",
+    "Poll-locked validated runtime mode change"
+  ],
+  "databaseSchemaChanged": false,
+  "userRunningProcessesTouched": false,
+  "workingDatabaseUsed": false,
+  "ports": {
+    "frontend": 5175,
+    "eureka": 18761,
+    "auth": 18334,
+    "gateway": 18088,
+    "demo": 18996,
+    "manager": 18335,
+    "postgres": 55489
+  },
+  "checks": [
+    {
+      "name": "UI creates service/route, edits filter and predicate arguments, preserves negative order, and publishes to real Gateway",
+      "status": "PASSED"
+    },
+    {
+      "name": "UI updates service, removes route filter/predicate assignments and deactivates route",
+      "status": "PASSED"
+    },
+    {
+      "name": "UI switches running Manager from APPLY to OBSERVE and manual OBSERVE keeps all configuration versions unchanged",
+      "status": "PASSED"
+    },
+    {
+      "name": "UI CENTRAL policy changes effective authorization of real Gateway operation to 403",
+      "status": "PASSED"
+    },
+    {
+      "name": "UI removes CENTRAL layer, restores public access and displays actor/reason audit",
+      "status": "PASSED"
+    },
+    {
+      "name": "UI switches running Manager back from OBSERVE to APPLY",
+      "status": "PASSED"
+    },
+    {
+      "name": "Native Gateway Swagger UI opens adaptive-demo and Try it out returns real 200 response",
+      "status": "PASSED"
+    },
+    {
+      "name": "UI publishes active=false; actual Gateway no longer exposes the manual route",
+      "status": "PASSED"
+    },
+    {
+      "name": "Existing REST DELETE endpoints remove disposable manual route and service; UI deletion confirmation was inspected separately",
+      "status": "PASSED"
+    }
+  ],
+  "screenshots": [
+    "admin-extension-route-editor.jpg",
+    "admin-extension-mode.jpg",
+    "admin-extension-swagger.jpg"
+  ],
+  "cleanup": "COMPLETED: own frontend, five JVMs and PostgreSQL stopped; temporary cluster removed. User standard-port processes were not stopped."
+}

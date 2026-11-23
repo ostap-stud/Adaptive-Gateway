@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-19",
+  "status": "PASSED",
+  "scope": "Frontend + real local backend integration; synthetic users in isolated PostgreSQL",
+  "backendSourceChanged": false,
+  "workingDatabaseUsed": false,
+  "build": {
+    "typescript": "PASSED",
+    "viteProduction": "PASSED",
+    "unitTests": 10,
+    "unitFailures": 0
+  },
+  "runtime": {
+    "node": "24.15.0",
+    "java": "21",
+    "postgres": "18",
+    "database": "adaptive_ui_qa",
+    "postgresPort": 55489,
+    "devPort": 5173,
+    "previewPort": 4173
+  },
+  "checks": [
+    {
+      "name": "Browser-created user and mapped role grant real backend operation",
+      "status": "PASSED"
+    },
+    {
+      "name": "Ordinary user admin API denied with 403",
+      "status": "PASSED"
+    },
+    {
+      "name": "Anonymous admin API denied with 401",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser-revoked role immediately denies real operation with the SAME JWT (403)",
+      "status": "PASSED"
+    },
+    {
+      "name": "Manager outage shown as stale snapshot with disabled manual trigger; inventory remains available",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser-triggered OBSERVE preserves all Auth configuration versions",
+      "status": "PASSED"
+    },
+    {
+      "name": "Production dist serves HTML, login, real inventory and OpenAPI through preview proxy",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser: wrong-password error and administrator login",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser: services/details, routes, operation declarations and PUBLIC filter",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser: role creation, user creation and role assignment through existing REST APIs",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser: permission mapping saved with audit reason",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser: manual APPLY confirmation, actual cycle and success result",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser: ordinary user cannot open production admin panel",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser: administrator grant requires explicit confirmation",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser: production deep-link reload preserves session; logout plus reload clears it",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser: responsive desktop 1440px and mobile 390px; drawer navigation and no page horizontal overflow",
+      "status": "PASSED"
+    },
+    {
+      "name": "Browser: production console has no JavaScript errors",
+      "status": "PASSED"
+    }
+  ],
+  "screenshots": [
+    "admin-panel-desktop-2026-11-19.jpg",
+    "admin-panel-mobile-2026-11-19.jpg"
+  ],
+  "cleanup": "COMPLETED: owned Vite servers, five JVMs and isolated PostgreSQL stopped; temporary cluster removed"
+}

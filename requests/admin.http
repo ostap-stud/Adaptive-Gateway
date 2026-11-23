@@ -1,0 +1,64 @@
+# Select environment local. Login uses existing private adminLogin/adminPassword.
+
+### Login
+POST {{auth}}/login
+Content-Type: application/json
+
+{"login":"{{adminLogin}}","password":"{{adminPassword}}"}
+
+> {% client.global.set("adminToken", String(response.body).trim()); %}
+
+### Services and persisted configuration metadata
+GET {{auth}}/admin/services
+Authorization: Bearer {{adminToken}}
+
+### Routes including inactive and internal
+GET {{auth}}/admin/routes
+Authorization: Bearer {{adminToken}}
+
+### Operations including effective policies and permissions
+GET {{auth}}/admin/services/adaptive-demo/operations
+Authorization: Bearer {{adminToken}}
+
+### Users and current roles, without password hashes
+GET {{auth}}/admin/users
+Authorization: Bearer {{adminToken}}
+
+### Role catalogue
+GET {{auth}}/admin/roles
+Authorization: Bearer {{adminToken}}
+
+### Declared permissions and mappings, including unresolved permissions
+GET {{auth}}/admin/permissions
+Authorization: Bearer {{adminToken}}
+
+### Current mode and latest Manager result (does not run a cycle)
+GET {{auth}}/admin/adaptive
+Authorization: Bearer {{adminToken}}
+
+### Run one cycle in the configured mode; APPLY may synchronize all admitted services
+POST {{auth}}/admin/adaptive/poll
+Authorization: Bearer {{adminToken}}
+
+
+### Read full filter/predicate parameters
+GET {{auth}}/admin/route-components
+Authorization: Bearer {{adminToken}}
+
+### OBSERVE for subsequent automatic cycles (does not start a poll)
+PUT {{auth}}/admin/adaptive/mode
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{"mode":"OBSERVE"}
+
+### APPLY for subsequent automatic cycles; review before running
+PUT {{auth}}/admin/adaptive/mode
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{"mode":"APPLY"}
+
+### Publish manual route edits using existing Gateway admin JWT API
+POST {{gateway}}/actuator/gateway/refresh
+Authorization: Bearer {{adminToken}}

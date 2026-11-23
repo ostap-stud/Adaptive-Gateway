@@ -1,5 +1,12 @@
 # Compiled class file
 *.class
+**/target/
+config/local.properties
+http-client.private.env.json
+.idea/
+*.iml
+__pycache__/
+*.pyc
 
 # Log file
 log.txt

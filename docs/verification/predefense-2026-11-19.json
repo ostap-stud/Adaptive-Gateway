@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-19",
+  "status": "PASSED",
+  "scope": "Targeted Manager and Auth lifecycle/admin verification; not a full-system acceptance run",
+  "database": "Isolated temporary PostgreSQL 18 cluster; no application database used",
+  "suites": [
+    {
+      "name": "edu.ldubgd.adaptivemanager.ApplyIntegrationTests",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "edu.ldubgd.adaptivemanager.ObservationConcurrencyTests",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "edu.ldubgd.adaptivemanager.ObservationIntegrationTests",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "edu.ldubgd.adaptivemanager.OpenApiAnalyzerTests",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "edu.ldubgd.adaptivemanager.ReadOnlyJsonClientTests",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "edu.ldubgd.authservice.AdminApiTests",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "edu.ldubgd.authservice.ManagerAdminClientTests",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "edu.ldubgd.authservice.AdaptiveSyncTests",
+      "tests": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "edu.ldubgd.authservice.AdmissionPolicyTests",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "edu.ldubgd.authservice.AuthSecurityBaselineTests",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "totalTests": 61.0
+}
