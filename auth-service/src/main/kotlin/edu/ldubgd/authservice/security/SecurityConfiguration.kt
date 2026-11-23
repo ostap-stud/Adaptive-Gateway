@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.core.annotation.Order
+import org.springframework.boot.web.servlet.FilterRegistrationBean
 import org.springframework.http.HttpStatus
 import org.springframework.security.authentication.AuthenticationManager
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration
@@ -39,6 +41,22 @@ class SecurityConfiguration{
     ): AuthenticationManager = authenticationConfiguration.authenticationManager
 
     @Bean
+    fun jwtServletRegistration(): FilterRegistrationBean<JwtFilter> =
+        FilterRegistrationBean(jwtFilter).apply { isEnabled = false }
+
+    @Bean
+    @Order(1)
+    fun adaptiveChain(http: HttpSecurity, @Value("\${adaptive.sync-key:}") secret: String): SecurityFilterChain {
+        http.securityMatcher("/$applicationName/internal/adaptive/**")
+            .csrf { it.disable() }
+            .sessionManagement { it.sessionCreationPolicy(SessionCreationPolicy.STATELESS) }
+            .authorizeHttpRequests { it.anyRequest().hasAuthority("ADAPTIVE_SYNC") }
+            .addFilterBefore(InternalServiceAuthenticationFilter(secret), UsernamePasswordAuthenticationFilter::class.java)
+        return http.build()
+    }
+
+    @Bean
+    @Order(2)
     fun filterChain(http: HttpSecurity): SecurityFilterChain {
         http {
             csrf { disable() }
@@ -50,6 +68,7 @@ class SecurityConfiguration{
                 authorize("/$applicationName/login", permitAll)
                 authorize("/$applicationName/validate", permitAll)
                 authorize("/$applicationName/signup", authenticated)
+                authorize("/$applicationName/admin/**", hasAuthority("ROLE_INFRA_ADMIN"))
                 authorize("/$applicationName/v3/api-docs", permitAll)       // only in dev
                 authorize("/$applicationName/swagger-ui/index.html", permitAll)
                 authorize("/$applicationName/swagger-ui.html", permitAll)

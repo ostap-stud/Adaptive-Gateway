@@ -7,8 +7,8 @@ logging:
       springframework:
         jdbc:
           core:
-            JdbcTemplate: DEBUG
-            StatementCreatorUtils: TRACE
+            JdbcTemplate: INFO
+            StatementCreatorUtils: INFO
 
 spring:
   application:

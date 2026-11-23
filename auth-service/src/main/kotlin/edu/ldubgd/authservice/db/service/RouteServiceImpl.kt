@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service
 import org.springframework.util.AntPathMatcher
 import org.springframework.util.PathMatcher
 import java.util.*
+import edu.ldubgd.authservice.adaptive.ConfigurationWriteLock
+import org.springframework.transaction.annotation.Transactional
 
 @Service
 class RouteServiceImpl(
@@ -17,32 +19,34 @@ class RouteServiceImpl(
     private val roleRepository: RoleRepository,
     private val filterService: FilterService,
     private val predicateService: PredicateService,
+    private val locks: ConfigurationWriteLock,
     private val pathMatcher: PathMatcher = AntPathMatcher()
 ) : RouteService {
 
     override fun findRoutesByRequestPath(requestPath: String): List<ServiceRoute> {
         return serviceRouteRepository.findAll().filter { route ->
-            pathMatcher.match(route.route, requestPath)
+            route.active && pathMatcher.match(route.route, requestPath)
         }
     }
 
     override fun findRouteByRequestMethod(routes: List<ServiceRoute>, requestMethod: String): ServiceRoute? {
-        val compatibleRoutes = mutableSetOf<ServiceRoute>()
+        val method = requestMethod.uppercase(Locale.ROOT)
         val allMethodPredicates = predicateService.getPredicatesByName("Method")
-        routes.forEach { pm ->
-            val pathMethods = allMethodPredicates.find { amp -> pm.predicates.any { amp.id == it.predicateId } }
-            if (pathMethods == null || pathMethods.args["methods"]?.contains(requestMethod.uppercase(Locale.getDefault())) == true) {
-                compatibleRoutes.add(pm)
+        return routes.filter { route ->
+            // Separate predicates are ANDed, while methods within one predicate are ORed.
+            route.active && allMethodPredicates.filter { predicate ->
+                route.predicates.any { it.predicateId == predicate.id }
+            }.all { predicate ->
+                predicate.args["methods"].orEmpty().split(',')
+                    .map { it.trim().uppercase(Locale.ROOT) }
+                    .contains(method)
             }
-        }
-        return when(compatibleRoutes.size){
-            0 -> null
-            1 -> compatibleRoutes.first()
-            else -> compatibleRoutes.minBy { it.order!! }
-        }
+        }.minWithOrNull(compareBy<ServiceRoute> { it.order ?: 0 }.thenBy { it.id })
     }
 
+    @Transactional
     override fun insertRoute(routeDTO: ServiceRouteDTO): ServiceRoute {
+        locks.lock()
         val route = ServiceRoute(
             id = 0,
             route = routeDTO.route,
@@ -53,11 +57,22 @@ class RouteServiceImpl(
             if (routeDTO.isInternal) null
             else serviceRepository.findByServiceName(routeDTO.serviceName)?.id!!
         )
+        locks.service(route.serviceId)
         return saveRoute(route, routeDTO)
     }
 
+    @Transactional
     override fun updateRoute(currentRoute: Optional<ServiceRoute>, routeDTO: ServiceRouteDTO): ServiceRoute {
-        val updated = currentRoute.get().copy(
+        locks.lock()
+        val latest = serviceRouteRepository.findById(currentRoute.get().id).orElseThrow()
+        val targetService = if (routeDTO.isInternal) null else serviceRepository.findByServiceName(routeDTO.serviceName)?.id
+        require(latest.source != edu.ldubgd.authservice.db.RouteSource.GENERATED ||
+            (!routeDTO.isInternal && targetService == latest.serviceId)) {
+            "A generated route cannot be transferred to another service or made internal"
+        }
+        locks.service(latest.serviceId)
+        if (targetService != latest.serviceId) locks.service(targetService)
+        val updated = latest.copy(
             route = routeDTO.route,
             routeDesc = routeDTO.routeDescription,
             isInternal = routeDTO.isInternal,
@@ -67,6 +82,7 @@ class RouteServiceImpl(
             else serviceRepository.findByServiceName(routeDTO.serviceName)?.id!!
         )
         updated.apply {
+            markManualChange()
             roles.clear()
             filters.clear()
             predicates.clear()

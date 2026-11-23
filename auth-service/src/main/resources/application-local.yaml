@@ -1,0 +1,25 @@
+spring:
+  config:
+    import: optional:file:./config/local.properties
+server:
+  address: 127.0.0.1
+adaptive:
+  initialize-schema: true
+  auto-register: true
+  sync-key: ${ADAPTIVE_SYNC_KEY}
+  manager:
+    base-url: http://localhost:8335
+  bootstrap:
+    enabled: true
+    login: ${BOOTSTRAP_ADMIN_LOGIN:admin}
+    password: ${BOOTSTRAP_ADMIN_PASSWORD}
+  gateway:
+    base-url: http://localhost:8088
+    key: ${GATEWAY_REFRESH_KEY}
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: false
+logging:
+  level:
+    org.springframework.jdbc.core: INFO

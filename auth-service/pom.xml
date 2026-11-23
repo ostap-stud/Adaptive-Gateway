@@ -122,6 +122,10 @@
 	</dependencies>
 
 	<build>
+		<resources>
+			<resource><directory>src/main/resources</directory></resource>
+			<resource><directory>../ddl</directory><targetPath>adaptive-db</targetPath><includes><include>000_empty_schema.sql</include><include>migrations/*.sql</include></includes></resource>
+		</resources>
 		<sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
 		<testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
 		<plugins>

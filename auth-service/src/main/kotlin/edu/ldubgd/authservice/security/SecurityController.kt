@@ -3,12 +3,11 @@ package edu.ldubgd.authservice.security
 import edu.ldubgd.authservice.db.RoleRepository
 import edu.ldubgd.authservice.db.User
 import edu.ldubgd.authservice.db.UserRepository
-import edu.ldubgd.authservice.db.service.RouteService
 import edu.ldubgd.authservice.security.jwt.JwtUtil
 import edu.ldubgd.authservice.security.requests.LogInRequest
 import edu.ldubgd.authservice.security.requests.SignUpRequest
 import edu.ldubgd.authservice.security.requests.ValidateTokenRequest
-import io.jsonwebtoken.ExpiredJwtException
+import edu.ldubgd.authservice.policy.AuthorizationDecisionService
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.Parameter
 import io.swagger.v3.oas.annotations.media.Content
@@ -16,7 +15,6 @@ import io.swagger.v3.oas.annotations.media.ExampleObject
 import io.swagger.v3.oas.annotations.media.Schema
 import io.swagger.v3.oas.annotations.responses.ApiResponse
 import io.swagger.v3.oas.annotations.tags.Tag
-import jakarta.servlet.http.HttpServletResponse
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
@@ -24,7 +22,6 @@ import org.springframework.security.authentication.AuthenticationManager
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.Authentication
 import org.springframework.security.core.context.SecurityContextHolder
-import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.web.bind.annotation.*
 
@@ -38,9 +35,7 @@ class SecurityController {
     @Autowired
     private lateinit var roleRepository: RoleRepository
     @Autowired
-    private lateinit var routeService: RouteService
-    @Autowired
-    private lateinit var userDetailsService: UserDetailsService
+    private lateinit var authorizationDecisions: AuthorizationDecisionService
     @Autowired
     private lateinit var passwordEncoder: PasswordEncoder
     @Autowired
@@ -246,52 +241,17 @@ class SecurityController {
         ),
         responses = [
             ApiResponse(responseCode = "200", description = "Токен валідний"),
-            ApiResponse(responseCode = "401", description = "Помилка валідації"),
+            ApiResponse(responseCode = "401", description = "Помилка автентифікації або відмова legacy-маршруту"),
+            ApiResponse(responseCode = "403", description = "Відмова політики API-операції"),
             ApiResponse(responseCode = "404", description = "Даний маршрут відсутній в системі")
         ]
     )
     @PostMapping("/validate")
-    fun validate(@RequestHeader("Authorization") authorization: String?,
-                 @RequestBody validateTokenRequest: ValidateTokenRequest
-    ): ResponseEntity<Any>{
-        var jwt: String? = null
-        var username: String? = null
-        val userDetails: UserDetailsImpl?
-        try {
-            if (authorization != null && authorization.startsWith("Bearer ")) {
-                jwt = authorization.substring(7)
-            }
-            if (jwt != null) {
-                try {
-                    username = jwtUtil.getNameFromToken(jwt)
-                } catch (e: ExpiredJwtException) {
-                    ResponseEntity.status(HttpServletResponse.SC_UNAUTHORIZED)
-                        .body("Authorization failed. " + e.message)
-                }
-                if (username != null) {
-                    userDetails = userDetailsService.loadUserByUsername(username) as UserDetailsImpl
-                    val requestPathRoutes = routeService.findRoutesByRequestPath(validateTokenRequest.routePath)
-                    if (requestPathRoutes.isNotEmpty()) {
-                        val routeToDirect =
-                            routeService.findRouteByRequestMethod(requestPathRoutes, validateTokenRequest.method)
-                        if (routeToDirect != null) {
-                            val requiredRoles = roleRepository.findByIdIn(routeToDirect.getRolesId()).map { it.role!! }
-                            if (jwtUtil.validateToken(jwt, userDetails, requiredRoles))
-                                return ResponseEntity.status(HttpStatus.OK).body("Token is valid!")
-                        } else {
-                            return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                                .body("Cannot reach the route ${validateTokenRequest.routePath} with ${validateTokenRequest.method}")
-                        }
-                    } else {
-                        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("There is no route for this request")
-                    }
-                }
-            }
-        }catch (e: Exception) {
-//            e.printStackTrace()
-        }
-        return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-            .body("Token is invalid or something went wrong.")
+    fun validate(
+        @RequestHeader("Authorization", required = false) authorization: String?,
+        @RequestBody request: ValidateTokenRequest
+    ): ResponseEntity<Any> {
+        val decision = authorizationDecisions.decide(authorization, request)
+        return ResponseEntity.status(decision.status).body(decision.message)
     }
-
 }

@@ -51,6 +51,18 @@ class JwtFilter : OncePerRequestFilter() {
                     username = jwtUtil.getNameFromToken(jwt)
                     if (username != null && SecurityContextHolder.getContext().authentication == null) {
                         userDetails = userDetailsService.loadUserByUsername(username) as UserDetailsImpl
+                        val localPath = request.requestURI.removePrefix(request.contextPath)
+                        if (localPath == "/$appName/admin" || localPath.startsWith("/$appName/admin/")) {
+                            if (!jwtUtil.validateToken(jwt, userDetails, listOf("ROLE_INFRA_ADMIN"))) {
+                                response.sendError(HttpServletResponse.SC_FORBIDDEN)
+                                return
+                            }
+                            SecurityContextHolder.getContext().authentication =
+                                UsernamePasswordAuthenticationToken(userDetails, null, userDetails.authorities +
+                                    org.springframework.security.core.authority.SimpleGrantedAuthority("ROLE_INFRA_ADMIN"))
+                            filterChain.doFilter(request, response)
+                            return
+                        }
                         val requestPathRoutes = routeService.findRoutesByRequestPath(request.requestURI)
                         if (requestPathRoutes.isNotEmpty()) {
                             val routeToDirect =

@@ -19,7 +19,15 @@ data class ServiceRoute(
     val filters: MutableSet<RouteFilterRef> = HashSet(),
     @MappedCollection(idColumn = "route_id", keyColumn = "predicate_id")
     val predicates: MutableSet<RoutePredicateRef> = HashSet(),
+    val source: RouteSource = RouteSource.MANUAL,
+    val managedKey: String? = null,
+    var active: Boolean = true,
+    var isOverridden: Boolean = false,
 ){
+    fun markManualChange() {
+        if (source == RouteSource.GENERATED) isOverridden = true
+    }
+
     fun addRole(role: Role){
         roles.add(createRouteRoleRef(role.id))
     }

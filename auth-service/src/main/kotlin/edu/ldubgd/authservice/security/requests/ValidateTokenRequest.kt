@@ -6,5 +6,7 @@ data class ValidateTokenRequest(
     @Schema(description = "Шлях запиту клієнта", example = "/test-service/services/add")
     val routePath: String,
     @Schema(description = "Метод запиту клієнта", example = "POST")
-    val method: String
+    val method: String,
+    @Schema(description = "ID маршруту з БД, вибраного Gateway; обов'язковий для GENERATED")
+    val routeId: Int? = null
 )

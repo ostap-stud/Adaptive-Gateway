@@ -22,7 +22,33 @@ import org.springframework.web.bind.annotation.*
 @RestController
 @RequestMapping("/\${spring.application.name}/service")
 @Tag(name = "Service Management", description = "Керування мікросервісами та їх маршрутами")
+@Transactional
 class ServiceController {
+
+    @Autowired
+    private lateinit var configurationLock: edu.ldubgd.authservice.adaptive.ConfigurationWriteLock
+
+    @PutMapping("/{id}/management-mode")
+    fun updateManagementMode(@PathVariable id: Int, @RequestBody request: ManagementModeRequest): ResponseEntity<Any> {
+        return if (metadataRepository.updateManagementMode(id, request.managementMode)) {
+            ResponseEntity.ok("Management mode updated")
+        } else ResponseEntity.status(HttpStatus.NOT_FOUND).body("Service is not found")
+    }
+
+    @PutMapping("/route/{id}/state")
+    fun updateRouteState(@PathVariable id: Int, @RequestBody request: RouteStateRequest): ResponseEntity<Any> {
+        configurationLock.route(id)
+        val current = serviceRouteRepository.findById(id)
+        if (current.isEmpty) return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Route is not found")
+        val route = current.get()
+        route.active = request.active
+        route.markManualChange()
+        serviceRouteRepository.save(route)
+        return ResponseEntity.ok("Route state updated; refresh Gateway to apply routing changes")
+    }
+
+    @Autowired
+    private lateinit var metadataRepository: AdaptiveServiceMetadataRepository
 
     @Autowired
     private lateinit var serviceRepository: ServiceRepository
@@ -102,6 +128,7 @@ class ServiceController {
     @Transactional
     @PostMapping("/add")
     fun addServices(@RequestBody services: List<ServiceDTO>): ResponseEntity<Any> {
+        configurationLock.lock()
         try {
             if (services.isNotEmpty()) {
                 services.forEach {
@@ -154,10 +181,10 @@ class ServiceController {
     )
     @PutMapping("/{id}")
     fun updateService(@PathVariable("id") id: Int, @RequestBody service: ServiceDTO): ResponseEntity<Any> {
+        configurationLock.lock()
         val current = serviceRepository.findById(id)
         if (current.isPresent) {
-            val updated = current.get().copy(serviceName = service.name, serviceDesc = service.description)
-            serviceRepository.save(updated)
+            metadataRepository.updateDetails(id, service.name, service.description)
             return ResponseEntity.status(HttpStatus.OK).body("Successfully updated Service (id: $id)")
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Service is not found")
@@ -172,6 +199,7 @@ class ServiceController {
     )
     @DeleteMapping("/{id}")
     fun deleteService(@PathVariable("id") id: Int): ResponseEntity<Any> {
+        configurationLock.lock()
         val deleteService = serviceRepository.findById(id)
         if (deleteService.isPresent) {
             serviceRepository.deleteById(id)
@@ -246,6 +274,7 @@ class ServiceController {
     @Transactional
     @PostMapping("/route/add")
     fun addServiceRoutes(@RequestBody serviceRoutes: List<ServiceRouteDTO>): ResponseEntity<Any> {
+        configurationLock.lock()
         try {
             if (serviceRoutes.isNotEmpty()) {
                 serviceRoutes.forEach { routeDTO ->
@@ -323,6 +352,7 @@ class ServiceController {
     )
     @PutMapping("/route/{id}")
     fun updateServiceRoute(@PathVariable("id") id: Int, @RequestBody serviceRoute: ServiceRouteDTO): ResponseEntity<Any> {
+        configurationLock.lock()
         val current = serviceRouteRepository.findById(id)
         if (current.isPresent) {
             try {
@@ -344,9 +374,18 @@ class ServiceController {
     )
     @DeleteMapping("/route/{id}")
     fun deleteServiceRoute(@PathVariable("id") id: Int): ResponseEntity<Any> {
+        configurationLock.route(id)
         val deleteRoute = serviceRouteRepository.findById(id)
         if (deleteRoute.isPresent) {
-            serviceRouteRepository.deleteById(id)
+            val route = deleteRoute.get()
+            if (route.source == RouteSource.GENERATED) {
+                // Preserve the managed key to prevent automatic recreation after manual deletion.
+                route.active = false
+                route.markManualChange()
+                serviceRouteRepository.save(route)
+            } else {
+                serviceRouteRepository.deleteById(id)
+            }
             return ResponseEntity.ok("Successfully deleted Service-route (id: $id)")
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Route is not found")
@@ -382,6 +421,7 @@ class ServiceController {
     )
     @PostMapping("/route/{id}/role")
     fun addServiceRouteRoles(@PathVariable("id") id: Int, @RequestBody roleNames: List<String>): ResponseEntity<Any> {
+        configurationLock.route(id)
         val current = serviceRouteRepository.findById(id)
         if (current.isPresent) {
             try {
@@ -391,6 +431,7 @@ class ServiceController {
                     roles.forEach {
                         route.addRole(it)
                     }
+                    route.markManualChange()
                     serviceRouteRepository.save(route)
                     return ResponseEntity.status(HttpStatus.OK).body("Successfully granted access to route for given roles. Route path: ${route.route}")
                 } else {
@@ -432,6 +473,7 @@ class ServiceController {
     )
     @DeleteMapping("/route/{id}/role")
     fun removeServiceRouteRoles(@PathVariable("id") id: Int, @RequestBody roleNames: List<String>): ResponseEntity<Any> {
+        configurationLock.route(id)
         val current = serviceRouteRepository.findById(id)
         if (current.isPresent) {
             if (roleNames.isNotEmpty()) {
@@ -439,6 +481,7 @@ class ServiceController {
                 roleRepository.findRolesByRoleIn(roleNames)
                     .filter { role -> route.roles.any { it.roleId == role.id } }
                     .forEach { role -> route.removeRole(role) }
+                route.markManualChange()
                 serviceRouteRepository.save(route)
                 return ResponseEntity.status(HttpStatus.OK).body("Successfully banned access to route for given roles. Route path: ${route.route}")
             } else {
@@ -485,6 +528,7 @@ class ServiceController {
     )
     @PostMapping("/route/{id}/filter")
     fun addServiceRouteFilters(@PathVariable("id") id: Int, @RequestBody filtersDTO: List<FilterDTO>): ResponseEntity<Any> {
+        configurationLock.route(id)
         val current = serviceRouteRepository.findById(id)
         if (current.isPresent) {
             try {
@@ -494,6 +538,7 @@ class ServiceController {
                     filters.forEach {
                         route.addFilter(it)
                     }
+                    route.markManualChange()
                     serviceRouteRepository.save(route)
                     return ResponseEntity.status(HttpStatus.OK).body("Successfully registered filters to route with path: ${route.route}")
                 } else {
@@ -535,6 +580,7 @@ class ServiceController {
     )
     @DeleteMapping("/route/{id}/filter")
     fun removeServiceRouteFilters(@PathVariable("id") id: Int, @RequestBody filterNames: List<String>): ResponseEntity<Any> {
+        configurationLock.route(id)
         val current = serviceRouteRepository.findById(id)
         if (current.isPresent) {
             if (filterNames.isNotEmpty()) {
@@ -542,6 +588,7 @@ class ServiceController {
                 filterService.getFiltersByNames(filterNames)
                     .filter { filter -> route.filters.any { it.filterId == filter.id } }
                     .forEach { filter -> route.removeFilter(filter) }
+                route.markManualChange()
                 serviceRouteRepository.save(route)
                 return ResponseEntity.status(HttpStatus.OK).body("Successfully unregistered filters from route with path: ${route.route}")
             } else {
@@ -587,6 +634,7 @@ class ServiceController {
     )
     @PostMapping("/route/{id}/predicate")
     fun addServiceRoutePredicates(@PathVariable("id") id: Int, @RequestBody predicatesDTO: List<PredicateDTO>): ResponseEntity<Any> {
+        configurationLock.route(id)
         val current = serviceRouteRepository.findById(id)
         if (current.isPresent) {
             try {
@@ -596,6 +644,7 @@ class ServiceController {
                     predicates.forEach {
                         route.addPredicate(it)
                     }
+                    route.markManualChange()
                     serviceRouteRepository.save(route)
                     return ResponseEntity.status(HttpStatus.OK).body("Successfully registered predicates to route with path: ${route.route}")
                 } else {
@@ -637,6 +686,7 @@ class ServiceController {
     )
     @DeleteMapping("/route/{id}/predicate")
     fun removeServiceRoutePredicates(@PathVariable("id") id: Int, @RequestBody predicateNames: List<String>): ResponseEntity<Any> {
+        configurationLock.route(id)
         val current = serviceRouteRepository.findById(id)
         if (current.isPresent) {
             if (predicateNames.isNotEmpty()) {
@@ -644,6 +694,7 @@ class ServiceController {
                 predicateService.getPredicatesByNames(predicateNames)
                     .filter { predicate -> route.predicates.any { it.predicateId == predicate.id } }
                     .forEach { predicate -> route.removePredicate(predicate) }
+                route.markManualChange()
                 serviceRouteRepository.save(route)
                 return ResponseEntity.status(HttpStatus.OK).body("Successfully unregistered predicates from route with path: ${route.route}")
             } else {
