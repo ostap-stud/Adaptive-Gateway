@@ -1,0 +1,14 @@
+spring:
+  config:
+    import: optional:file:./config/local.properties
+server:
+  address: 127.0.0.1
+  port: 8088
+  ssl:
+    enabled: false
+gateway:
+  refresh-key: ${GATEWAY_REFRESH_KEY}
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: false

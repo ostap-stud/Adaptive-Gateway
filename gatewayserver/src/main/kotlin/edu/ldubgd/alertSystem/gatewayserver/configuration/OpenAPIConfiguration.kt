@@ -2,6 +2,10 @@ package edu.ldubgd.alertSystem.gatewayserver.configuration
 
 import io.swagger.v3.oas.models.Components
 import io.swagger.v3.oas.models.OpenAPI
+import io.swagger.v3.oas.models.Operation
+import io.swagger.v3.oas.models.PathItem
+import io.swagger.v3.oas.models.responses.ApiResponse
+import io.swagger.v3.oas.models.responses.ApiResponses
 import io.swagger.v3.oas.models.info.Info
 import io.swagger.v3.oas.models.security.SecurityRequirement
 import io.swagger.v3.oas.models.security.SecurityScheme
@@ -20,6 +24,15 @@ class OpenAPIConfiguration {
         val securityScheme = "bearerAuth"
         return OpenAPI()
             .info(Info().title(title).version(version).description(description))
+            // Describe real Actuator endpoints without registering competing HTTP handlers.
+            .path("/actuator/gateway/refresh", PathItem().post(
+                actuatorOperation("Request route cache refresh")
+            ))
+            .path("/actuator/gateway/routes", PathItem().get(
+                actuatorOperation("Get current gateway routes")
+            ))
+            .path("/actuator/health", PathItem().get(actuatorOperation("Get gateway health")))
+            .path("/actuator/info", PathItem().get(actuatorOperation("Get gateway information")))
             .addSecurityItem(SecurityRequirement().addList(securityScheme))
             .components(
                 Components().addSecuritySchemes(
@@ -31,4 +44,11 @@ class OpenAPIConfiguration {
                     .bearerFormat("JWT")
             ))
     }
+
+    private fun actuatorOperation(summary: String): Operation = Operation()
+        .summary(summary)
+        .addTagsItem("Actuator API")
+        .responses(ApiResponses()
+            .addApiResponse("200", ApiResponse().description("Successful response"))
+            .addApiResponse("401", ApiResponse().description("Authorization required")))
 }

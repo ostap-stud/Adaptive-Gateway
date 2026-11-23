@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: adaptive-demo
+server:
+  address: 127.0.0.1
+  port: 8996
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: false
+openapi:
+  service:
+    url: http://localhost:8088

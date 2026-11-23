@@ -6,7 +6,10 @@ data class ServiceRouteDTO(
     val serviceName: String,
     val order: Int = 0,
     val filters: List<ServiceRouteFilterDTO> = emptyList(),
-    val predicates: List<ServiceRoutePredicateDTO> = emptyList()
+    val predicates: List<ServiceRoutePredicateDTO> = emptyList(),
+    val source: String = "MANUAL",
+    val serviceDatabaseId: Int = 0,
+    val configurationVersion: Long = 0
 )
 
 data class ServiceRoutePathDTO(

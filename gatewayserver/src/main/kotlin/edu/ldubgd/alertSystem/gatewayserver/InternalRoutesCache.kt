@@ -21,7 +21,7 @@ class InternalRoutesCache(
     @PostConstruct
     fun init() = refreshCachedRoutes()
 
-    @Scheduled(fixedDelay = 300_000)
+    @Scheduled(fixedDelayString = "\${gateway.internal-routes.refresh-delay-ms:300000}")
     fun refreshCachedRoutes(){
         internalRoutes = serviceRouteRepository.findAllInternalRoutes().toSet()
     }

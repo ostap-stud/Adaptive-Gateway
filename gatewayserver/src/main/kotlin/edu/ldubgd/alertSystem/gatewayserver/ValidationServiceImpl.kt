@@ -1,71 +1,51 @@
 package edu.ldubgd.alertSystem.gatewayserver
 
 import edu.ldubgd.alertSystem.gatewayserver.data.ValidateTokenRequest
+import org.springframework.beans.factory.annotation.Value
+import org.springframework.cloud.gateway.route.Route
+import org.springframework.cloud.gateway.support.ServerWebExchangeUtils.GATEWAY_ROUTE_ATTR
+import org.springframework.http.HttpHeaders
 import org.springframework.http.HttpStatus
+import org.springframework.http.HttpStatusCode
 import org.springframework.http.MediaType
 import org.springframework.stereotype.Service
-import org.springframework.web.client.HttpClientErrorException
 import org.springframework.web.reactive.function.client.WebClient
-import org.springframework.web.reactive.function.client.toEntity
 import org.springframework.web.server.ServerWebExchange
 import reactor.core.publisher.Mono
+import java.time.Duration
 
 @Service
 class ValidationServiceImpl(
-    webBuilder: WebClient.Builder
+    webBuilder: WebClient.Builder,
+    @Value("\${gateway.validation.timeout-ms:3000}") private val timeoutMs: Long = 3000
 ) : ValidationService<Void> {
-
-    private val webClient: WebClient = webBuilder.build()
+    private val webClient = webBuilder.build()
 
     override fun validateTokenForPath(
-        token: String?,
-        path: String,
-        method: String,
-        exchange: ServerWebExchange,
-        chain: (ServerWebExchange) -> Mono<Void>
+        token: String?, path: String, method: String,
+        exchange: ServerWebExchange, chain: (ServerWebExchange) -> Mono<Void>
     ): Mono<Void> {
-        return webClient.post()
+        val route = exchange.getAttribute<Route>(GATEWAY_ROUTE_ATTR)
+        val routeId = (route?.metadata?.get("databaseRouteId") as? Number)?.toInt()
+        val decision: Mono<HttpStatusCode> = webClient.post()
             .uri("http://auth-service/auth-service/validate")
-            .header("Authorization", token)
+            .headers { if (!token.isNullOrBlank()) it.set(HttpHeaders.AUTHORIZATION, token) }
             .contentType(MediaType.APPLICATION_JSON)
-            .bodyValue(ValidateTokenRequest(path, method))
-            .retrieve()
-            .onStatus(
-                { it.is4xxClientError }
-            ) { response ->
-                response.bodyToMono(String::class.java)
-                    .flatMap { body ->
-                        Mono.error {
-                            HttpClientErrorException.create(
-                                response.statusCode(),
-                                body,
-                                response.headers().asHttpHeaders(),
-                                byteArrayOf(), Charsets.UTF_8
-                            )
-                        }
-                    }
-            }
-            .toEntity<String>()
-            .flatMap { chain.invoke(exchange) }
-            .onErrorResume { ex -> validationErrorHandler(exchange, ex) }
-    }
+            .bodyValue(ValidateTokenRequest(path, method, routeId))
+            .exchangeToMono { response -> response.releaseBody().thenReturn(response.statusCode()) }
+            .timeout(Duration.ofMillis(timeoutMs))
+            .onErrorReturn(HttpStatus.SERVICE_UNAVAILABLE)
 
-    private fun validationErrorHandler(exchange: ServerWebExchange, ex: Throwable): Mono<Void> {
-        val response = exchange.response
-        response.headers.contentType = MediaType.TEXT_PLAIN
-        response.statusCode = HttpStatus.INTERNAL_SERVER_ERROR
-        val body = if (ex is HttpClientErrorException) {
-            response.statusCode = ex.statusCode
-            ex.responseHeaders?.forEach { name, values ->
-                response.headers.addAll(name, values)
+        // Catch only Auth transport failures; downstream failures keep their own semantics.
+        return decision.flatMap { status ->
+            if (status.value() == 200) chain(exchange)
+            else {
+                val clientStatus = if (status.value() in setOf(400, 401, 403, 404)) status else HttpStatus.SERVICE_UNAVAILABLE
+                exchange.response.statusCode = clientStatus
+                exchange.response.headers.contentType = MediaType.TEXT_PLAIN
+                val message = if (clientStatus.value() == 503) "Authorization service unavailable" else "Access denied"
+                exchange.response.writeWith(Mono.just(exchange.response.bufferFactory().wrap(message.toByteArray(Charsets.UTF_8))))
             }
-            ex.statusText.toByteArray(Charsets.UTF_8)
-        } else {
-            ex.message?.toByteArray(Charsets.UTF_8) ?: byteArrayOf()
         }
-        val buffer = response.bufferFactory().wrap(body)
-        return response.writeWith(Mono.just(buffer))
     }
-
-
 }

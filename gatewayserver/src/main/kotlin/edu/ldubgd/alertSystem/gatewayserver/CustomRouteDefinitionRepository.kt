@@ -29,6 +29,16 @@ class CustomRouteDefinitionRepository(
                 }
                 uri = URI.create(uriStr)
                 order = routeDTO.order
+                metadata = mutableMapOf<String, Any>(
+                    "databaseRouteId" to routeDTO.id,
+                    "configurationSource" to routeDTO.source,
+                    "serviceDatabaseId" to routeDTO.serviceDatabaseId,
+                    "configurationVersion" to routeDTO.configurationVersion
+                ).apply {
+                    if (!routeDTO.serviceName.startsWith("http")) {
+                        put("documentationPath", "/${routeDTO.serviceName}/v3/api-docs")
+                    }
+                }
                 val extraPaths = routeDTO.predicates
                     .filter { it.name == "Path" }
                     .joinToString(separator = ",") { it.args?.get("patterns").orEmpty() }
@@ -51,6 +61,11 @@ class CustomRouteDefinitionRepository(
                     FilterDefinition().apply {
                         name = filterDTO.name
                         args = filterDTO.args ?: emptyMap()
+                    }
+                }.toMutableList().apply {
+                    // Generated routes always ask Auth, including for PUBLIC operations.
+                    if (routeDTO.source == "GENERATED" && none { it.name == "Authentication" }) {
+                        add(0, FilterDefinition("Authentication"))
                     }
                 }
             }

@@ -20,6 +20,9 @@ class ServiceRouteRepositoryImpl(
                     r.id,
                     r.route,
                     r.order,
+                    r.source,
+                    s.id AS service_id,
+                    s.configuration_version,
                     s.service_name AS serviceName,
                     -- Aggregate route's filters to array
                     (
@@ -37,7 +40,7 @@ class ServiceRouteRepositoryImpl(
                     ) AS predicates
                 FROM users.route AS r
                 JOIN users.service AS s ON r.service_id = s.id
-                WHERE r.is_internal = false
+                WHERE r.is_internal = false AND r.active = true
             """
         val query = jdbcTemplate.query(sql) { result, _ ->
             ServiceRouteDTO(
@@ -45,6 +48,9 @@ class ServiceRouteRepositoryImpl(
                 route = result.getString("route"),
                 order = result.getInt("order"),
                 serviceName = result.getString("serviceName"),
+                source = result.getString("source"),
+                serviceDatabaseId = result.getInt("service_id"),
+                configurationVersion = result.getLong("configuration_version"),
                 filters = mapper.readValue(result.getString("filters")),
                 predicates = mapper.readValue(result.getString("predicates"))
             )
@@ -54,9 +60,10 @@ class ServiceRouteRepositoryImpl(
     }
 
     override fun findAllInternalRoutes(): List<ServiceRoutePathDTO> {
+        // Keep inactive internal paths guarded; Auth denies them instead of exposing the endpoint.
         val sql =
             """
-                SELECT r.route FROM route AS r 
+                SELECT r.route FROM users.route AS r
                 WHERE r.is_internal = true
             """
         return jdbcTemplate.query(sql) { result, _ ->
