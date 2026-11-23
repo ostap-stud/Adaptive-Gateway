@@ -1,0 +1,9 @@
+spring:
+  config:
+    import: optional:file:./config/local.properties
+manager:
+  mode: APPLY
+  admission-mode: DISCOVERY
+  auth-base-url: http://localhost:8334
+  auth-key: ${ADAPTIVE_SYNC_KEY}
+  poll-delay-ms: 5000

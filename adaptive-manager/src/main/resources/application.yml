@@ -1,0 +1,18 @@
+server:
+  address: 127.0.0.1
+  port: 8335
+spring:
+  application:
+    name: adaptive-manager
+manager:
+  mode: OBSERVE
+  allowed-services: []
+  polling-enabled: true
+  poll-delay-ms: 30000
+  initial-delay-ms: 1000
+  eureka-url: http://localhost:8761/eureka/
+  timeout-ms: 3000
+  max-response-bytes: 2097152
+  # Optional in OBSERVE; required in APPLY with ALLOWLIST or DISCOVERY admission.
+  auth-base-url: ""
+  auth-key: ""
