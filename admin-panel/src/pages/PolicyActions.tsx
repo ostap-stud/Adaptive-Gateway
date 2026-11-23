@@ -1,0 +1,27 @@
+import { useState } from 'react'
+import { ClipboardList, Pencil } from 'lucide-react'
+import { body, errorMessage, request } from '../api'
+import { Alert, Badge, DataTable, Field, Modal, RolePicker } from '../components'
+import { dateTime } from '../domain'
+import { useAuth, useData, useToast } from '../state'
+import type { Operation } from '../types'
+
+export function PolicyActions({operation}:{operation:Operation}) {
+  const [open,setOpen]=useState(false),[source,setSource]=useState('ADMIN'),[access,setAccess]=useState('AUTHENTICATED'),[selected,setSelected]=useState<string[]>([]),[force,setForce]=useState(false),[reason,setReason]=useState(''),[confirm,setConfirm]=useState(false),[busy,setBusy]=useState(false),[error,setError]=useState('')
+  const {roles,errors,refresh}=useData(),{token}=useAuth(),notify=useToast()
+  const existing=operation.policies.find(p=>p.source===source)
+  function chooseSource(value:string){const policy=operation.policies.find(p=>p.source===value);setSource(value);setAccess(policy?.accessType || 'AUTHENTICATED');setSelected(policy?.roles || []);setForce(policy?.forceOverride || false);setConfirm(false)}
+  async function save(remove=false){
+    setBusy(true);setError('')
+    try{await request(`/policy/operations/${operation.id}/${source}`,token,{method:remove?'DELETE':'PUT',body:body(remove?{reason:reason.trim()}:{accessType:access,roles:access==='ROLES'?selected:[],forceOverride:source==='ADMIN'&&force,reason:reason.trim()})});notify(remove?'Шар політики видалено.':'Політику доступу збережено.');setOpen(false);await refresh()}
+    catch(error){setError(errorMessage(error))}finally{setBusy(false)}
+  }
+  return <><button className="button small-button" disabled={!!errors.roles} onClick={()=>{chooseSource('ADMIN');setReason('');setError('');setOpen(true)}} aria-label={`Політика ${operation.http_method} ${operation.gateway_path}`}><Pencil size={14}/>Політика</button>{open&&<Modal title="Політика API operation" busy={busy} onClose={()=>setOpen(false)} footer={<><button className="button" disabled={busy} onClick={()=>setOpen(false)}>Скасувати</button>{existing&&<button className="button danger-button" disabled={busy||!reason.trim()||!confirm} onClick={()=>void save(true)}>Видалити {source}</button>}<button className="button primary" disabled={busy||!reason.trim()||!confirm||(access==='ROLES'&&!selected.length)} onClick={()=>void save()}>{busy?'Збереження…':'Зберегти політику'}</button></>}><div className="modal-subject"><strong>{operation.http_method} {operation.gateway_path}</strong></div>{error&&<Alert>{error}</Alert>}<div className="tag-group">{operation.policies.map(policy=><Badge key={policy.id}>{policy.source}: {policy.accessType}{policy.forceOverride?' · FORCE':''}</Badge>)}</div><Field label="Редагований шар"><select disabled={busy} value={source} onChange={e=>chooseSource(e.target.value)}><option>ADMIN</option><option>CENTRAL</option></select></Field><Field label="Тип доступу"><select disabled={busy} value={access} onChange={e=>{setAccess(e.target.value);setConfirm(false)}}>{['PUBLIC','AUTHENTICATED','ROLES','BLOCKED'].map(type=><option key={type}>{type}</option>)}</select></Field>{access==='ROLES'&&<RolePicker roles={roles} value={selected} onChange={setSelected} disabled={busy}/>} {source==='ADMIN'&&<label className="check-inline"><input type="checkbox" checked={force} disabled={busy} onChange={e=>{setForce(e.target.checked);setConfirm(false)}}/>Force override</label>}<Field label="Причина зміни політики" hint="Обов’язкова причина записується до аудиту."><textarea required maxLength={2000} rows={3} value={reason} disabled={busy} onChange={e=>setReason(e.target.value)}/></Field><Alert tone={force?'warning':'info'}>{force?'ADMIN force замінює інші шари, у тому числі може відкрити раніше заблокований доступ.':'CENTRAL та звичайний ADMIN поєднуються з OPENAPI обмежувально. Видалення шару повертає дію решти політик.'} OPENAPI та DEFAULT тут не редагуються.</Alert><label className="confirm-check"><input type="checkbox" disabled={busy} checked={confirm} onChange={e=>setConfirm(e.target.checked)}/><span>Підтверджую зміну доступу до цієї операції.</span></label></Modal>}</>
+}
+
+interface AuditEntry {id:number;actor:string;action:string;target:string;reason:string;occurred_at?:string;before_state?:unknown;after_state?:unknown}
+export function AuditViewer(){
+  const {token}=useAuth(),[open,setOpen]=useState(false),[entries,setEntries]=useState<AuditEntry[]>([]),[busy,setBusy]=useState(false),[error,setError]=useState('')
+  async function show(){setOpen(true);setBusy(true);setError('');try{setEntries(await request<AuditEntry[]>('/policy/audit',token))}catch(error){setError(errorMessage(error))}finally{setBusy(false)}}
+  return <><button className="button" onClick={()=>void show()}><ClipboardList size={16}/>Аудит політик</button>{open&&<Modal title="Останні 100 змін політик і mappings" onClose={()=>setOpen(false)}>{error&&<Alert>{error}</Alert>}{busy?<p>Завантаження…</p>:<DataTable headers={['Час / адміністратор','Дія / ціль','Причина']} empty={!entries.length}>{entries.map(entry=><tr key={entry.id}><td>{dateTime(entry.occurred_at)}<small className="cell-sub">{entry.actor}</small></td><td>{entry.action}<small className="cell-sub">{entry.target}</small></td><td>{entry.reason}<details><summary>До / після</summary><pre className="audit-json">{JSON.stringify({before:entry.before_state,after:entry.after_state},null,2)}</pre></details></td></tr>)}</DataTable>}</Modal>}</>
+}
