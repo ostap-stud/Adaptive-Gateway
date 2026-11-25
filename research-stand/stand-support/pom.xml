@@ -1,0 +1,9 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>edu.ldubgd.stand</groupId>
+    <artifactId>research-stand</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <artifactId>stand-support</artifactId>
+</project>

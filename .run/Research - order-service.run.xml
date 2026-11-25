@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Research - order-service" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="stand.order.ApplicationKt" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <module name="order-service" />
+    <method v="2"><option name="Make" enabled="true" /></method>
+  </configuration>
+</component>

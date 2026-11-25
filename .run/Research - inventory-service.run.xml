@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Research - inventory-service" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="stand.inventory.ApplicationKt" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <module name="inventory-service" />
+    <method v="2"><option name="Make" enabled="true" /></method>
+  </configuration>
+</component>

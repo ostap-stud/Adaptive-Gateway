@@ -1,0 +1,4 @@
+STAND_DB=adaptive_commerce
+STAND_PG_PORT=5432
+STAND_DB_USER=postgres
+STAND_DB_PASSWORD=

@@ -1,0 +1,48 @@
+# IntelliJ HTTP Client. Оберіть оточення local з кореня Adaptive Gateway.
+# Для входу заповніть штатний приватний файл змінних. Запускайте запити по одному.
+
+### Публічний каталог через Gateway
+GET {{gateway}}/catalog-service/products?page=0&size=5&minPrice=100&q=USB
+
+### Вхід звичайного тестового користувача
+POST {{auth}}/login
+Content-Type: application/json
+
+{"login":"{{userLogin}}","password":"{{userPassword}}"}
+
+> {%
+  client.test("Login", () => client.assert(response.status === 200));
+  if (response.status === 200) client.global.set("commerceToken", String(response.body).trim());
+%}
+
+### Нова покупка. Для повтору після помилки використайте UUID з історії запиту
+POST {{gateway}}/order-service/orders
+Authorization: Bearer {{commerceToken}}
+Content-Type: application/json
+
+{"id":"{{$uuid}}","items":[{"productId":1,"quantity":2},{"productId":2,"quantity":1}]}
+
+> {%
+  if (response.status === 201) client.global.set("commerceOrderId", response.body.id);
+%}
+
+### Читання замовлення з дозволом orders.read
+GET {{gateway}}/order-service/orders/{{commerceOrderId}}
+Authorization: Bearer {{commerceToken}}
+
+### Скасування з дозволом orders.manage
+POST {{gateway}}/order-service/orders/{{commerceOrderId}}/cancel
+Authorization: Bearer {{commerceToken}}
+
+### Порівняння політик експериментальної операції
+GET {{gateway}}/catalog-service/selection
+
+###
+GET {{gateway}}/catalog-service/selection
+Authorization: Bearer {{commerceToken}}
+
+### Чинна специфікація через Gateway
+GET {{gateway}}/swagger/services/catalog-service
+
+### Останнє спостереження Manager
+GET {{manager}}/observations

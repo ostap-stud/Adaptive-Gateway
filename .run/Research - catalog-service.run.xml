@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Research - catalog-service" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="stand.catalog.ApplicationKt" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <module name="catalog-service" />
+    <method v="2"><option name="Make" enabled="true" /></method>
+  </configuration>
+</component>

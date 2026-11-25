@@ -1,0 +1,36 @@
+server:
+  address: 127.0.0.1
+  port: 8911
+  error:
+    include-message: always
+spring:
+  application:
+    name: catalog-service
+  config:
+    import: optional:file:./research-stand/local.properties,optional:file:./local.properties
+  datasource:
+    url: jdbc:postgresql://${STAND_PG_HOST:127.0.0.1}:${STAND_PG_PORT:5432}/${STAND_DB:adaptive_commerce}?currentSchema=catalog
+    username: ${STAND_DB_USER:postgres}
+    password: ${STAND_DB_PASSWORD:}
+  sql:
+    init:
+      mode: always
+  jackson:
+    deserialization:
+      fail-on-null-for-primitives: true
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    metadata-map:
+      "[gateway.enabled]": "true"
+      "[gateway.base-path]": "/catalog-service"
+      "[gateway.openapi-path]": "/catalog-service/v3/api-docs"
+  client:
+    service-url:
+      defaultZone: ${STAND_EUREKA:http://127.0.0.1:8761/eureka/}
+springdoc:
+  paths-to-match: /catalog-service/**
+  api-docs:
+    path: /catalog-service/v3/api-docs
+  swagger-ui:
+    enabled: false
