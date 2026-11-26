@@ -1,0 +1,87 @@
+{
+  "section": "4.4",
+  "start": "2026-11-26T14:27:08.705800+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "java": "java version \"21.0.10\" 2026-01-20 LTS\nJava(TM) SE Runtime Environment (build 21.0.10+8-LTS-217)\nJava HotSpot(TM) 64-Bit Server VM (build 21.0.10+8-LTS-217, mixed mode, sharing)",
+  "postgres": "postgres (PostgreSQL) 18.6",
+  "manager_delay_s": 1.5,
+  "probe_sleep_s": 0.1,
+  "registry_cache_ms": 1000,
+  "gateway_registry_fetch_s": 2,
+  "loadbalancer_cache_ttl_s": 1,
+  "pg_port": 39547,
+  "registration_port": 38763,
+  "refresh_port": 38089,
+  "endpoints": {
+    "eureka": "http://127.0.0.1:38761",
+    "auth": "http://127.0.0.1:38334",
+    "gateway": "http://127.0.0.1:38088",
+    "manager": "http://127.0.0.1:38335",
+    "catalog": "http://127.0.0.1:38911",
+    "inventory": "http://127.0.0.1:38912",
+    "order": "http://127.0.0.1:38913",
+    "registry": "http://127.0.0.1:38762",
+    "docs": "http://127.0.0.1:38914",
+    "sync": "http://127.0.0.1:38336"
+  },
+  "profile": "expanded",
+  "pairs": 10,
+  "route_batch": [
+    {
+      "route": "/catalog-service/**",
+      "serviceName": "catalog-service",
+      "isInternal": false,
+      "routeDescription": "Catalog GET",
+      "order": 0,
+      "predicates": [
+        {
+          "name": "Method",
+          "args": {
+            "methods": "GET"
+          }
+        }
+      ],
+      "filters": [],
+      "roles": []
+    },
+    {
+      "route": "/catalog-service/**",
+      "serviceName": "catalog-service",
+      "isInternal": false,
+      "routeDescription": "Catalog POST,PUT,DELETE",
+      "order": 1,
+      "predicates": [
+        {
+          "name": "Method",
+          "args": {
+            "methods": "POST,PUT,DELETE"
+          }
+        }
+      ],
+      "filters": [
+        {
+          "name": "Authentication",
+          "args": {}
+        }
+      ],
+      "roles": [
+        "ROLE_EXPERIMENT_WRITER"
+      ]
+    }
+  ],
+  "jar_sha256": {
+    "eureka": "849eec5265776fe232e001ab83498adfbf6ccf35eeddf0f99ff7fa8b576b2193",
+    "gateway": "94b9a34a03c0ae30a5fe271b6126f36aa30582989ccb5dbac7f8311d3c530d46",
+    "auth": "eeee41f7100d4bafc9795b0ae87488423875cd43d65f849a12c94ee4cb11b274",
+    "manager": "4c7e3f46806a840d3f710fcdb83d82d506dcac60da849be5ff74fb84a4556dc1",
+    "catalog": "1c3d4579edbca03dd79a7c47ed17967d51218f7b5502610dc992415c34cd6b6f",
+    "order": "cc74789eff7e241c87f9b13f16d483c84c773a2aa5b47d2c7474a561562e0833",
+    "inventory": "b4b56d3da80029f4173264f5f436b83db70b4c5a7100afb8cccafceb90e7d05b"
+  },
+  "jvm_options": "-XX:ActiveProcessorCount=2 -XX:TieredStopAtLevel=1 -Xmx300m",
+  "expanded_contract_sha256": "6e5ff4e9b619634ac616152482914a87338c5143db9dea4b8d0bb285f087a2c5",
+  "error": "writer create: HTTP 404, expected (201,)",
+  "finished": "2026-11-26T14:29:12.110637+00:00",
+  "completed": 1
+}

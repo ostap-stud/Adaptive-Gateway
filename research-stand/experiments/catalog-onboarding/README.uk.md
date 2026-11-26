@@ -1,5 +1,25 @@
 # Запуск додаткових сценаріїв на Windows
 
+## Окремий прогін 4.4 із двома MANUAL-маршрутами
+
+З кореня Adaptive-Gateway у PowerShell виконайте команду нижче. Вона запускає тільки 10 пар порівняння 4.4. Кожен запуск створює власний каталог `results/4.4-methods-<UTC>`.
+
+```powershell
+python -B research-stand/experiments/catalog-onboarding/compare44.py --pg-bin "C:\Program Files\PostgreSQL\18\bin" --java "D:\java\jdk-21.0.10\bin\java.exe"
+```
+
+Перевірка збережених результатів без запуску стенду:
+
+```powershell
+python -B research-stand/experiments/catalog-onboarding/verify44.py "research-stand/experiments/catalog-onboarding/results/ID_ПРОГОНУ"
+```
+
+[Звіт 4.4](REPORT-4.4.uk.md) · [Інструкція для вимірювання часу оператора](ADMIN-PANEL-4.4.uk.md)
+
+## Архівний комбінований прогін 4.3–4.5
+
+Команда нижче відтворює попередню методику, включно із захищеним MANUAL-маршрутом на весь Catalog.
+
 У корені локального Adaptive-Gateway мають бути зібрані виконувані JAR для Eureka, Auth, Gateway, Adaptive Manager та трьох сервісів дослідницького стенду. Потрібні Python 3.10+, Java 21 та локальні програми PostgreSQL 18 (`initdb`, `postgres`, `pg_ctl`, `pg_isready`, `psql`). Скрипт використовує стандартну бібліотеку Python. Приклад для PowerShell з кореня репозиторію:
 
 ```powershell
