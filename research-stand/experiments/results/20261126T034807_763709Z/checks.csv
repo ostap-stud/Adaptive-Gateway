@@ -1,0 +1,5 @@
+﻿section,scenario,arm,manager_delay_s,attempted,passed,failed
+4.6,fixed_window,,1.0,10,10,0
+4.6,fixed_window,,3.0,10,10,0
+4.6,fixed_window,,5.0,10,10,0
+4.6,fixed_window,,10.0,10,10,0

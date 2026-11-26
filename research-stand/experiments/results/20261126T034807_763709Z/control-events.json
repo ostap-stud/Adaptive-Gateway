@@ -1,0 +1,5150 @@
+[
+  {
+    "kind": "cycle",
+    "start_ns": 5579121338367100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579121361134600,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579121458972900,
+    "end_ns": 5579121784032300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 1,
+    "request_id": "c214d46f-ec87-3e67-a3e8-92e4a7d79242"
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579122395202900,
+    "end_ns": 5579122444792600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/inventory-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 1,
+    "request_id": "08030cfa-47d7-3587-bc8f-64c98fbc453b"
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579123057841500,
+    "end_ns": 5579123082909000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/order-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 1,
+    "request_id": "138b84be-5b8b-343e-8fc0-76dced3a59b1"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579135335537800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579135446709300,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579139107279200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579139115094500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579139168559700,
+    "end_ns": 5579139221202700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 2,
+    "request_id": "8e4265b7-d2ba-304c-aaad-87cccfb9585f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579142298215300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579142317266000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579142351375000,
+    "end_ns": 5579142406932500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 3,
+    "request_id": "d23e9034-edf1-3ebf-86d0-f1ff5bcb84fc"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579145489472000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579145505696700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579148586321500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579148592803000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579151668746800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579151687264600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579154750866800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579154774619100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579157941324500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579157964458000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579161039687700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579161059350700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579164112241000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579164131851500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579164164918900,
+    "end_ns": 5579164207762100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 4,
+    "request_id": "0a370873-f61f-3e6c-9eaa-1972a9cd635f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579167254443700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579167272798900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579167304018600,
+    "end_ns": 5579167363906000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 5,
+    "request_id": "08772021-5b44-3304-85e9-731e73301975"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579170420605600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579170440931500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579173529444400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579173547033400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579176652237600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579176681479200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579179770752500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579179778918200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579182887663700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579182911365800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579186020183300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579186028624300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579189125219600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579189128772400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579189159615500,
+    "end_ns": 5579189180846300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 6,
+    "request_id": "2e3ff4ab-166a-38a2-b12a-1ad0848dfec9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579192239311800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579192260759700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579192272169400,
+    "end_ns": 5579192322740900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 7,
+    "request_id": "83994c81-1c46-3ea5-b94b-0f65f893420d"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579195399573600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579195432410000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579198518114300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579198521667500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579201595514900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579201617236500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579204704474900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579204708971200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579207736674600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579207755826100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579210853480600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579210863085500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579213952656900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579213955877500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579213971556200,
+    "end_ns": 5579214000053100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 8,
+    "request_id": "09ca5137-383e-3664-a8d0-d2db9466038b"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579217042313900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579217060753100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579217092065100,
+    "end_ns": 5579217112617000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 9,
+    "request_id": "eb4de71e-ad00-3027-8eb3-b1a3007b6620"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579220149229500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579220166465600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579223230010900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579223234300300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579226311330000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579226321430700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579229397339200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579229420117100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579232495525000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579232510294900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579235635295100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579235639572000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579238694910900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579238714960000,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579238751973500,
+    "end_ns": 5579238791328800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 10,
+    "request_id": "519f764c-14fe-30a4-b5f9-46f68161e15a"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579241817778400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579241836148400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579241867993200,
+    "end_ns": 5579241888130500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 11,
+    "request_id": "1ae9c5d7-1ee2-3859-a892-2f8b4bf3ad64"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579244912916400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579244955600000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579248013263700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579248030732300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579251112295300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579251129158100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579254223465500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579254246017800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579257344925400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579257369257200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579260484257500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579260490922000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579263591786200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579263613696600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579263650170000,
+    "end_ns": 5579263728519500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 12,
+    "request_id": "92f6667b-e0f9-3296-b8ee-7b3ec16a2701"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579266779319600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579266800581000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579266835261600,
+    "end_ns": 5579266851782100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 13,
+    "request_id": "a1c70a33-1c14-355c-b002-239ea4e1ff04"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579269917772600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579269954462700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579273080590300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579273099687600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579276193263500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579276199851000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579279303339500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579279340986400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579282479614600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579282515585500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579285620254400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579285656969600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579288785172500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579288794689000,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579288828070800,
+    "end_ns": 5579288869981000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 14,
+    "request_id": "b50d1c96-68c9-39c8-9eb8-a0b0c63ba1e2"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579291946709400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579291952316400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579291985384400,
+    "end_ns": 5579292037048300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 15,
+    "request_id": "a55f7bba-b414-3172-8cd7-cf466a145ceb"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579295109083400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579295127352200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579298240870800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579298248543800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579301340824000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579301348524100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579304447016700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579304483313700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579307570109100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579307606149400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579310702362000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579310719233000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579313819818200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579313861045100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579313913026200,
+    "end_ns": 5579313966830300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 16,
+    "request_id": "3f571e9d-9e80-3658-8980-464ff377b744"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579317033340000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579317051082800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579317067950500,
+    "end_ns": 5579317106382400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 17,
+    "request_id": "a961a5c7-ea0c-30e3-8eea-947c8637b759"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579320172235800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579320188680400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579323246234400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579323267253700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579326368307700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579326388484200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579329494011100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579329514800400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579332615761900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579332622051700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579335696444600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579335716605200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579338815886700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579338854430900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579338876360000,
+    "end_ns": 5579338910051500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 18,
+    "request_id": "8718078a-86c2-3d34-958f-775703cae189"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579341975132400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579341992030800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579341997941800,
+    "end_ns": 5579342014480900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 19,
+    "request_id": "f0b2ece9-2a86-3b18-b523-737bbb5b3027"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579345058800800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579345080185800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579348187688600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579348218408400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579351333375900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579351351077000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579354444228600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579354463032000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579357528984100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579357533816000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579360643287100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579360662186300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579363767572600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579363788665500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579363823295100,
+    "end_ns": 5579363873540800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 20,
+    "request_id": "1ae87b86-eb19-3342-844b-11ca8abcce25"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579366947911600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579366984329400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579367016010900,
+    "end_ns": 5579367052432900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 21,
+    "request_id": "08b50123-a30d-3485-9c27-729bc2b6444f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579370102063400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579370140675800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579373261478200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579373293106600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579376399019300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579376419416700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579379527753800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579379550342800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579382641278200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579382682073200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579385800264100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579385835455900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579399216138100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579399235909100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579404418319200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579404445120600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579404483234300,
+    "end_ns": 5579404535987500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 22,
+    "request_id": "143ecad1-10be-3646-a50f-634b46548b8c"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579409598720800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579409614696300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579409651780500,
+    "end_ns": 5579409703878600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 23,
+    "request_id": "e52cb3fb-5105-3b90-b97b-e21a415c2d4e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579414790442400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579414826347700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579419936185400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579419970653600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579425080104300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579425089637300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579430197204300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579430212612900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579430262481900,
+    "end_ns": 5579430330939300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 24,
+    "request_id": "3e1d8afe-c8d7-3a69-9a7a-338a82015f30"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579435414347600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579435433161500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579435475307700,
+    "end_ns": 5579435514791500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 25,
+    "request_id": "57131f83-5335-3427-b6ae-9efcaebdcbdf"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579440583010900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579440611587500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579445671815900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579445680900000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579450780421600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579450802004000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579455964555300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579455997197500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579456025922000,
+    "end_ns": 5579456071011800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 26,
+    "request_id": "c04b7020-58d8-36c7-9521-5fde9065ebcf"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579461149892200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579461173572200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579461185667800,
+    "end_ns": 5579461202453700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 27,
+    "request_id": "f38efa8d-5200-3489-bc50-0878beb415fe"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579466289056900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579466315292200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579471451216400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579471459010100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579476551563100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579476582893400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579481667995000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579481706606100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579481766625700,
+    "end_ns": 5579481813138400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 28,
+    "request_id": "801f2ea3-7fe0-3a28-9c23-fe6f30c68d24"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579486900790700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579486910336100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579486960270000,
+    "end_ns": 5579487000918100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 29,
+    "request_id": "c2e345a6-06b5-3e26-8ca3-a1b2e7a444e3"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579492044697400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579492061334500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579497109441600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579497127302600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579502202616200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579502218551100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579507253199900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579507258543400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579507264278500,
+    "end_ns": 5579507279813700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 30,
+    "request_id": "93572e4d-72f7-382b-a0b1-9797559373fa"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579512344145000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579512348023000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579512354308700,
+    "end_ns": 5579512373349500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 31,
+    "request_id": "413fb845-3001-35cf-b1fc-367dba56f738"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579517449441200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579517484286500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579522583725700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579522606863900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579527718163400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579527735033500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579532822535900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579532829792900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579532856202100,
+    "end_ns": 5579532888979700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 32,
+    "request_id": "d1fa89d5-3647-341e-8ec0-52b7c80cb4cc"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579537928145700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579537947341700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579537981470900,
+    "end_ns": 5579538021283000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 33,
+    "request_id": "b0ee01ac-1aba-338a-b552-7acfc15554b0"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579543072740500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579543088831400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579548257998600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579548261103600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579553366193700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579553388914900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579558495513600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579558527915800,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579558563010900,
+    "end_ns": 5579558606970500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 34,
+    "request_id": "166e5eb5-6a33-32ca-8213-0aac4b964a2a"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579563643692800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579563664933700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579563698104000,
+    "end_ns": 5579563751786300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 35,
+    "request_id": "a001319c-7235-3943-a289-bff1f6d71e83"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579568824916900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579568828399200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579573927938800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579573950716100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579579044322000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579579047761600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579584140721400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579584155208200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579584198697700,
+    "end_ns": 5579584238330900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 36,
+    "request_id": "1ff3defe-6af7-3e3b-9bb7-6cd7494fcc24"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579589291060100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579589313518200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579589326892700,
+    "end_ns": 5579589381996000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 37,
+    "request_id": "d6e366e2-d4f3-3f0b-a4e8-447a11cc6b0d"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579594450141800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579594486436700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579599632606000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579599675862700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579604793342400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579604834923200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579609979664600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579609996219600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579610013090300,
+    "end_ns": 5579610037922200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 38,
+    "request_id": "79bb539b-8458-3840-8907-e17c35518747"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579615070011900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579615090808800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579615119413900,
+    "end_ns": 5579615179110000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 39,
+    "request_id": "37263046-ec51-3e3e-a415-ad7f774a1f43"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579620250103300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579620275485100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579625389370900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579625394820300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579630490367300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579630494956200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579635609549100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579635613027400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579635643935800,
+    "end_ns": 5579635673520100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 40,
+    "request_id": "2b870282-8722-3a2b-9c62-91aba8e1fbf6"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579640750970300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579640786726300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579640813777000,
+    "end_ns": 5579640829932500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 41,
+    "request_id": "5280972e-cd71-30a7-932c-3e26aeef5975"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579645878983800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579645922641700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579651061986800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579651083625100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579656187467200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579656226771000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579670378834800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579670417939600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579671508584100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579671511794400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579671543011100,
+    "end_ns": 5579671567431700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 42,
+    "request_id": "a40da78e-2629-3f58-8200-50a36d806038"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579672619865500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579672637821200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579672654610500,
+    "end_ns": 5579672679420900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 43,
+    "request_id": "f6f9f739-d86d-34c2-8c7b-47254963d76c"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579673716864700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579673733570200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579674810504800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579674845233000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579675944040200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579675983554700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579677087476500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579677106191400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579678214634500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579678251568100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579679364016500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579679387453000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579680480402500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579680497997300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579681569628800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579681595240500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579682696113600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579682702513700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579683817072400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579683841602700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579684942952800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579684980900500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579686126122100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579686137544600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579687250972600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579687267301700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579688384285500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579688421816200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579689502888500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579689520008100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579690577161900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579690594375900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579691645372000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579691649027200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579692675526400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579692693295800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579693771316000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579693789977600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579694925248300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579694943100300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579696095793200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579696130630600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579696161341200,
+    "end_ns": 5579696199406400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 44,
+    "request_id": "f7ddae01-e142-3877-86b3-ae0cb9044248"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579697270397600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579697288991100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579697326971000,
+    "end_ns": 5579697367427300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 45,
+    "request_id": "27ee4a7d-fc8f-32c6-b9d1-fbb747e8211e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579698450814400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579698475370300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579699572282600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579699615016700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579700771310300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579700810462500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579701936085600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579701975068100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579703135034100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579703145219200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579704296703500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579704340262300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579705491137800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579705533002200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579706641214300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579706680189400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579707808229200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579707843514600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579708954377500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579708995260700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579710116440300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579710158009000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579711236059400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579711274353100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579712411024600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579712447188100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579713569520900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579713606439400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579714703800500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579714745177700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579715839758400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579715878809000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579717002255100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579717043865000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579718173871400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579718213297800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579719326675100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579719373883000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579720522726100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579720560762600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579720570184800,
+    "end_ns": 5579720582597300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 46,
+    "request_id": "9657b8c8-4802-3fd4-ba72-90ddc556a78f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579721657720700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579721679520100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579721692470900,
+    "end_ns": 5579721745626200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 47,
+    "request_id": "aa252f42-2704-34ca-92c0-0ce02ce5447b"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579722826613800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579722867803100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579724025698700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579724061359400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579725188713700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579725224541300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579726327012400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579726372190800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579727487703400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579727509892100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579728527800400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579728545264900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579729628732800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579729637303300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579730710680000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579730751794200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579731837083000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579731876949500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579733032802000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579733071418200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579734197553400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579734236182900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579735353201300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579735374440100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579736476525800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579736511953300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579737628396400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579737666589900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579738805532900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579738849809300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579740002178200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579740043907700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579741194216900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579741234618400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579742309935200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579742317360400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579743418372300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579743460363900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579744618573600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579744658135200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579745774638100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579745780871500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579745812323800,
+    "end_ns": 5579745859692500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 48,
+    "request_id": "257c4e83-ff01-3ed8-b2db-4bb80dfbf44c"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579746928647200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579746965560600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579746999130900,
+    "end_ns": 5579747043809500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 49,
+    "request_id": "7ee29b5d-7e42-3226-97dd-77c8783c627f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579748114036900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579748129834000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579749231432600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579749249627500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579750386656300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579750397813200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579751478787500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579751492241300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579752633474400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579752672099500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579753816040500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579753860166000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579754981408800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579755002782700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579756134139200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579756169885600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579757250720200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579757258559300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579758342217200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579758381766900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579759504678100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579759546635600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579760636736700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579760679005900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579761803486700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579761840596500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579762965758400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579762971859800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579764120606700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579764156424900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579765264938600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579765287870700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579766392091700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579766403227800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579767555304800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579767567246400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579768695037900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579768728494400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579769812726500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579769853342200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579770979027500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579770988589900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579771014743800,
+    "end_ns": 5579771063579700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 50,
+    "request_id": "cb54b08c-3ab8-3e27-8196-cd083535bb53"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579772124175400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579772145348800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579772171484100,
+    "end_ns": 5579772201010600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 51,
+    "request_id": "d280dff1-d7aa-3d9b-9508-d311268498cf"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579773262896400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579773301988400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579774427148000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579774442056300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579775562814100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579775565873800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579776669026800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579776707288900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579777803908700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579777821896700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579778938086000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579778974998800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579780084453800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579780087216200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579781175341300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579781183989600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579782267963200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579782279411700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579783369556800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579783410598900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579784534152900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579784550473600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579785625517700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579785664329000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579786759334700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579786776586700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579787823098800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579787847191400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579788948144500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579788989099000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579790098763700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579790131735900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579791233161900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579791273524100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579792427426600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579792464874200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579793564813400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579793602014100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579794702220900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579794741656400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579795901086800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579795914037500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579795925392600,
+    "end_ns": 5579795942030000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 52,
+    "request_id": "8922968d-e741-38ef-88d8-bd385f30dd9b"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579796991196800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579797006323200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579798158263300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579798169422600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579798191917300,
+    "end_ns": 5579798233361000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 53,
+    "request_id": "514dc49f-dbf3-3a81-bb8f-2f66160f7d3d"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579799281196500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579799290243200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579800442710200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579800457555400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579801545429700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579801561651400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579802672067100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579802681876300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579803790246000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579803812433000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579804924118500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579804938689500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579806076617600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579806115362800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579807229815600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579807262009100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579808377786000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579808402140100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579809503718700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579809521020600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579810590601500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579810609657300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579811700544500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579811706647400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579812848557600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579812863791100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579813972967400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579814012992200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579815123916100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579815158259900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579816226982500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579816241789400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579817334638200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579817345585900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579818435226600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579818451661300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579819529375100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579819565251300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579820694330800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579820712722400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579820741373200,
+    "end_ns": 5579820765181300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 54,
+    "request_id": "e0677944-63a8-382e-b50e-d6e6cd1cf0cb"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579821799436200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579821816938700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579821823590700,
+    "end_ns": 5579821837297000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 55,
+    "request_id": "6a6ab1d5-83cf-3740-a08c-b560dd192c2d"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579822862563200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579822901858600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579824012196800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579824049522300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579825149700600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579825160962500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579826245891100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579826258361700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579827394464000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579827435283000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579828610320800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579828621857500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579829741758600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579829762979000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579830883955700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579830894829700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579831998442100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579832016538900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579833091115300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579833128841300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579834244246400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579834254524900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579835350735500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579835388550200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579836482686000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579836491427100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579837575865700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579837594502600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579838711377100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579838728196200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579839787115500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579839807508200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579840906993500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579840948120400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579842040804500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579842058345800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579843160953600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579843178822800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579844346234800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579844367229900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579845509712000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579845523675400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579845570745400,
+    "end_ns": 5579845611685800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 56,
+    "request_id": "0e29a6a0-cbaa-3054-ae89-2a333892aa39"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579846677302200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579846688270200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579847806069600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579847822780800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579847840434200,
+    "end_ns": 5579847864997200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 57,
+    "request_id": "a73f71c5-cfd0-3611-bbcb-70aaa5d8f051"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579848887547200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579848904746800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579849940354600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579849956776700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579850999885100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579851002282100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579852035094100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579852037803300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579853083347400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579853098061900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579854209389000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579854227791800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579855305253000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579855310431800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579856337388900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579856355741900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579857466438900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579857476740000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579858583674500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579858600889900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579859733604800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579859767543200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579860895777600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579860916563800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579862029728500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579862044201800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579863151209800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579863186849200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579864282943400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579864299028600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579865370458100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579865374542500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579866450721200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579866487242500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579867566031100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579867570079700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579868669849000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579868674119900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579869774081400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579869793473100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579870908348000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579870918216000,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579870965422800,
+    "end_ns": 5579871018296600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 58,
+    "request_id": "1bb619d8-c595-36b7-9e3f-84f0fd1c282e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579872101655500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579872122384900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579872174379400,
+    "end_ns": 5579872210743800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 59,
+    "request_id": "10b81f2f-da67-3c28-abef-b544dd42ae5a"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579873247821100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579873265697800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579874337252700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579874344634300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579875401460300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579875408094200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579876509482100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579876542039300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579877642823800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579877659155000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579878745620100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579878777986500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579879867105500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579879890980800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579881003373400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579881022135900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579882087830400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579882106344600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579883175065700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579883192445600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579884253333000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579884269131600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579885373960500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579885391544200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579886482983400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579886515321700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579887615072000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579887637042900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579888732327900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579888766988100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579889863068100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579889882449600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579890994188500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579891014478800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579892125071900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579892135403300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579893229351300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579893250486100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579894353658800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579894386502900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579895497838100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579895518581400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579895526576200,
+    "end_ns": 5579895540777500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 60,
+    "request_id": "d226ada3-f0d6-364c-8982-70d568b6dbc6"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579896594553100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579896611296300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579896643739100,
+    "end_ns": 5579896673772400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 61,
+    "request_id": "50c79edc-7914-3eee-b91d-09a87d28b57b"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579897747681100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579897781026300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579898866168900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579898887615200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579899984547300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579899989384200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579901105905300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579901115572400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579902177638300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579902207980000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579903282015500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579903301740700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579904373657800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579904392936100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579905492947600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579905511436300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579906597911400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579906617345600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579907716614700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579907733500000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579908789443900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579908811838300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579909880088000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579909897135100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579910967802800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579910985761500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579912058314600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579912061545900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579913100415400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579913124730500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579914272386400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579914290009800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579915344387400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579915361490200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579916461879200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579916482315200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579917613769500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579917651877900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579918740197800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579918757689400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579930661003700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579930701979100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579940876932200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579940885032500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579940923403300,
+    "end_ns": 5579940988768300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 62,
+    "request_id": "2f222e80-d792-31fa-b862-6a17835428d5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579951065318000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579951103912300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579951148732600,
+    "end_ns": 5579951189215500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 63,
+    "request_id": "e3310217-c07b-3032-ab94-ff10ce1c457f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579961260325200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579961276596500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579971348977000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579971383322700,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579971421751700,
+    "end_ns": 5579971441500000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 64,
+    "request_id": "f6c616b1-6b33-3cee-8f9e-9570740f36b2"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579981515402500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579981533143900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5579981564651300,
+    "end_ns": 5579981578446900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 65,
+    "request_id": "bbef2aa0-290e-317f-978d-2cbd4a714c21"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5579991623266000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5579991665079700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580001817819900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580001830633900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580001861226000,
+    "end_ns": 5580001885840200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 66,
+    "request_id": "2f36ae04-448a-3e91-85ec-9498ac79c677"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580011948356600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580011970518700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580012001800500,
+    "end_ns": 5580012045119000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 67,
+    "request_id": "6841c368-ac70-3b89-b705-bacdf87d6b2e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580022087460000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580022093093400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580032195083400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580032212993300,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580032222569400,
+    "end_ns": 5580032260112400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 68,
+    "request_id": "ed85e964-b078-3ef9-ab3c-674be1dc6e11"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580042291308800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580042307429100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580042347767400,
+    "end_ns": 5580042378212100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 69,
+    "request_id": "3bb78849-3c30-3b0f-afee-1a4aa7342112"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580052453208200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580052481603900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580062585862900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580062604563300,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580062614432000,
+    "end_ns": 5580062644237400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 70,
+    "request_id": "cfcf36a2-616f-3872-a2e7-51056b9bb275"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580072707957900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580072724236400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580072743209200,
+    "end_ns": 5580072756972500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 71,
+    "request_id": "1493cfdb-acda-3b41-a7b8-d390aaf6a2ea"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580082827671500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580082862991200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580092967749700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580092973072700,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580092980499200,
+    "end_ns": 5580092993367700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 72,
+    "request_id": "e9f94519-f5d2-3089-9b36-592e3b0ccd24"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580103017061600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580103047131300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580103069901700,
+    "end_ns": 5580103115196000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 73,
+    "request_id": "f0c4a146-1a35-3c32-8486-2490a31d783f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580113195988800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580113212645900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580123311489800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580123329507100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580123348048300,
+    "end_ns": 5580123389927400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 74,
+    "request_id": "efc5ca5b-1aa2-35cd-a944-5bf943d6a25d"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580133438012900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580133443599200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580133451040000,
+    "end_ns": 5580133465312500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 75,
+    "request_id": "e071b34d-15ff-3cb3-91f6-812b0edc8c43"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580143501177700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580143552711600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580153684812200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580153741708600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580153816604500,
+    "end_ns": 5580153948836600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 76,
+    "request_id": "63c9b825-6e98-3a77-abd1-a92bcaf38080"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580164045157300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580164088754200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580164123440700,
+    "end_ns": 5580164218338300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 77,
+    "request_id": "f6d9418a-46a7-3588-bff7-bd205064e40e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580174288040900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580174321077900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580184386699700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580184406766400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580184438030300,
+    "end_ns": 5580184478914500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 78,
+    "request_id": "46de1272-4b34-3b03-b937-995b916b9ae3"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580194568126500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580194597956700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580194632771400,
+    "end_ns": 5580194689347900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 79,
+    "request_id": "cc8ada96-1b8e-3633-abf8-7ef32368b88b"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580204749476800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580204770825700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580214845249500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580214864460400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580214897890600,
+    "end_ns": 5580214944096700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 80,
+    "request_id": "d8044cd4-8f1a-3fdc-9c06-8df3e2bd8b85"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580225012403000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580225031758600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5580225064490900,
+    "end_ns": 5580225107719700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 81,
+    "request_id": "eccfaea2-5b02-3107-b5aa-6aa924f7eda5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5580235185240900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5580235191345000,
+    "profile": "authenticated",
+    "status": 200
+  }
+]

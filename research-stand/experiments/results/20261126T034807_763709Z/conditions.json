@@ -1,0 +1,67 @@
+{
+  "parameters": {
+    "repo": "C:\\Users\\GrybO\\OneDrive\\Рабочий стол\\Adaptive-Gateway",
+    "output": "C:\\Users\\GrybO\\.codex\\.chatgpt-projects\\g-p-6ab919ecd7cc8191be5ad28f8ca97bf9\\.work\\ch4-publication\\results",
+    "java": "D:\\java\\jdk-21.0.10\\bin\\java.exe",
+    "pg_bin": "C:\\Program Files\\PostgreSQL\\18\\bin",
+    "pg_port": 39546,
+    "sections": [
+      "4.6"
+    ],
+    "delay": 1.5,
+    "probe_ms": 100,
+    "timing": 20,
+    "checks": 5,
+    "pairs": 10,
+    "faults": 5,
+    "windows": 10,
+    "intervals": [
+      1.0,
+      3.0,
+      5.0,
+      10.0
+    ],
+    "window_s": 24.0,
+    "seed": 413
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_cpu": 16,
+  "python": "3.12.14",
+  "jvm_flags": "-XX:ActiveProcessorCount=2 -XX:TieredStopAtLevel=1 -Xmx300m",
+  "endpoints": {
+    "eureka": "http://127.0.0.1:38761",
+    "auth": "http://127.0.0.1:38334",
+    "gateway": "http://127.0.0.1:38088",
+    "manager": "http://127.0.0.1:38335",
+    "catalog": "http://127.0.0.1:38911",
+    "inventory": "http://127.0.0.1:38912",
+    "order": "http://127.0.0.1:38913",
+    "registry": "http://127.0.0.1:38762",
+    "docs": "http://127.0.0.1:38914",
+    "sync": "http://127.0.0.1:38336"
+  },
+  "registry_cache_ms": 1000,
+  "registry_fetch_s": 2,
+  "gateway_cache_ttl_s": 1,
+  "manager_timeout_ms": 10000,
+  "clock": "time.perf_counter_ns",
+  "status": "complete",
+  "jars_sha256": {
+    "discoveryserver-0.0.3-.jar": "849eec5265776fe232e001ab83498adfbf6ccf35eeddf0f99ff7fa8b576b2193",
+    "gatewayserver-0.0.1-SNAPSHOT.jar": "94b9a34a03c0ae30a5fe271b6126f36aa30582989ccb5dbac7f8311d3c530d46",
+    "auth-service-0.0.1-SNAPSHOT.jar": "eeee41f7100d4bafc9795b0ae87488423875cd43d65f849a12c94ee4cb11b274",
+    "adaptive-manager-0.0.1-SNAPSHOT.jar": "4c7e3f46806a840d3f710fcdb83d82d506dcac60da849be5ff74fb84a4556dc1",
+    "catalog-service-1.0.0.jar": "1c3d4579edbca03dd79a7c47ed17967d51218f7b5502610dc992415c34cd6b6f",
+    "order-service-1.0.0.jar": "cc74789eff7e241c87f9b13f16d483c84c773a2aa5b47d2c7474a561562e0833",
+    "inventory-service-1.0.0.jar": "b4b56d3da80029f4173264f5f436b83db70b4c5a7100afb8cccafceb90e7d05b"
+  },
+  "java": "java version \"21.0.10\" 2026-01-20 LTS\nJava(TM) SE Runtime Environment (build 21.0.10+8-LTS-217)\nJava HotSpot(TM) 64-Bit Server VM (build 21.0.10+8-LTS-217, mixed mode, sharing)",
+  "postgres": "postgres (PostgreSQL) 18.6",
+  "commit": "fec732524d4df37426ce6cb6db39e93c0cfc1cd3",
+  "docs_sha256": {
+    "default": "992026837a83975f76d826c0b293155430bda25cee071c3f4f1d3492a98c248c",
+    "authenticated": "e5b07e62eeb62f3ee6fc54397405a367d5a167e30a9095d3d1202be1f77cf890",
+    "permission": "e2087f164b2107e1bae91a96a7a8bfe34445733eb568e353def745693c026536",
+    "expanded": "6e5ff4e9b619634ac616152482914a87338c5143db9dea4b8d0bb285f087a2c5"
+  }
+}
