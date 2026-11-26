@@ -1,0 +1,2 @@
+﻿section,scenario,repeat,started,ok,error,finished
+4.4,AUTOMATIC,1,2026-11-26T13:38:06.411909+00:00,False,TimeoutError: Manager observed absence,2026-11-26T13:39:22.170269+00:00

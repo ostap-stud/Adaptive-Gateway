@@ -1,0 +1,1 @@
+{"section": "4.4", "scenario": "AUTOMATIC", "repeat": 1, "started": "2026-11-26T13:38:06.411909+00:00", "ok": false, "error": "TimeoutError: Manager observed absence", "finished": "2026-11-26T13:39:22.170269+00:00"}
