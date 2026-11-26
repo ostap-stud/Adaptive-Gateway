@@ -7,7 +7,8 @@ import org.springframework.context.annotation.Profile
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import stand.support.Access
-import stand.support.Kind.*
+import stand.support.Kind.PERMISSION
+import stand.support.Kind.PUBLIC
 import java.math.BigDecimal
 
 @RestController

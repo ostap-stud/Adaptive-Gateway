@@ -3,8 +3,9 @@ package stand.order
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import stand.support.Access
-import stand.support.Kind.*
-import java.util.UUID
+import stand.support.Kind.AUTHENTICATED
+import stand.support.Kind.PERMISSION
+import java.util.*
 
 @RestController
 @RequestMapping("/order-service/orders")

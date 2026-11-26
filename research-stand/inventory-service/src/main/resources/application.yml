@@ -34,3 +34,9 @@ springdoc:
     path: /inventory-service/v3/api-docs
   swagger-ui:
     enabled: false
+openapi:
+  service:
+    title: Inventory-service API specification
+    version: 1.0.0
+    #    url: https://localhost:8443
+    url: https://localhost:8088

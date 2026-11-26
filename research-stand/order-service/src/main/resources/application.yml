@@ -37,3 +37,9 @@ springdoc:
 stand:
   inventory-url: ${STAND_INVENTORY_URL:http://127.0.0.1:8912}
   catalog-url: ${STAND_CATALOG_URL:http://127.0.0.1:8911}
+openapi:
+  service:
+    title: Order-service API specification
+    version: 1.0.0
+    #    url: https://localhost:8443
+    url: https://localhost:8088

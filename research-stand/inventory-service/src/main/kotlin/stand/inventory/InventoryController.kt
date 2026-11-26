@@ -4,7 +4,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import stand.support.Access
 import stand.support.Kind.*
-import java.util.UUID
+import java.util.*
 
 @RestController
 @RequestMapping("/inventory-service")
