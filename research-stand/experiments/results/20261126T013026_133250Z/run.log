@@ -1,0 +1,187 @@
+Results: C:\Users\GrybO\.codex\.chatgpt-projects\g-p-6ab919ecd7cc8191be5ad28f8ca97bf9\experiment-kit\results\20261126T013026_133250Z
+Isolated infrastructure ready
+4.3 add 1 True 1454.6676
+4.3 restrict 1 True 658.3246
+4.3 remove 1 True 727.1733
+4.3 add 2 True 1450.7324
+4.3 restrict 2 True 353.8058
+4.3 remove 2 True 1092.8853
+4.3 add 3 True 683.4515
+4.3 restrict 3 True 1423.1234
+4.3 remove 3 True 454.7616
+4.3 add 4 True 930.2728
+4.3 restrict 4 True 823.4745
+4.3 remove 4 True 1146.0762
+4.3 add 5 True 443.485
+4.3 restrict 5 True 756.3388
+4.3 remove 5 True 769.6763
+4.3 add 6 True 261.1021
+4.3 restrict 6 True 1116.976
+4.3 remove 6 True 1158.575
+4.3 add 7 True 961.1902
+4.3 restrict 7 True 1328.4292
+4.3 remove 7 True 1036.9845
+4.3 add 8 True 949.0796
+4.3 restrict 8 True 1441.0358
+4.3 remove 8 True 1077.8443
+4.3 add 9 True 937.1998
+4.3 restrict 9 True 1766.2565
+4.3 remove 9 True 231.1725
+4.3 add 10 True 1135.673
+4.3 restrict 10 True 445.5583
+4.3 remove 10 True 816.6053
+4.3 add 11 True 1550.0361
+4.3 restrict 11 True 221.1804
+4.3 remove 11 True 1148.306
+4.3 add 12 True 264.9482
+4.3 restrict 12 True 230.2101
+4.3 remove 12 True 669.2574
+4.3 add 13 True 919.6864
+4.3 restrict 13 True 257.7109
+4.3 remove 13 True 539.5971
+4.3 add 14 True 843.4762
+4.3 restrict 14 True 948.4171
+4.3 remove 14 True 1348.1908
+4.3 add 15 True 750.6665
+4.3 restrict 15 True 837.4681
+4.3 remove 15 True 247.7658
+4.3 add 16 True 1438.1182
+4.3 restrict 16 True 1128.5202
+4.3 remove 16 True 234.4838
+4.3 add 17 True 540.6599
+4.3 restrict 17 True 942.5535
+4.3 remove 17 True 1021.9233
+4.3 add 18 True 1060.8856
+4.3 restrict 18 True 653.9588
+4.3 remove 18 True 1521.5427
+4.3 add 19 True 754.9374
+4.3 restrict 19 True 937.9098
+4.3 remove 19 True 1160.9574
+4.3 add 20 True 850.9048
+4.3 restrict 20 True 574.3943
+4.3 remove 20 True 238.6098
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 61812)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1118-904-0_26.1118.904.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1118-904-0_26.1118.904.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1118-904-0_26.1118.904.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1118-904-0_26.1118.904.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\http\server.py", line 440, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1118-904-0_26.1118.904.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\GrybO\.codex\.chatgpt-projects\g-p-6ab919ecd7cc8191be5ad28f8ca97bf9\experiment-kit\observers.py", line 99, in dispatch
+    self.end_headers()
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1118-904-0_26.1118.904.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\http\server.py", line 542, in end_headers
+    self.flush_headers()
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1118-904-0_26.1118.904.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\http\server.py", line 546, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1118-904-0_26.1118.904.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+4.6 fixed_window 1 True 435.9891
+4.6 fixed_window 2 True 667.9573
+4.6 fixed_window 3 True 834.6303
+4.6 fixed_window 1 True 434.3035
+4.6 fixed_window 2 True 1303.7757
+4.6 fixed_window 3 True 7754.479
+4.6 fixed_window 1 True 641.1529
+4.6 fixed_window 2 True 3027.7675
+4.6 fixed_window 3 True 3246.1746
+4.6 fixed_window 1 True 747.1796
+4.6 fixed_window 2 True 667.6022
+4.6 fixed_window 3 True 3137.5571
+4.2 add 1 True 1451.883
+4.2 restrict 1 True 1659.4409
+4.2 permission 1 True 1457.282
+4.2 remove 1 True 1631.1258
+4.2 add 2 True 1532.7301
+4.2 restrict 2 True 1551.6722
+4.2 permission 2 True 1408.7557
+4.2 remove 2 True 1661.5397
+4.2 add 3 True 1571.0942
+4.2 restrict 3 True 1546.5842
+4.2 permission 3 True 1361.0814
+4.2 remove 3 True 1630.7774
+4.2 add 4 True 1562.4596
+4.2 restrict 4 True 1448.7801
+4.2 permission 4 True 1533.6291
+4.2 remove 4 True 1662.1831
+4.2 add 5 True 1588.1836
+4.2 restrict 5 True 1536.9691
+4.2 permission 5 True 1541.405
+4.2 remove 5 True 1585.569
+4.4 restrict 1 True 142.7913
+4.4 relax 1 True 139.7717
+4.4 restrict 1 True 1037.4444
+4.4 relax 1 True 928.8369
+4.4 restrict 2 True 1633.4388
+4.4 relax 2 True 254.8515
+4.4 restrict 2 True 136.9373
+4.4 relax 2 True 149.0758
+4.4 restrict 3 True 134.041
+4.4 relax 3 True 40.3444
+4.4 restrict 3 True 1070.2528
+4.4 relax 3 True 746.9177
+4.4 restrict 4 True 1164.1151
+4.4 relax 4 True 433.3145
+4.4 restrict 4 True 43.1725
+4.4 relax 4 True 163.5153
+4.4 restrict 5 True 134.8549
+4.4 relax 5 True 144.9255
+4.4 restrict 5 True 966.0136
+4.4 relax 5 True 1474.7801
+4.4 restrict 6 True 1068.1477
+4.4 relax 6 True 1557.3263
+4.4 restrict 6 True 134.9669
+4.4 relax 6 True 134.7789
+4.4 restrict 7 True 146.2823
+4.4 relax 7 True 160.8078
+4.4 restrict 7 True 1342.7151
+4.4 relax 7 True 546.7461
+4.4 restrict 8 True 1335.0792
+4.4 relax 8 True 1066.5765
+4.4 restrict 8 True 136.8487
+4.4 relax 8 True 168.8146
+4.4 restrict 9 True 147.9207
+4.4 relax 9 True 130.3751
+4.4 restrict 9 True 1369.4034
+4.4 relax 9 True 749.2469
+4.4 restrict 10 True 460.5477
+4.4 relax 10 True 735.7842
+4.4 restrict 10 True 164.3659
+4.4 relax 10 True 162.8287
+4.5 replay 1 True 
+4.5 version_conflict 1 True 
+4.5 override 1 True 
+4.5 openapi_outage 1 True 
+4.5 registry_outage 1 True 
+4.5 gateway_outage 1 True 
+4.5 replay 2 True 
+4.5 version_conflict 2 True 
+4.5 override 2 True 
+4.5 openapi_outage 2 True 
+4.5 registry_outage 2 True 
+4.5 gateway_outage 2 True 
+4.5 replay 3 True 
+4.5 version_conflict 3 True 
+4.5 override 3 True 
+4.5 openapi_outage 3 True 
+4.5 registry_outage 3 True 
+4.5 gateway_outage 3 True 
+4.5 replay 4 True 
+4.5 version_conflict 4 True 
+4.5 override 4 True 
+4.5 openapi_outage 4 True 
+4.5 registry_outage 4 True 
+4.5 gateway_outage 4 True 
+4.5 replay 5 True 
+4.5 version_conflict 5 True 
+4.5 override 5 True 
+4.5 openapi_outage 5 True 
+4.5 registry_outage 5 True 
+4.5 gateway_outage 5 True 

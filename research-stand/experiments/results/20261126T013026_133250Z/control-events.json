@@ -1,0 +1,7825 @@
+[
+  {
+    "kind": "cycle",
+    "start_ns": 5570858917129200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570858956785100,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570859146994300,
+    "end_ns": 5570859742286300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 1,
+    "request_id": "c214d46f-ec87-3e67-a3e8-92e4a7d79242"
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570860961976500,
+    "end_ns": 5570861024709000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/inventory-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 1,
+    "request_id": "08030cfa-47d7-3587-bc8f-64c98fbc453b"
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570862378525400,
+    "end_ns": 5570862444689300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/order-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 1,
+    "request_id": "138b84be-5b8b-343e-8fc0-76dced3a59b1"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570863963064900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570863983300200,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570865608452800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570865658360700,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570867272870500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570867290572500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570867325652900,
+    "end_ns": 5570867382970100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 2,
+    "request_id": "8e4265b7-d2ba-304c-aaad-87cccfb9585f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570868940401700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570868973932300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570869001410500,
+    "end_ns": 5570869063622800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 3,
+    "request_id": "d23e9034-edf1-3ebf-86d0-f1ff5bcb84fc"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570870591296000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570870609084000,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570870655410100,
+    "end_ns": 5570870711273600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 4,
+    "request_id": "53056ede-9976-3344-951c-7e763849c8a9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570872282158000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570872288771700,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570872317330200,
+    "end_ns": 5570872362837000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 5,
+    "request_id": "fc021fbe-f0b9-33a8-b37c-58caf11765af"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570873910881500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570873928171600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570873937403200,
+    "end_ns": 5570873976116800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 6,
+    "request_id": "f0162aa0-4650-31c2-a503-2d73ebc9a165"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570875539764500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570875558228200,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570875591039800,
+    "end_ns": 5570875710059900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 7,
+    "request_id": "156aa5c7-6c7a-384b-8f67-a8930c752888"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570877276497600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570877282380000,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570877296710800,
+    "end_ns": 5570877327347500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 8,
+    "request_id": "09ca5137-383e-3664-a8d0-d2db9466038b"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570878890311800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570878946011800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570878997003700,
+    "end_ns": 5570879068815400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 9,
+    "request_id": "eb4de71e-ad00-3027-8eb3-b1a3007b6620"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570880619148100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570880647691200,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570880728301400,
+    "end_ns": 5570880797367200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 10,
+    "request_id": "8337bce3-a902-33e3-94f3-56c832fa4624"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570882373339100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570882384018000,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570882402657300,
+    "end_ns": 5570882453304500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 11,
+    "request_id": "fc30af96-f8ad-370d-8266-aea5bef17ff6"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570884009622500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570884031748500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570884046537600,
+    "end_ns": 5570884120563100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 12,
+    "request_id": "12f83a79-d158-3541-a8d1-053fc6aea059"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570885655026800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570885672848800,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570885685155700,
+    "end_ns": 5570885783223200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 13,
+    "request_id": "e2f46f99-fb95-33f5-aea0-12b60b91542f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570887387984900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570887409473700,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570887446532200,
+    "end_ns": 5570887505673900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 14,
+    "request_id": "b50d1c96-68c9-39c8-9eb8-a0b0c63ba1e2"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570889091978000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570889116439800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570889151964600,
+    "end_ns": 5570889253641000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 15,
+    "request_id": "a55f7bba-b414-3172-8cd7-cf466a145ceb"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570890828537100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570890847169200,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570890865715100,
+    "end_ns": 5570890973794100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 16,
+    "request_id": "59f12c3d-4ec1-3654-9967-5d358f48b82a"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570892593826300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570892604270900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570892627649100,
+    "end_ns": 5570892677797300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 17,
+    "request_id": "ac5565d0-fd8b-3135-b3d9-b7d02619b676"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570894220860900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570894224499200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570894257052400,
+    "end_ns": 5570894282653400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 18,
+    "request_id": "a115c299-0b8c-335b-ac89-2be1ee77e7f6"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570895822907900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570895839170900,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570895855588900,
+    "end_ns": 5570895932906900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 19,
+    "request_id": "17006bf5-2d0c-388b-8dfe-51bbd0fe88b3"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570897460028700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570897478129200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570897485871400,
+    "end_ns": 5570897514890100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 20,
+    "request_id": "1ae87b86-eb19-3342-844b-11ca8abcce25"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570899059075400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570899077652400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570899108363400,
+    "end_ns": 5570899147668300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 21,
+    "request_id": "08b50123-a30d-3485-9c27-729bc2b6444f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570900683012300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570900696484400,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570900716002700,
+    "end_ns": 5570900757013100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 22,
+    "request_id": "743fbe4d-d910-3fd9-a769-6d99834d98b4"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570902288361600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570902291927500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570902297682200,
+    "end_ns": 5570902346058300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 23,
+    "request_id": "3a016c38-7b9d-338c-a2f9-87fb6c9ac738"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570903903922300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570903907264500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570903940102900,
+    "end_ns": 5570903987509800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 24,
+    "request_id": "feca4733-2be3-3d3b-81a5-9faf069f6839"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570905555734000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570905588738200,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570905626950000,
+    "end_ns": 5570905658792300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 25,
+    "request_id": "867681c9-c359-3335-af50-cc23fc9440ab"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570907227456600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570907231500900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570907237699900,
+    "end_ns": 5570907271846900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 26,
+    "request_id": "c04b7020-58d8-36c7-9521-5fde9065ebcf"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570908815203000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570908819195600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570910357108100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570910377307600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570910419942000,
+    "end_ns": 5570910470147700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 27,
+    "request_id": "f38efa8d-5200-3489-bc50-0878beb415fe"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570912055765000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570912075645800,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570912112857300,
+    "end_ns": 5570912168680500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 28,
+    "request_id": "dd49d965-6330-322d-a746-f75b55bdbd1b"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570913702170500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570913706216000,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570913734730600,
+    "end_ns": 5570913750555700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 29,
+    "request_id": "ee62ec8c-cf0e-30c6-b1ff-3df102e8442e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570915305193100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570915355648800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570915414348900,
+    "end_ns": 5570915496341600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 30,
+    "request_id": "35694c10-4d55-3a75-91ee-376864c26e53"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570917040114200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570917087092500,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570917113670100,
+    "end_ns": 5570917156441300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 31,
+    "request_id": "acbf57a4-04b9-3589-a10d-ea8f09564675"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570918715765700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570918725218900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570918764190900,
+    "end_ns": 5570918872934600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 32,
+    "request_id": "d1fa89d5-3647-341e-8ec0-52b7c80cb4cc"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570920440494600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570920445663000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570920454494200,
+    "end_ns": 5570920482978100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 33,
+    "request_id": "b0ee01ac-1aba-338a-b552-7acfc15554b0"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570922028526100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570922050647900,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570922104661700,
+    "end_ns": 5570922201697900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 34,
+    "request_id": "a1cc4e33-8edc-3817-ac85-a682369a8e16"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570923809367800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570923865551200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570923927683000,
+    "end_ns": 5570923988149000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 35,
+    "request_id": "8a0cf1ee-7146-3e3c-8fa8-f7a07f3e5816"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570925580289700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570925607501800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570925630344900,
+    "end_ns": 5570925743051400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 36,
+    "request_id": "ce9e1ada-5ca3-392f-b995-536e2579f3f8"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570927288709300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570927308009900,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570927344949800,
+    "end_ns": 5570927474872200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 37,
+    "request_id": "422c2999-250e-3203-8a00-c369f87aba4e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570929065274600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570929076967900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570929129937600,
+    "end_ns": 5570929185265400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 38,
+    "request_id": "79bb539b-8458-3840-8907-e17c35518747"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570930727808800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570930738669300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570930762307200,
+    "end_ns": 5570930818681400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 39,
+    "request_id": "37263046-ec51-3e3e-a415-ad7f774a1f43"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570932403674000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570932431060600,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570932467706900,
+    "end_ns": 5570932539910800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 40,
+    "request_id": "abdeece0-1c20-3f97-90a1-d71533a50d53"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570934101517600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570934125699100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570934170442600,
+    "end_ns": 5570934198981200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 41,
+    "request_id": "2613f48b-1c9a-317f-88ab-25a097c9a0de"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570935743472500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570935767950600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570935817770700,
+    "end_ns": 5570935893590800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 42,
+    "request_id": "65befa39-c803-362f-9d52-a2455da9d95c"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570937466336200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570937487641500,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570937517840100,
+    "end_ns": 5570937569093400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 43,
+    "request_id": "6b27ed28-4efa-3e06-b94f-3752a7e9200e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570939111856900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570939131198500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570939162190700,
+    "end_ns": 5570939176261500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 44,
+    "request_id": "f7ddae01-e142-3877-86b3-ae0cb9044248"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570940745252700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570940762944000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570940769358500,
+    "end_ns": 5570940787858500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 45,
+    "request_id": "27ee4a7d-fc8f-32c6-b9d1-fbb747e8211e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570942322966500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570942363671200,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570942406312500,
+    "end_ns": 5570942452464100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 46,
+    "request_id": "3d59e66c-9bae-307f-8d03-98876e0c5b66"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570944013434600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570944020620600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570944039013700,
+    "end_ns": 5570944082454500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 47,
+    "request_id": "a061fcd5-b4da-37b9-b576-97ae5db24a71"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570945615228000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570945620666900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570945630060100,
+    "end_ns": 5570945671618900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 48,
+    "request_id": "f9054df4-fd1c-3ecb-b843-fc40068b2108"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570947227183600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570947236032200,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570947266971300,
+    "end_ns": 5570947344004100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 49,
+    "request_id": "bc128310-4b2d-3deb-b83f-f2c979ad6630"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570948888007100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570948922896000,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570948974233800,
+    "end_ns": 5570949007283300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 50,
+    "request_id": "cb54b08c-3ab8-3e27-8196-cd083535bb53"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570950603257200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570950621322900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570950672413800,
+    "end_ns": 5570950741215500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 51,
+    "request_id": "d280dff1-d7aa-3d9b-9508-d311268498cf"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570952279006400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570952310383200,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570952332673600,
+    "end_ns": 5570952358039700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 52,
+    "request_id": "9c42f3cd-d81a-3737-8177-a3a07462ebe3"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570953912992500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570953955644600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570953988215100,
+    "end_ns": 5570954032427600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 53,
+    "request_id": "7f8a0037-de79-3eba-b8bc-b91b193bdfec"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570955637993400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570955690748400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570955744095300,
+    "end_ns": 5570955816547300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 54,
+    "request_id": "bdd40da5-7559-387b-9aa3-db5df7db2aed"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570957420606000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570957432731400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570959042293000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570959053736100,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570959070188700,
+    "end_ns": 5570959102940700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 55,
+    "request_id": "b8159b92-41be-3417-8270-c4f2fb8a0d38"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570960717142600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570960742576100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570960791173900,
+    "end_ns": 5570960839891900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 56,
+    "request_id": "0e29a6a0-cbaa-3054-ae89-2a333892aa39"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570962405064200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570962409916200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570962422396800,
+    "end_ns": 5570962458296800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 57,
+    "request_id": "a73f71c5-cfd0-3611-bbcb-70aaa5d8f051"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570964001271900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570964066391700,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570964110828500,
+    "end_ns": 5570964198591300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 58,
+    "request_id": "5a07cc66-0852-3ef5-b6db-efcaa8e0f2ba"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570965743413400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570965760337200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570965766557900,
+    "end_ns": 5570965786273400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 59,
+    "request_id": "54c5ae9c-03cb-34fa-9a48-7d28e7ad37d8"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570967319331000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570967335874000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570967377803600,
+    "end_ns": 5570967442503800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 60,
+    "request_id": "05c7daa3-9c08-3aad-91e4-b3b60687e460"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570969014595800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570969037092900,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570969078766900,
+    "end_ns": 5570969108358900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 61,
+    "request_id": "424d11a8-cb0c-395d-a9dd-43917a472adf"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570981013114400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570981060645000,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570982478883700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570982509769700,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570982533532700,
+    "end_ns": 5570982567110900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 62,
+    "request_id": "2f222e80-d792-31fa-b862-6a17835428d5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570983619377300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570983645237500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5570983668160600,
+    "end_ns": 5570983702488400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 63,
+    "request_id": "e3310217-c07b-3032-ab94-ff10ce1c457f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570984741661700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570984772469000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570985965548900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570986040813600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570987243292400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570987260848600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570988372377400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570988403464700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570989494970300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570989514791400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570990574899900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570990596385200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570991852154300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570991878378100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570993007516700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570993026207500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570994159533900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570994179781300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570995356715200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570995387625300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570996561240300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570996568267200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570997666700800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570997689604100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570998796859400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570998828467300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5570999900156100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5570999938153000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571001090114700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571001127658300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571002242344400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571002263010200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571003368053800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571003402768000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571004527983700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571004545342800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571005650401700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571005686024800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571006800002500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571006835425600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571006856517400,
+    "end_ns": 5571006873560700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 64,
+    "request_id": "f6c616b1-6b33-3cee-8f9e-9570740f36b2"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571007955574700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571007963927500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571007985906500,
+    "end_ns": 5571008015296000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 65,
+    "request_id": "bbef2aa0-290e-317f-978d-2cbd4a714c21"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571009097776300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571009138869700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571010260907000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571010296710500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571011390104500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571011405346400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571012531055000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571012554320900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571013622706600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571013654341500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571014778078200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571014795940700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571015877995500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571015880974200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571016957470900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571016975692500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571018008061500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571018025213900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571019095292100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571019112825800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571020195577000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571020213337700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571021286433500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571021289409900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571022342000200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571022381611800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571023523556100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571023562020100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571024665284600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571024668256800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571025734932100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571025753219200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571026828347800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571026846263800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571027945851800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571027949323500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571028984729300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571029002551400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571030097169400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571030128741100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571031204253500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571031215914300,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571031270129100,
+    "end_ns": 5571031322888300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 66,
+    "request_id": "2f36ae04-448a-3e91-85ec-9498ac79c677"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571032359642300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571032372899700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571032394254500,
+    "end_ns": 5571032479021300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 67,
+    "request_id": "6841c368-ac70-3b89-b705-bacdf87d6b2e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571033553563700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571033559525400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571034684880700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571034706571200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571035864569500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571035882240800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571036982869900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571037000733500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571038108629000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571038127006000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571039233662800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571039250899500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571040337464000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571040359976800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571041482609100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571041502849400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571042614692000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571042657376500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571043816130600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571043849325500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571044940885800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571044958365100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571046027219000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571046047805900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571047131288900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571047169438900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571048271629200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571048288541600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571049405121100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571049421640500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571050532347800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571050554166700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571051648617800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571051651307900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571052713414300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571052737680100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571053837370300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571053855166600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571054897630200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571054916568700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571066448950700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571066467497800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571076610895200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571076615613000,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571076647184900,
+    "end_ns": 5571076687916400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 68,
+    "request_id": "ed85e964-b078-3ef9-ab3c-674be1dc6e11"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571086748835600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571086785923300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571086815602900,
+    "end_ns": 5571086847532500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 69,
+    "request_id": "3bb78849-3c30-3b0f-afee-1a4aa7342112"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571096938017000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571096961726300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571107076915600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571107080754900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571107111383800,
+    "end_ns": 5571107127614500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 70,
+    "request_id": "cfcf36a2-616f-3872-a2e7-51056b9bb275"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571117164185000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571117211201600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571117247382900,
+    "end_ns": 5571117273314700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 71,
+    "request_id": "1493cfdb-acda-3b41-a7b8-d390aaf6a2ea"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571127397765400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571127419644700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571137541634400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571137595108700,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571137617081100,
+    "end_ns": 5571137650951500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 72,
+    "request_id": "e9f94519-f5d2-3089-9b36-592e3b0ccd24"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571147693590000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571147721575200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571147793909600,
+    "end_ns": 5571147927772200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 73,
+    "request_id": "f0c4a146-1a35-3c32-8486-2490a31d783f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571158020267100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571158035628700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571172998283400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571173066922300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571178280951600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571178290280800,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571178310884800,
+    "end_ns": 5571178337640100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 74,
+    "request_id": "efc5ca5b-1aa2-35cd-a944-5bf943d6a25d"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571183385351000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571183422326900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571183462117400,
+    "end_ns": 5571183571745800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 75,
+    "request_id": "e071b34d-15ff-3cb3-91f6-812b0edc8c43"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571188669782600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571188689416200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571193780314300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571193795743700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571198897867600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571198916920300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571204000411800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571204036346300,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571204077689300,
+    "end_ns": 5571204134468500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 76,
+    "request_id": "63c9b825-6e98-3a77-abd1-a92bcaf38080"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571209202471300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571209207752700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571209237033700,
+    "end_ns": 5571209279231700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 77,
+    "request_id": "f6d9418a-46a7-3588-bff7-bd205064e40e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571214324212400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571214329186600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571219408022300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571219423166200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571224516889800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571224537104500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571229710244200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571229749550600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571229794196000,
+    "end_ns": 5571229866985500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 78,
+    "request_id": "46de1272-4b34-3b03-b937-995b916b9ae3"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571234998905700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571235016213100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571235022535000,
+    "end_ns": 5571235057931300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 79,
+    "request_id": "cc8ada96-1b8e-3633-abf8-7ef32368b88b"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571240105489700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571240113029500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571245156486100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571245168281200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571250237499100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571250262628500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571264708036000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571264751076800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571267893010500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571267910466900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571267943517600,
+    "end_ns": 5571267986254400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 80,
+    "request_id": "d8044cd4-8f1a-3fdc-9c06-8df3e2bd8b85"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571271030999100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571271034717600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571271064550300,
+    "end_ns": 5571271077640000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 81,
+    "request_id": "eccfaea2-5b02-3107-b5aa-6aa924f7eda5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571274119614700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571274138961100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571277214236900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571277223154600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571280304915200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571280325324600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571283428769000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571283437217000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571286540548200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571286570728300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571289671755200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571289699208200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571292757954700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571292779884100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571292799971100,
+    "end_ns": 5571292852243000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 82,
+    "request_id": "565c5522-4b99-3885-b1bc-204a5e4f96ae"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571295930918500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571295936986800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571295968347300,
+    "end_ns": 5571295998500300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 83,
+    "request_id": "d42065e8-77ca-3a7d-9eed-c44f17c780ec"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571299065339500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571299082899600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571302138082800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571302145164700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571305236210900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571305255710800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571308365925300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571308368952300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571311407184200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571311423470000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571314534778800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571314555096000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571317672012400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571317691115500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571317722472500,
+    "end_ns": 5571317761440100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 84,
+    "request_id": "eb530c41-2a98-38a6-8550-685c3eca2baa"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571320788781400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571320805366100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571323872459100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571323890360600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571323926429900,
+    "end_ns": 5571323971502300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 85,
+    "request_id": "71d2a0af-3d69-34d1-a1d3-eaefbf6e46ef"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571327052232200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571327084755500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571330177212600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571330209726000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571333325412500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571333340975200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571336395447500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571336424446600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571339481237700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571339484335400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571352982683300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571353030035300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571354679155900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571354682838600,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571354690946100,
+    "end_ns": 5571354721173100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 86,
+    "request_id": "74eeae9e-cadc-388b-938a-3ce7f766be1d"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571356290476100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571356309150400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571356342707200,
+    "end_ns": 5571356357491100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 87,
+    "request_id": "fc841c94-e393-37b0-8d7b-5bea8d9ec158"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571357933745200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571357957653200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571357996363900,
+    "end_ns": 5571358044670300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 88,
+    "request_id": "b615f4f1-a086-3cbd-a48c-dfb33f72156f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571359607260600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571359610532100,
+    "profile": "permission",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571359617215800,
+    "end_ns": 5571359630995800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 89,
+    "request_id": "4b62282a-6c78-35d6-ad8e-8663ffd7cf7f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571361153238400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571361157600600,
+    "profile": "permission",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571361187492600,
+    "end_ns": 5571361237518700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 91,
+    "request_id": "e99ad92d-ccff-3fa1-83c9-c22b5d7815b8"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571362783768500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571362801483400,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571362834106100,
+    "end_ns": 5571362847023200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 92,
+    "request_id": "07bfb1de-313d-3b5d-b2a7-5dbdca54dd7c"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571364413026400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571364433747700,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571364462677900,
+    "end_ns": 5571364515105300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 93,
+    "request_id": "5fc264d3-10ad-3088-83b4-89ecb4beb6ad"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571366056446300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571366086809800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571366103874900,
+    "end_ns": 5571366118714300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 94,
+    "request_id": "70831f90-f338-3fd0-b058-27042fa0f0a5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571367691865500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571367710966000,
+    "profile": "permission",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571367741215000,
+    "end_ns": 5571367763498400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 95,
+    "request_id": "a0894b09-cf76-3735-9833-63321ad71131"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571369299016200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571369305871400,
+    "profile": "permission",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571369337460700,
+    "end_ns": 5571369381848400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 97,
+    "request_id": "be9c8c97-a439-3c10-a8a6-1f57e8b46140"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571370946004900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571370965692600,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571370997750900,
+    "end_ns": 5571371014006000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 98,
+    "request_id": "4b2469f4-7d63-32e3-b312-16fe08ea3c55"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571372582359900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571372620065100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571372674904300,
+    "end_ns": 5571372716728200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 99,
+    "request_id": "5464a0c2-a684-362b-93e7-95fdad972d2d"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571374305570300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571374325880000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571374360184300,
+    "end_ns": 5571374375425000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 100,
+    "request_id": "fc39a6d2-9ab7-3376-a56a-19136f4a480d"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571375907787600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571375925001400,
+    "profile": "permission",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571375958121400,
+    "end_ns": 5571376007682800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 101,
+    "request_id": "aa61ccfc-0a7d-3a3c-8488-25cdec8e5108"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571377582132800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571377602743800,
+    "profile": "permission",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571377641110400,
+    "end_ns": 5571377682291800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 103,
+    "request_id": "1fce6095-345f-3cf9-8656-3a62600f9639"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571379260748600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571379275124800,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571379308806400,
+    "end_ns": 5571379326664900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 104,
+    "request_id": "9a32a915-7aa8-3094-ad61-7d0779825f22"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571380906551900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571380940726900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571380973561000,
+    "end_ns": 5571381020197700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 105,
+    "request_id": "21a66733-a13f-387d-a4dd-b91854e4b27c"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571382596776800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571382617408900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571382626216100,
+    "end_ns": 5571382668394700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 106,
+    "request_id": "7198e373-181c-33bf-9c7d-cecf3f7defe1"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571384242534200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571384250248400,
+    "profile": "permission",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571384285222600,
+    "end_ns": 5571384326731800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 107,
+    "request_id": "cdf05de7-6cb3-3a98-a64f-7df6a6db1f3c"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571385874434500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571385883051800,
+    "profile": "permission",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571385928146700,
+    "end_ns": 5571385960870900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 109,
+    "request_id": "e47f908d-a301-3460-b4d0-7a95d21014b7"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571387552350800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571387572239700,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571387584886800,
+    "end_ns": 5571387665024300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 110,
+    "request_id": "0ba10f3f-fd46-3703-9719-8542b98a0909"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571389229589500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571389245424300,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571389285610700,
+    "end_ns": 5571389364173300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 111,
+    "request_id": "96009162-cdd3-344c-9595-d78f0d78a57f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571390977123200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571390993325200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571391025524900,
+    "end_ns": 5571391050101100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 112,
+    "request_id": "9dbdf64e-0d8e-3875-9b27-fe0c915fd920"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571392602279800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571392611292200,
+    "profile": "permission",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571392638034900,
+    "end_ns": 5571392678821900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 113,
+    "request_id": "d1bbb10e-d3b9-340d-bf1b-8d7d93237626"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571394217318700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571394234407400,
+    "profile": "permission",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571394240006100,
+    "end_ns": 5571394275768600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 115,
+    "request_id": "d8bfbc10-33ea-3c96-aa84-dffbdbf511f3"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571395799632400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571395817216000,
+    "profile": "default",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571395843897500,
+    "end_ns": 5571395875680900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 116,
+    "request_id": "9cc30ec3-fd56-3967-9a9a-608f78fa90ac"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571397407186100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571397425367100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571397460706100,
+    "end_ns": 5571397500958700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 117,
+    "request_id": "4e3a8874-75f3-330c-9bbd-e06b67dcc5e9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571399042495200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571399069068300,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571399139628200,
+    "end_ns": 5571399194326200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 119,
+    "request_id": "ed2375b1-a2c4-34de-86c0-4c3f2028a1f8"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571400762309800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571400781595200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571400816582000,
+    "end_ns": 5571400860636200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 120,
+    "request_id": "52670c39-75bf-369c-b5ad-4d2c3268b4f5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571402417993100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571402421193100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571402452621000,
+    "end_ns": 5571402482470900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 121,
+    "request_id": "2fadeb59-b0c1-386c-8a36-c7c9ab39b795"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571404014162600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571404018205100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571405581514300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571405592469200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571405615934400,
+    "end_ns": 5571405644460300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 122,
+    "request_id": "1be51057-df1a-373a-b112-457413c16b8e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571407189133800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571407208067600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571407213761400,
+    "end_ns": 5571407225445100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 123,
+    "request_id": "786000a9-3661-372a-a122-ce0c11e52004"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571408743225800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571408761563800,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571408767527700,
+    "end_ns": 5571408780677700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 125,
+    "request_id": "b5a529fd-24f9-34e3-b584-1ca2c0463be6"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571410315184100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571410332136200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571410349909400,
+    "end_ns": 5571410380957100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 127,
+    "request_id": "68b75b27-db54-37b7-b562-769876dbb82a"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571411956082100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571411974389600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571412009147500,
+    "end_ns": 5571412060512300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 128,
+    "request_id": "6eca8875-833e-38e0-9212-311e9847cabe"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571413622389900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571413641261900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571413675399400,
+    "end_ns": 5571413724726400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 129,
+    "request_id": "19475b25-5944-3b3d-9ca4-271a8204a388"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571415267768400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571415284342200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571415291584300,
+    "end_ns": 5571415304839500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 130,
+    "request_id": "338c9f3e-98bd-357a-aa98-5db306dbffe8"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571416877513300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571416900276600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571416942128800,
+    "end_ns": 5571417002907900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 131,
+    "request_id": "7d432c43-2cbc-3a2e-9fbc-6c90ff8e0a8d"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571418578426100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571418582309100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571418591801500,
+    "end_ns": 5571418623909400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 133,
+    "request_id": "90d139c4-df51-31be-86f3-02bc1b5e915a"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571420163538300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571420187106900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571420213203600,
+    "end_ns": 5571420268431000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 135,
+    "request_id": "4ca4a960-dd8e-3dd4-935f-e5c110c01113"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571421846107200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571421855000100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571421888001900,
+    "end_ns": 5571421909638900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 136,
+    "request_id": "4852eacc-5912-31cb-8f32-e9e0aa67bec8"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571423466160900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571423482907600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571423502132500,
+    "end_ns": 5571423563441400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 137,
+    "request_id": "b6b64f78-b4e8-34c4-a806-b9bd39dfeb9e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571425142525900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571425151438000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571425186369800,
+    "end_ns": 5571425227454900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 138,
+    "request_id": "37cdb252-6fb7-39d0-ab8d-f0c5fae15303"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571426770067500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571426805115100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571428423163000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571428427204100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571428434279300,
+    "end_ns": 5571428464936400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 139,
+    "request_id": "a84fccab-dd68-3a21-aa4a-c7563d29bb7e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571430026587600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571430032208600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571430038689700,
+    "end_ns": 5571430078649100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 141,
+    "request_id": "8694834f-d434-3abf-b9ff-454f3e3ab9c6"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571431638839100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571431643822800,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571431656465200,
+    "end_ns": 5571431693263400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 143,
+    "request_id": "eb163f8a-5b9e-3d27-813e-d34ebe4b6d07"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571433279432800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571433289247200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571433312373400,
+    "end_ns": 5571433346821000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 144,
+    "request_id": "8e3f8c52-6a75-3131-a6c1-8aba0a858925"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571434883166100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571434889730700,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571434901407800,
+    "end_ns": 5571434927036500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 145,
+    "request_id": "809a0c42-ba4c-318f-a905-bd48a47601f1"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571436458957400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571436496516800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571436524582800,
+    "end_ns": 5571436567122700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 146,
+    "request_id": "4db76e57-51cc-3327-8fdb-d8504b535dc8"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571438143404100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571438165320200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571438186526700,
+    "end_ns": 5571438216475700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 147,
+    "request_id": "c56349ea-84fa-3571-8ef3-7e67ce9f3ddd"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571439782231500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571439802368800,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571439811283400,
+    "end_ns": 5571439859893900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 149,
+    "request_id": "4efd3ea8-2cba-392f-b791-e0e7763f32db"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571441436458100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571441439788900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571441446145300,
+    "end_ns": 5571441489785200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 151,
+    "request_id": "d7de3eb5-deee-3212-842d-4713747375f2"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571443051582600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571443077658800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571443103666000,
+    "end_ns": 5571443119259600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 152,
+    "request_id": "e2604b80-9771-3adc-a506-11929d089089"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571444693967400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571444714407100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571444760771700,
+    "end_ns": 5571444810624200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 153,
+    "request_id": "603cd628-ae9e-3564-8cd2-a3d303b8aeee"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571446367054100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571446385949700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571446392594500,
+    "end_ns": 5571446404918900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 154,
+    "request_id": "83673b39-3071-30e0-ae2d-c3fc95229845"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571447963947600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571447985551600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571448001484500,
+    "end_ns": 5571448014059500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 155,
+    "request_id": "5e31d525-4dc8-3384-b106-b14f019309f8"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571449549808800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571449565055000,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571449606727100,
+    "end_ns": 5571449645731700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 157,
+    "request_id": "c80de670-7699-3fa2-9075-90eae4f8ef62"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571451215560600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571451221236900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571452830586900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571452849465600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571452857767400,
+    "end_ns": 5571452876700200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 159,
+    "request_id": "9fbdbcd9-b278-3e3f-93af-3208a1e635cf"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571454395018600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571454399305800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571455980160600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571456011456500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571456024554400,
+    "end_ns": 5571456053580300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 162,
+    "request_id": "70ef5a90-d46b-3c10-89ab-eb5ea82421ce"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571457611289700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571457631892800,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571457650972100,
+    "end_ns": 5571457738252700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 163,
+    "request_id": "43733c4b-7375-3ae1-93f9-1cbfc55f9cde"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571459314330200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571459330191600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571459341518700,
+    "end_ns": 5571459394142000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 165,
+    "request_id": "0df5eecd-d2eb-34c1-a799-6427eacd667c"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571460975659300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571460985695300,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571461008436600,
+    "end_ns": 5571461035151800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 167,
+    "request_id": "bbbd1ca7-4eb4-3710-ad9a-0458ba6634bd"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571462618298000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571462653081700,
+    "profile": "unavailable",
+    "status": 503
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571464226852700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571464234452100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571464275084900,
+    "end_ns": 5571464311825200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 168,
+    "request_id": "35bb7e82-5277-3074-a559-fad1794d9441"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571465871980600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571465874530200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571465879337000,
+    "end_ns": 5571465985025800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 169,
+    "request_id": "7f1136bd-80f0-3623-81a7-7a2dc5bb0741"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571467554729000,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571469608316800,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571471115710200,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571473177043400,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571474695377500,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571476740566600,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571478247584100,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571480289705400,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571481811050300,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571483872659700,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571485389823200,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571487425574000,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571488943239100,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571492924921500,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571494487079400,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571496045244300,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571497610287200,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571499155956400,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571500684252400,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571502200486100,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571503878897100,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571505582653900,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571507316191500,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571508939338000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571508960901900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571509010164600,
+    "end_ns": 5571509104238400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 170,
+    "request_id": "b33db579-fded-3cea-b06c-c5740e528abd"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571510694830300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571510739480000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571512439664500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571512485276800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571514169521000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571514183663400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571515790786300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571515817347200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571517409171600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571517426235100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571517444798500,
+    "end_ns": 5571517467795900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 171,
+    "request_id": "59e98b36-aabf-337d-8b22-abe5ee60d90e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571519008385200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571519042154000,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571520658121300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571520680716000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571520697727800,
+    "end_ns": 5571520781907500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571522404224900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571522428508400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571522439030800,
+    "end_ns": 5571522456895400,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571524001206200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571524053995400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571524095490300,
+    "end_ns": 5571524119048400,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571525689153900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571525741220100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571525786400500,
+    "end_ns": 5571525797701100,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571527358988600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571527407262700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571527452193600,
+    "end_ns": 5571527477301200,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571529043116100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571529090023500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571529132860800,
+    "end_ns": 5571529169155000,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571530778816900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571530792991500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571530803060800,
+    "end_ns": 5571530836126500,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571532377987800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571532409148000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571532444641300,
+    "end_ns": 5571532461523200,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571534002421300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571534036228100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571534072637700,
+    "end_ns": 5571534092918400,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571535664361300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571535710423100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571535766060900,
+    "end_ns": 5571535826997400,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571537449267500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571537485156900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571537530976400,
+    "end_ns": 5571537570573000,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571539126252500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571539155422400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571539207061900,
+    "end_ns": 5571539240446100,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571540808618500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571540828332900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571540841391800,
+    "end_ns": 5571540859894800,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571542433708400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571542438463900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571542447201900,
+    "end_ns": 5571542454698000,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571543978919900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571543985059100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571543997158100,
+    "end_ns": 5571544376722600,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/75435a63-da11-3039-a57e-5a8260de53f9/refresh",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 172,
+    "request_id": "75435a63-da11-3039-a57e-5a8260de53f9"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571545904390000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571545925402400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571547523325300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571547542492100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571547559431200,
+    "end_ns": 5571547639156700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 173,
+    "request_id": "26d3c66b-2e72-37db-866d-845a930bbaa3"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571549272605000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571549277984400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571550823567800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571550843849400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571550860606600,
+    "end_ns": 5571550893244300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 175,
+    "request_id": "7898ec40-9ff8-32b0-8bc9-ab9bb595474d"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571552431613100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571552457278600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571554042591100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571554064072800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571554099090700,
+    "end_ns": 5571554176872600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 178,
+    "request_id": "f55b4af6-bc32-32c8-8f7b-9b109877fadf"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571555767818400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571555792096300,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571555811684000,
+    "end_ns": 5571555841595200,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 179,
+    "request_id": "8cd5265f-7791-3acd-9b79-9ee1c1c71a81"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571557405576400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571557415015300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571557427787300,
+    "end_ns": 5571557628115600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 181,
+    "request_id": "534528f9-bed7-30e5-9ec1-75a3e774fc7e"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571559254018900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571559281673200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571559309952800,
+    "end_ns": 5571559388151500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 183,
+    "request_id": "9077fbe4-db51-3c4d-97c2-dc2f62b46df4"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571560973074600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571560998143400,
+    "profile": "unavailable",
+    "status": 503
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571562611927700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571562649983700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571562697960000,
+    "end_ns": 5571562741877400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 184,
+    "request_id": "f7cd0ef4-838d-3e03-a0a3-cec8030cae96"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571564295871700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571564317520800,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571564358283600,
+    "end_ns": 5571564407566600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 185,
+    "request_id": "c67429a5-d56a-36de-bec4-d5aec53b4762"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571565954666900,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571567996160400,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571569516182300,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571571557710200,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571573084865700,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571575127058600,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571576633939300,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571578691139400,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571580208863000,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571582243688400,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571583761366200,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571585812889700,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571587322289900,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571589362229400,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571590919820900,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571592468593600,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571594097493000,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571595711916400,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571597283493200,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571598942238900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571598975602300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571599018883100,
+    "end_ns": 5571599110461900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 186,
+    "request_id": "34984182-cd58-31ba-9373-bb7250f650c8"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571600760672300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571600819347300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571602399078700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571602454332500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571604113453000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571604168534700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571605779101200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571605824252400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571607423138900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571607469592600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571607515634800,
+    "end_ns": 5571607654014000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 187,
+    "request_id": "dbb24961-3cd4-39e9-831a-ae4736a6bdc5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571609212511100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571609232125900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571610791805600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571610817490100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571610856973700,
+    "end_ns": 5571610887448600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571612411518300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571612421009500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571612433418600,
+    "end_ns": 5571612442460900,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571613979209000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571613993895100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571614012356600,
+    "end_ns": 5571614046171500,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571615600972200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571615632976300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571615649579600,
+    "end_ns": 5571615684254700,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571617252713600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571617266464100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571617275220700,
+    "end_ns": 5571617293901500,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571618829090800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571618860263400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571618868200300,
+    "end_ns": 5571618874433400,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571620398439500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571620420148300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571620431617600,
+    "end_ns": 5571620438950400,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571621999482600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571622017526400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571622024990400,
+    "end_ns": 5571622032320800,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571623564986600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571623574490300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571623588373500,
+    "end_ns": 5571623601201500,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571625132969900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571625142433700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571625154453200,
+    "end_ns": 5571625166686900,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571626698717700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571626704022800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571626711728900,
+    "end_ns": 5571626719341600,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571628262223800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571628282723700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571628290857800,
+    "end_ns": 5571628298293000,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571629887728700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571629906403800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571629940123100,
+    "end_ns": 5571630088265600,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/5734d96a-eea4-311c-90f0-8bad4ecb7d48/refresh",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 188,
+    "request_id": "5734d96a-eea4-311c-90f0-8bad4ecb7d48"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571631630213400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571631679816300,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571631721698600,
+    "end_ns": 5571631894678000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 189,
+    "request_id": "ca6e8540-4f77-3a1a-8a86-69d0c8a54afd"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571633438835100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571633471089400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571635160303200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571635172941900,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571635212870000,
+    "end_ns": 5571635316581500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 191,
+    "request_id": "c1a2e1a7-8752-3638-a899-16af8c37a735"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571636920552100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571636948645600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571638528761200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571638557816600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571638599221400,
+    "end_ns": 5571638689925900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 194,
+    "request_id": "f12ea280-3e9f-3c36-8ccb-f9ff7cb49605"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571640234822300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571640273904400,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571640303836200,
+    "end_ns": 5571640361612900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 195,
+    "request_id": "d084eeda-2f7a-3dda-89c8-dcf4d5e82a15"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571642011577900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571642061760400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571642101606700,
+    "end_ns": 5571642216786400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 197,
+    "request_id": "6e258fbc-b161-3fa0-bc7c-7a5e58211920"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571643778171300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571643802067100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571643833728600,
+    "end_ns": 5571643865163600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 199,
+    "request_id": "5f261c0b-befa-36b6-ba33-f5887d6bc254"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571645408280900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571645436673300,
+    "profile": "unavailable",
+    "status": 503
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571646988346700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571647038371000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571647095508900,
+    "end_ns": 5571647175554900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 200,
+    "request_id": "1e2badeb-59cd-34c4-a081-21f8834dafaf"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571648706890800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571648716905200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571648734220800,
+    "end_ns": 5571648785807900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 201,
+    "request_id": "589d99ca-8f96-35ab-a0c5-5f43e7355522"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571650354256300,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571652407345100,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571653934361500,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571655988437400,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571657511244700,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571659569687000,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571661084708900,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571663116415000,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571664641789600,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571666681635900,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571668186937500,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571670224133700,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571671732008700,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571673987965800,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571675529439400,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571677080326700,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571678617525600,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571680167637100,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571681702075500,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571683249693400,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571684882339900,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571686468152400,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571688072480900,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571689740732600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571689755353300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571689766805400,
+    "end_ns": 5571689797942100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 202,
+    "request_id": "a7e8f714-43fd-3d64-a244-8b5b6332a1a2"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571691343464300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571691362879500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571692940313300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571692972782900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571694596599200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571694629759000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571696249217800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571696267509200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571697917640700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571697940366500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571697951585600,
+    "end_ns": 5571697981104300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 203,
+    "request_id": "93775f13-b1be-3491-8968-a29d77ebe8b4"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571699522155600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571699535452100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571701098171800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571701107015700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571701140618400,
+    "end_ns": 5571701164595400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571702714591800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571702721125300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571702755965000,
+    "end_ns": 5571702773138700,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571704354511900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571704390501000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571704454261500,
+    "end_ns": 5571704477834000,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571706065492300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571706097095700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571706112015700,
+    "end_ns": 5571706120106700,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571707669160800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571707704211200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571707737325500,
+    "end_ns": 5571707757897600,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571709310317700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571709344704000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571709369092300,
+    "end_ns": 5571709385536400,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571710938758300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571710943796100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571710951246300,
+    "end_ns": 5571710958510300,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571712492767200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571712529069600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571712556477000,
+    "end_ns": 5571712589894000,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571714162687100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571714181671700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571714188698900,
+    "end_ns": 5571714194994100,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571715731683500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571715761267100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571715803281400,
+    "end_ns": 5571715819938300,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571717391092200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571717405039700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571717420606100,
+    "end_ns": 5571717460238400,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571719022320800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571719029903200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571719037724300,
+    "end_ns": 5571719046506100,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571720592119500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571720596699300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571720603650400,
+    "end_ns": 5571720610057300,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571722155710600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571722174451700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571722207450300,
+    "end_ns": 5571722424857200,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/89b55202-b43f-3b98-b54d-ef5b807bbef5/refresh",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 204,
+    "request_id": "89b55202-b43f-3b98-b54d-ef5b807bbef5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571725416562300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571725427297000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571726970134000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571726994279200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571727021875500,
+    "end_ns": 5571727100439500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 205,
+    "request_id": "233dfbfb-5da6-3cfb-b36d-b5437f55a006"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571728652555700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571728669368700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571730223024800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571730231359600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571730252050300,
+    "end_ns": 5571730331327500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 207,
+    "request_id": "da4cf9e9-9cca-39ba-bc88-6eb1598f2927"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571731882463000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571731906606400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571733582721200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571733600070200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571733620792700,
+    "end_ns": 5571733692431300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 210,
+    "request_id": "c0133031-ad0f-3b7e-83ac-37514bbd02e6"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571735283494700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571735339209200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571735386719500,
+    "end_ns": 5571735536852100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 211,
+    "request_id": "5587f014-9c38-3257-afdd-39ccd9ecd1b2"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571737103978000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571737125816900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571737162328200,
+    "end_ns": 5571737199113800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 213,
+    "request_id": "fc53da16-2a60-3fc8-bdfb-04d024500682"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571738743643600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571738786711200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571738847221200,
+    "end_ns": 5571738942521100,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 215,
+    "request_id": "77dba363-4812-3a61-89ad-c1038238eeb3"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571740477127000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571740524791500,
+    "profile": "unavailable",
+    "status": 503
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571742072858900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571742107264000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571742118425500,
+    "end_ns": 5571742174606800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 216,
+    "request_id": "4aeb10b8-f8e7-3749-8907-a13f9284075a"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571743740304600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571743763721200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571743779393000,
+    "end_ns": 5571743873960300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 217,
+    "request_id": "ff6a8587-0688-3fc3-be1c-7e218f21bd6a"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571745434302100,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571747472845900,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571748983288700,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571751038800900,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571752545816500,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571754597113900,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571756104073000,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571758146281700,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571759657579200,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571761725159500,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571763235924500,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571765297427000,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571766805855700,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571768895236200,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571770430407600,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571771978152600,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571773516346400,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571775105950600,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571776702883600,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571778348266300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571778386348900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571778445000200,
+    "end_ns": 5571778532922600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 218,
+    "request_id": "4f1d4899-40aa-3547-855e-d8af84899166"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571780110362800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571780141210000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571781737322100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571781768974200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571783421449400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571783464587900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571785154015700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571785171660600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571786724512300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571786776825200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571788452981800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571788485205600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571790142739600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571790180814200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571790227727500,
+    "end_ns": 5571790286077300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 219,
+    "request_id": "b59bd66a-e447-3d5b-84cd-21b6a3ea78e3"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571791916991700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571791982168600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571793717275400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571793751140200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571793796790400,
+    "end_ns": 5571793831375600,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571795371821200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571795381075200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571795390534200,
+    "end_ns": 5571795427768300,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/f81b518a-1cd3-3cdd-be91-676b3e57734f/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571796972703400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571797004230700,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571797029647000,
+    "end_ns": 5571797039066200,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/f81b518a-1cd3-3cdd-be91-676b3e57734f/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571798585550300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571798592234200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571798600929600,
+    "end_ns": 5571798620539000,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/f81b518a-1cd3-3cdd-be91-676b3e57734f/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571800164589000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571800182165200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571800197543700,
+    "end_ns": 5571800210578100,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/f81b518a-1cd3-3cdd-be91-676b3e57734f/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571801790528000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571801796718800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571801808089900,
+    "end_ns": 5571801817365800,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/f81b518a-1cd3-3cdd-be91-676b3e57734f/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571803347329000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571803396354300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571803467152600,
+    "end_ns": 5571803495808000,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/f81b518a-1cd3-3cdd-be91-676b3e57734f/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571805084603700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571805114054300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571805192563300,
+    "end_ns": 5571805223846200,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/f81b518a-1cd3-3cdd-be91-676b3e57734f/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571806781655900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571806820352100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571806846696000,
+    "end_ns": 5571806876305000,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/f81b518a-1cd3-3cdd-be91-676b3e57734f/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571808433112400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571808451704100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571808484525400,
+    "end_ns": 5571808493054500,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/f81b518a-1cd3-3cdd-be91-676b3e57734f/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571810073945400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571810101338400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571810125406400,
+    "end_ns": 5571810133579100,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/f81b518a-1cd3-3cdd-be91-676b3e57734f/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571811696956400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571811712367200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571811748844700,
+    "end_ns": 5571812057686700,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/f81b518a-1cd3-3cdd-be91-676b3e57734f/refresh",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 220,
+    "request_id": "f81b518a-1cd3-3cdd-be91-676b3e57734f"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571813609289800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571813624646000,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571813654906500,
+    "end_ns": 5571813768777700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 221,
+    "request_id": "c89953fa-a798-3a9a-aae1-8add6833badf"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571815324161700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571815371472000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571817025405500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571817049785100,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571817098310800,
+    "end_ns": 5571817175346300,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 223,
+    "request_id": "a579a29b-7ae2-329b-aaa7-8f7ce5c3f008"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571818707999900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571818728635200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571820321717800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571820329999800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571820359022200,
+    "end_ns": 5571820444754000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 226,
+    "request_id": "02814390-2bff-303a-bef4-5647ffcaaba0"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571822015119500,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571822044582700,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571822096030800,
+    "end_ns": 5571822152643500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 227,
+    "request_id": "21869019-f03d-3f40-9a89-3ca028dbf3ea"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571823699729700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571823741059300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571823780656500,
+    "end_ns": 5571823873552900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 229,
+    "request_id": "4fad4d74-b38f-3774-88e0-7064f9b05f96"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571825412783100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571825461857200,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571825480103100,
+    "end_ns": 5571825514962500,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 231,
+    "request_id": "f4d5651e-ba92-330f-85c0-7bb53746aa23"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571827050271000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571827081270500,
+    "profile": "unavailable",
+    "status": 503
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571828676814100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571828695472600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571828725040800,
+    "end_ns": 5571828749709400,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 232,
+    "request_id": "0196688c-0415-3330-a589-eb04a80bcab5"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571830279359300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571830312216800,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571830360752500,
+    "end_ns": 5571830427597700,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 233,
+    "request_id": "f98b2d2d-2f54-3602-9d63-73aa4e7323ef"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571831989075300,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571834034778800,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571835555913400,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571837605382200,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571839122122700,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571841182588700,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571842692604600,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571844724544200,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571846229392400,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571848274280400,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571849783471400,
+    "unavailable": false
+  },
+  {
+    "kind": "instrument_error",
+    "start_ns": 5571851834780200,
+    "detail": "[WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571853340804000,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571855105347900,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571856642966800,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571858192302500,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571859741441900,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571861276282000,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571862824268200,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571864364040700,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571865972294200,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571867564524300,
+    "unavailable": false
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571869223289800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571869256663500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571869300913000,
+    "end_ns": 5571869366840900,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 234,
+    "request_id": "f7b0793f-4a70-33d9-a161-0b55c510fc72"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571870895726100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571870948090100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571872627184000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571872660988600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571874275525400,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571874313582900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571875906576700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571875916186300,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571877531121800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571877541622400,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571879104931700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571879117105500,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571879132011600,
+    "end_ns": 5571879215298000,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 235,
+    "request_id": "e15a9bde-2aad-388b-982e-e970481d3bbc"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571880818847700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571880874924600,
+    "profile": "expanded",
+    "status": 200
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571882575992300,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571882615505900,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571882695805700,
+    "end_ns": 5571882767756800,
+    "method": "PUT",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/configuration",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571884357107100,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571884370883000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571884390090300,
+    "end_ns": 5571884408949300,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571885948311000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571885957448600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571885970936300,
+    "end_ns": 5571885979946200,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571887564068700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571887596352200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571887618401700,
+    "end_ns": 5571887634030500,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571889228309900,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571889279754100,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571889311808900,
+    "end_ns": 5571889324973400,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571890893628200,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571890903733800,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571890918665600,
+    "end_ns": 5571890968786600,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571892552305000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571892566869200,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571892581295300,
+    "end_ns": 5571892591249000,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571894130405700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571894139241500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571894153001900,
+    "end_ns": 5571894161765100,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571895682024000,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571895705444600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571895731758100,
+    "end_ns": 5571895790977100,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571897338379800,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571897345013600,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571897353812500,
+    "end_ns": 5571897360538200,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571898901952700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571898907295500,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571898916082700,
+    "end_ns": 5571898922402100,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571900472535600,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571900492420000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571900524027900,
+    "end_ns": 5571900554903300,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "FAILED_REFRESH",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  },
+  {
+    "kind": "cycle",
+    "start_ns": 5571902094870700,
+    "unavailable": false
+  },
+  {
+    "kind": "fetch",
+    "start_ns": 5571902110926000,
+    "profile": "authenticated",
+    "status": 200
+  },
+  {
+    "kind": "sync",
+    "start_ns": 5571902137491700,
+    "end_ns": 5571902294716600,
+    "method": "POST",
+    "path": "/auth-service/internal/adaptive/services/catalog-service/events/c37a2f1c-a3e8-3240-ae4b-dc1e69b47448/refresh",
+    "http": 200,
+    "status": "APPLIED",
+    "version": 236,
+    "request_id": "c37a2f1c-a3e8-3240-ae4b-dc1e69b47448"
+  }
+]

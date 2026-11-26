@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="680" height="318" preserveAspectRatio="xMinYMin meet" viewBox="0 0 680 318" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="680" height="318"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-318)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="680" height="318" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="20" y="292" style="font-family: Arial, sans-serif; font-size: 16px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,584) scale(1,-1)">Час від публікації контракту до зміни доступу</text>
+			<text x="20" y="272" style="font-family: Arial, sans-serif; font-size: 10px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,544) scale(1,-1)">REST — підготовлений адміністративний запит. Риска — медіана.</text>
+			<text x="69" y="245" style="font-family: Arial, sans-serif; font-size: 10px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,490) scale(1,-1)">мс</text>
+			<path d="M 69,52 L 658,52 Z" style="stroke: rgb(83%,87%,89%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="55.99462890625" y="49.0" style="font-family: Arial, sans-serif; font-size: 9px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,98) scale(1,-1)">0</text>
+			<path d="M 69,97.25 L 658,97.25 Z" style="stroke: rgb(83%,87%,89%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="45.98388671875" y="94.25" style="font-family: Arial, sans-serif; font-size: 9px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,188) scale(1,-1)">500</text>
+			<path d="M 69,142.5 L 658,142.5 Z" style="stroke: rgb(83%,87%,89%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="40.978515625" y="139.5" style="font-family: Arial, sans-serif; font-size: 9px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,279) scale(1,-1)">1000</text>
+			<path d="M 69,187.75 L 658,187.75 Z" style="stroke: rgb(83%,87%,89%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="40.978515625" y="184.75" style="font-family: Arial, sans-serif; font-size: 9px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,369) scale(1,-1)">1500</text>
+			<path d="M 69,233 L 658,233 Z" style="stroke: rgb(83%,87%,89%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<text x="40.978515625" y="230.0" style="font-family: Arial, sans-serif; font-size: 9px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,460) scale(1,-1)">2000</text>
+			<circle cx="115.125" cy="64.92261265" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="149.11686938125" cy="64.39282564999999" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="128.1087387625" cy="64.13071049999999" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="162.10060814375" cy="55.90711125" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="141.09247752500002" cy="64.20436845" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="120.08434690625002" cy="64.21450444999999" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="154.0762162875" cy="65.23854815" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="133.06808566875003" cy="64.38480735" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="167.05995505" cy="65.38682335" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="146.05182443125" cy="66.87511395" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 108.7575,64.388817 L 176.4925,64.388817 Z" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 2;"/>
+			<text x="102.030517578125" y="34" style="font-family: Arial, sans-serif; font-size: 9px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,68) scale(1,-1)">Обмеження · REST</text>
+			<text x="131.392578125" y="19" style="font-family: Arial, sans-serif; font-size: 8px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,38) scale(1,-1)">n = 10</text>
+			<circle cx="262.375" cy="145.8887182" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="296.36686938125" cy="199.8262114" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="275.3587387625" cy="148.8578784" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="309.35060814375" cy="157.35241655" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="288.342477525" cy="139.4242308" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="267.33434690625" cy="148.66736685" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="301.3262162875" cy="173.51571654999998" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="280.31808566875003" cy="172.8246676" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="314.30995505000004" cy="175.93100769999998" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="293.30182443125" cy="93.67956685" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 256.0075,153.105147 L 323.7425,153.105147 Z" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 2;"/>
+			<text x="243.521484375" y="34" style="font-family: Arial, sans-serif; font-size: 9px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,68) scale(1,-1)">Обмеження · Manager</text>
+			<text x="278.642578125" y="19" style="font-family: Arial, sans-serif; font-size: 8px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,38) scale(1,-1)">n = 10</text>
+			<circle cx="409.625" cy="64.64933884999999" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="443.61686938125" cy="65.49135989999999" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="422.6087387625" cy="55.6511682" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="456.60060814375" cy="66.79813465" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="435.592477525" cy="65.11575775" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="414.58434690625" cy="64.19749045" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="448.5762162875" cy="66.55310589999999" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="427.56808566875003" cy="67.2777213" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="461.55995505000004" cy="63.79894655" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="440.55182443125" cy="66.73599735" r="2.6" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 403.2575,65.303559 L 470.9925,65.303559 Z" style="stroke: rgb(63%,26%,11%); stroke-linecap: butt; stroke-width: 2;"/>
+			<text x="400.95361328125" y="34" style="font-family: Arial, sans-serif; font-size: 9px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,68) scale(1,-1)">Відкриття · REST</text>
+			<text x="425.892578125" y="19" style="font-family: Arial, sans-serif; font-size: 8px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,38) scale(1,-1)">n = 10</text>
+			<circle cx="556.875" cy="136.05973945" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="590.86686938125" cy="75.06406075" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="569.8587387625" cy="119.59605185000001" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="603.85060814375" cy="91.21496225000001" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="582.842477525" cy="185.46759905" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="561.8343469062501" cy="192.93803015" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="595.8262162875" cy="101.48052204999999" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="574.8180856687501" cy="148.52517325" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="608.80995505" cy="119.80684445" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<circle cx="587.80182443125" cy="118.58847010000001" r="2.6" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 550.5075,119.701448 L 618.2425,119.701448 Z" style="stroke: rgb(12%,38%,54%); stroke-linecap: butt; stroke-width: 2;"/>
+			<text x="542.444580078125" y="34" style="font-family: Arial, sans-serif; font-size: 9px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,68) scale(1,-1)">Відкриття · Manager</text>
+			<text x="573.142578125" y="19" style="font-family: Arial, sans-serif; font-size: 8px;fill: rgb(8%,16%,25%); stroke:none;" transform="translate(0,38) scale(1,-1)">n = 10</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,3 @@
+﻿scenario,metric,n,mean,median,min,max,sd,p95
+relax,adaptive_minus_manual_ms,10,709.9143,662.7225,105.7757,1422.5474,424.8433,
+restrict,adaptive_minus_manual_ms,10,1012.4976,1028.5772,296.1818,1496.5015,321.4574,
